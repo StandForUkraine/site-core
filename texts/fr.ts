@@ -44,6 +44,12 @@ export default {
   goal5: 'Soutenir la presse indépendante',
   footerCreds: `Ce site Web a été créé par des ingénieurs, managers, désigners, écrivains, traducteurs, journalistes et activistes de toute l'Ukraine et d'ailleur.`,
   footerContact: 'Rejoins-nous',
+  joinUs: 'Rejoignez-nous',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'Pour',
@@ -57,4 +63,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Copier le code',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

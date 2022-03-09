@@ -1,31 +1,34 @@
 import styled from 'styled-components'
 
 export const Chip = styled.button<{ isActive?: boolean }>`
-  background: #f2f2f2;
+  background-color: #f2f2f2;
   border-radius: 40px;
   padding: 6px 10px;
-  border: 2px solid #f2f2f2;
+  height: 33px;
+  border: 2px solid #ffffff;
   outline: none;
   font-weight: 500;
   white-space: nowrap;
   margin-right: 5px;
 
   &:hover {
-    border-color: rgba(255, 229, 0, 0.5);
+    background-color: #FFE600;
   }
 
   &:focus {
-    border-color: #ffe500;
+    border-color: #2F80ED;
   }
 
-  ${({ isActive }) =>
-    isActive
-      ? `
-        background: #000;
-        color: #fff;
-        border-color: #000;
-        `
-      : ''}
+  ${({ isActive }) => isActive ? `
+    background-color: #000;
+    color: #fff;
+    &:hover {
+      background-color: #000;
+      color: #FFE600;
+    }
+  ` : `
+    color: #333333;
+  `}
 `
 
 export default Chip

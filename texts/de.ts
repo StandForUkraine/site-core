@@ -36,7 +36,7 @@ export default {
 
   // footer
   footerHeader:
-    'Stand for Ukraine - ist eine zentrale Stelle akkreditierter und verifizierter Organisationen. Sie hilft Ukraine sich gegen den Russischen Angriff zu verteidigen, und einen Wiederaufbau zu ermöglichen.',
+    'Stand for Ukraine ist eine zentrale Stelle akkreditierter und verifizierter Organisationen. Sie hilft Ukraine sich gegen den Russischen Angriff zu verteidigen, und einen Wiederaufbau zu ermöglichen.',
   footerGoals: 'Unsere Ziele',
   goal1: 'Unterstützung der Ukrainischen Streitkräfte mit Waffen, Munition und Vorräten',
   goal2: 'Rettung von Veteranen und Kriegsopfern',
@@ -46,6 +46,12 @@ export default {
   footerCreds:
     'Diese Webseite wurde erstellt von IT technikern, Managern, Designern, Textern, Übersetzern, Journalisten, und Aktivisten aus der Ukraine und der ganzen Welt.',
   footerContact: 'Hier erreichst du uns',
+  joinUs: 'Begleiten Sie uns',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'Zu',
@@ -59,4 +65,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Code kopieren',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

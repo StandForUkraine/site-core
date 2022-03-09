@@ -45,6 +45,12 @@ export default {
   footerCreds:
     "Bu web sitesi, Ukrayna'nın her yerinden ve ötesinden IT mühendisleri, yöneticiler, tasarımcılar, yazarlar, çevirmenler, gazeteciler ve aktivistler tarafından yapılmıştır.",
   footerContact: 'Bize Ulaşın',
+  joinUs: 'Bize katılın',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'La',
@@ -58,4 +64,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Kodu Kopyala',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

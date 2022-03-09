@@ -5,11 +5,14 @@ import { allTags, Tag } from 'core/utils/tags'
 import { payMethods, PayMethod } from 'core/utils/payMethods'
 import MultipleSelection from './MultipleSelection'
 import DonationWidget from './DonationWidget'
+import styled from 'styled-components'
+import TextButton from './TextButton'
 
 export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const t = useText()
   const [selectedTags, setSelectedTags] = useState<Tag[]>([])
   const [selectedMethods, setSelectedMethods] = useState<PayMethod[]>([])
+  const [slice, setSlice] = useState(9);
   const { lang } = useLang()
 
   const filteredDonations = useMemo(
@@ -72,11 +75,44 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
 
       {filteredDonations.length < 1 && <h1>Nothing found.</h1>}
 
-      {filteredDonations.map((donation) => (
-        <DonationWidget key={donation.id} donation={donation} />
-      ))}
+      <DonationWrapper>
+        {
+          (slice > 0 ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
+            <DonationWidget key={donation.id} donation={donation} />
+          ))
+        }
+        {
+          slice > 0 && (
+            <ButtonWrapper>
+              <TextButton
+                onClick={() => setSlice(0)}
+              >
+                {t('browseAll1')} {filteredDonations.length} {t('browseAll2')}
+              </TextButton>
+            </ButtonWrapper>
+          )
+        }
+      </DonationWrapper>
     </>
   )
 }
 
 export default Donations
+
+const DonationWrapper = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  padding-top: 16px;
+  padding-bottom: 52px;
+  border-bottom: 1px solid #E0E0E0;
+
+  @media (min-width: 1280px) {
+    padding-top: 28px;
+  }
+`;
+
+const ButtonWrapper = styled.div`
+  text-align: center;
+  padding-top: 9px;
+  width: 100%;
+`;

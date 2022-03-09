@@ -34,7 +34,7 @@ export default {
   'Human Rights': 'Human Rights',
 
   // footer
-  footerHeader: `Împreună pentru Ucraina – este o bază de date pentru organizații de încredere, care ajută la combaterea invaziei ruse și la depășirea consecințelor sale.`,
+  footerHeader: `Împreună pentru Ucraina este o bază de date pentru organizații de încredere, care ajută la combaterea invaziei ruse și la depășirea consecințelor sale.`,
   footerGoals: 'Obiectivele Noastre',
   goal1: 'Furnizarea armatai Ucrainei cu armament, muniție, și provizii',
   goal2: 'Recuperarea veteranilor și victimelor războiului',
@@ -43,6 +43,12 @@ export default {
   goal5: 'Susținerea presei independente',
   footerCreds: `Acest site este realizat de ingineri IT, manageri, designeri, scriitori, translatori, jurnaliști, și activiști din Ucraina și de peste granițe.`,
   footerContact: 'Contactează-ne',
+  joinUs: 'Alăturați-ne',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'La',
@@ -56,4 +62,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Copiați codul',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

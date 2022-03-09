@@ -9,9 +9,7 @@ export const Button = styled.button<ButtonProps>`
   display: inline-flex;
   text-decoration: none;
   padding: 6px 16px;
-  border: 2px solid
-    ${(props) =>
-      props.color === 'dark' ? '#000' : props.color === 'success' ? '#D0F1D5' : '#F2F2F2'};
+  border: 2px solid #ffffff;
   background-color: ${(props) =>
     props.color === 'dark' ? '#000' : props.color === 'success' ? '#D0F1D5' : '#F2F2F2'};
   color: ${(props) =>
@@ -25,35 +23,35 @@ export const Button = styled.button<ButtonProps>`
 
   ${(props) => (props.fullWidth ? 'width: 100%;' : '')}
 
-  ${(props) =>
-    props.color === 'dark'
-      ? `
-  &:hover {
-    color: #FFE600;
-  }
-  &:focus {
-    border-color: #FFE600;
-  }
-  `
-      : props.color === 'success'
-      ? `
-  &:hover {
-    background-color: #D0F1D5;
-    border-color: transparent;
-  }
-  &:focus {
-    border-color: transparent;
-  }
-  `
-      : `
-  &:hover {
-    background-color: rgba(255, 230, 0, 0.5);
-    border-color: transparent;
-  }
-  &:focus {
-    border-color: #FFE600;
-  }
-  `}
+  ${(props) => props.color === 'dark' ? `
+    /* dark hover/focus */
+    &:hover {
+      color: #FFE600;
+    }
+    &:focus {
+      border-color: #2F80ED;
+    }
+  ` : ''}
+
+  ${(props) => props.color === 'success' ? `
+    /* success hover/focus */
+    &:hover {
+      background-color: #D0F1D5;
+    }
+    &:focus {
+      border-color: #2F80ED;
+    }
+  ` : ''}
+
+  ${(props) => props.color === 'default' ? `
+    /* default hover/focus */
+    &:hover {
+      background-color: #FFE600;
+    }
+    &:focus {
+      border-color: #2F80ED;
+    }
+  ` : ''}
 `
 
 Button.defaultProps = {

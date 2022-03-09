@@ -43,6 +43,12 @@ export default {
   goal5: 'Aiutare la stampa indipendente',
   footerCreds: `Questo sito è fatto da ingegneri IT, dirigenti, designers, scrittori, traduttori, giornalisti e attivisti dall'Ucraina e non solo.`,
   footerContact: 'Contattaci',
+  joinUs: 'Unisciti a noi',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'A',
@@ -56,4 +62,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Copia codice',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

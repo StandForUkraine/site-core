@@ -43,6 +43,12 @@ export default {
   goal5: 'Wspomóż niezależną prasę',
   footerCreds: `Ta strona internetowa jest tworzona przez inżynierów IT, menedżerów, projektantów, pisarzy, tłumaczy, dziennikarzy i aktywistów z całej Ukrainy i spoza niej.`,
   footerContact: 'Dotrzyj do nas',
+  joinUs: 'Dołącz do nas',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'W celu',
@@ -56,4 +62,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Skopiuj kod',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }
