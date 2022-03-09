@@ -110,6 +110,10 @@ const DonationPost = styled.div`
   @media (min-width: 768px) {
     width: 50%;
   }
+
+  @media (min-width: 1280px) {
+    width: calc(100% / 3);
+  }
 `
 
 const DonationLogo = styled.img``
@@ -162,6 +166,8 @@ const LegalNumber = styled.button`
   color: #777;
   display: flex;
   align-items: center;
+  border: 2px solid transparent;
+  border-radius: 4px;
 
   svg {
     margin-left: 5px;
@@ -170,6 +176,10 @@ const LegalNumber = styled.button`
   &:hover {
     color: #555;
     text-decoration: underline;
+  }
+
+  &:focus {
+    border-color: #2F80ED;
   }
 `
 

@@ -35,7 +35,7 @@ export default {
 
   // footer
   footerHeader:
-    'Stand for Ukraine — это подборка надежных организаций, помогающих бороться с российским вторжением и преодолевать его последствия.',
+    'Stand for Ukraine это подборка надежных организаций, помогающих бороться с российским вторжением и преодолевать его последствия.',
   footerGoals: 'Наши цели',
   goal1: 'Помочь украинским военным, обеспечив оружием и боеприпасами',
   goal2: 'Поддержать ветеранов и жертв войны',
@@ -45,6 +45,12 @@ export default {
   footerCreds:
     'Этот сайт создан разработчиками, менеджерами, дизайнерами, копирайтерами, переводчиками, журналистами и активистами со всей Украины и мира.',
   footerContact: 'Связаться с нами',
+  joinUs: 'Присоединяйтесь к нам',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'Организации',
@@ -58,4 +64,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Скопировать код',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

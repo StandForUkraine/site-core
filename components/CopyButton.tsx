@@ -1,11 +1,16 @@
 import useMountedRef from 'core/utils/useMountedRef'
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 import CopyToClipboard from 'react-copy-to-clipboard'
 import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
 import Button from './Button'
 
-export const CopyButton = ({ content }: { content: string }) => {
+export interface CopyButtonProps {
+  content: string;
+  buttonChildren?: ReactNode;
+}
+
+export const CopyButton = ({ content, buttonChildren }: CopyButtonProps) => {
   const t = useText()
   const mountedRef = useMountedRef()
   const [copied, setCopied] = useState(false)
@@ -24,7 +29,9 @@ export const CopyButton = ({ content }: { content: string }) => {
         }, 2000)
       }}
     >
-      <CopyBtn color="default">{t('copyLink')}</CopyBtn>
+      <CopyBtn color="default">
+        {buttonChildren ?? t('copyLink')}
+      </CopyBtn>
     </CopyToClipboard>
   ) : (
     <CopyBtn color="success">{t('copyLinkDone')}</CopyBtn>

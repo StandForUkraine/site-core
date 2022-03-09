@@ -34,7 +34,7 @@ export default {
   'Human Rights': 'Mensenrechten',
 
   // footer
-  footerHeader: `Stand For Ukraine - is een aggregator van betrouwbare organisaties die helpen de Russische invasie te bestrijden en de gevolgen ervan te overwinnen.`,
+  footerHeader: `Stand For Ukraine is een aggregator van betrouwbare organisaties die helpen de Russische invasie te bestrijden en de gevolgen ervan te overwinnen.`,
   footerGoals: 'Onze doelen',
   goal1: 'Help het Oekraïense leger met wapens, munitie en militaire benodigdheden',
   goal2: 'Rehabiliteer veteranen en oorlogsslachtoffers',
@@ -43,6 +43,12 @@ export default {
   goal5: 'Ondersteun onafhankelijke pers',
   footerCreds: `Deze website is gemaakt door IT-ingenieurs, managers, ontwerpers, schrijvers, vertalers, journalisten en activisten uit heel Oekraïne en daarbuiten.`,
   footerContact: 'Bereik ons',
+  joinUs: 'Doe met ons mee',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'Naar',
@@ -56,4 +62,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Kopieer code',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }

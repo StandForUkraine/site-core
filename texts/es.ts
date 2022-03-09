@@ -35,7 +35,7 @@ export default {
 
   // footer
   footerHeader:
-    'Stand for Ukraine - es un agregador de organizaciones confiables que ayuda a combatir la invasión rusa y superar sus consecuencias.',
+    'Stand for Ukraine es un agregador de organizaciones confiables que ayuda a combatir la invasión rusa y superar sus consecuencias.',
   footerGoals: 'Nuestros Objetivos',
   goal1: 'Ayuda a los militares ucranianos con armas, municiones y suministros',
   goal2: 'Recuperar a los veteranos y víctimas de la guerra',
@@ -45,6 +45,12 @@ export default {
   footerCreds:
     'Este sitio web está hecho por ingenieros de TI, gerentes, diseñadores, escritores, traductores, periodistas y activistas de toda Ucrania y más allá.',
   footerContact: 'Contáctanos',
+  joinUs: 'Únete a nosotros',
+  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  aboutProject: 'About The Project',
+  suggestOrgLink: 'Suggest an organization',
+  sharedFeedbackLink: 'Share feedback',
+  joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'Para',
@@ -58,4 +64,8 @@ export default {
   Patreon: 'Patreon',
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
+
+  copyCode: 'Copiar código',
+  browseAll1: 'Browse all',
+  browseAll2: 'organizatios',
 }
