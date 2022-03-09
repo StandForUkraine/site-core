@@ -12,8 +12,10 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const t = useText()
   const [selectedTags, setSelectedTags] = useState<Tag[]>([])
   const [selectedMethods, setSelectedMethods] = useState<PayMethod[]>([])
-  const [slice, setSlice] = useState(9);
+  const [slice, setSlice] = useState(9)
   const { lang } = useLang()
+
+  const shouldBeSliced = slice > 0 && selectedTags.length === 0 && selectedMethods.length === 0;
 
   const filteredDonations = useMemo(
     () =>
@@ -77,12 +79,12 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
 
       <DonationWrapper>
         {
-          (slice > 0 ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
+          (shouldBeSliced ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
             <DonationWidget key={donation.id} donation={donation} />
           ))
         }
         {
-          slice > 0 && (
+          shouldBeSliced && (
             <ButtonWrapper>
               <TextButton
                 onClick={() => setSlice(0)}
