@@ -53,6 +53,7 @@ export default {
   // filter
   filterTo: 'Naar',
   filterPayVia: 'Via',
+  resetFilter: 'Filter resetten',
 
   // payment methods
   IBAN: 'IBAN',

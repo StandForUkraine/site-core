@@ -17,7 +17,8 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const { lang } = useLang()
   const gtag = useGtag()
 
-  const shouldBeSliced = slice > 0 && selectedTags.length === 0 && selectedMethods.length === 0;
+  const isFiltered = selectedTags.length > 0 || selectedMethods.length > 0;
+  const shouldBeSliced = slice > 0 && !isFiltered;
 
   const filteredDonations = useMemo(
     () =>
@@ -63,21 +64,39 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
 
   return (
     <>
-      <MultipleSelection
-        title={t('filterTo')}
-        allOptions={[...allTags]}
-        selectedOptions={selectedTags}
-        onOptionClick={onTagClick}
-      />
+      <FilterWrapper
+        isFiltered={isFiltered}
+      >
+        <MultipleSelection
+          title={t('filterTo')}
+          allOptions={[...allTags]}
+          selectedOptions={selectedTags}
+          onOptionClick={onTagClick}
+        />
 
-      <MultipleSelection
-        title={t('filterPayVia')}
-        allOptions={payMethods.filter((m) => m !== 'Western Union')}
-        selectedOptions={selectedMethods}
-        onOptionClick={onMethodClick}
-      />
+        <MultipleSelection
+          title={t('filterPayVia')}
+          allOptions={payMethods.filter((m) => m !== 'Western Union')}
+          selectedOptions={selectedMethods}
+          onOptionClick={onMethodClick}
+        />
 
-      {filteredDonations.length < 1 && <h1>Nothing found.</h1>}
+        {
+          (selectedTags.length > 0 || selectedMethods.length > 0) && (
+            <ResetFilterButton
+              onClick={() => {
+                gtag('event', 'reset_filter_click', { event_category: 'home_page' });
+                setSelectedTags([])
+                setSelectedMethods([])
+              }}
+            >
+              {t('resetFilter')}
+            </ResetFilterButton>
+          )
+        }
+      </FilterWrapper>
+
+      {filteredDonations.length < 1 && <NotFound>Nothing found.</NotFound>}
 
       <DonationWrapper>
         {
@@ -116,10 +135,43 @@ const DonationWrapper = styled.div`
   @media (min-width: 1280px) {
     padding-top: 28px;
   }
-`;
+`
 
 const ButtonWrapper = styled.div`
   text-align: center;
   padding-top: 9px;
   width: 100%;
-`;
+`
+
+const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
+  position: relative;
+
+  ${(props) => props.isFiltered ? `
+    padding-bottom: 24px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+    }
+  ` : ''}
+`
+
+const ResetFilterButton = styled(TextButton).attrs({
+  variant: 'external-link',
+  size: 'small',
+})`
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    bottom: 6px;
+  }
+  
+  @media (min-width: 1280px) {
+    right: 0;
+  }
+`
+
+const NotFound = styled.h1`
+  text-align: center;
+`

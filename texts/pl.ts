@@ -53,6 +53,7 @@ export default {
   // filter
   filterTo: 'W celu',
   filterPayVia: 'Przez',
+  resetFilter: 'Zresetuj filtr',
 
   // payment methods
   IBAN: 'IBAN',

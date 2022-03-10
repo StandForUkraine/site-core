@@ -55,6 +55,7 @@ export default {
   // filter
   filterTo: 'Организации',
   filterPayVia: 'Оплата',
+  resetFilter: 'Сбросить фильтр',
 
   // payment methods
   IBAN: 'IBAN',
