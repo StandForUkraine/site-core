@@ -5,13 +5,14 @@ import { useLang, useText } from 'core/utils/lang'
 import Button from './Button'
 import ShareIcon from './ShareIcon'
 import SharePopup from './SharePopup'
+import { defaultLang } from 'core/texts'
 
 export const TopHeader = () => {
   const [visibleShare, setVisibleShare] = useState(false)
-  const { lang } = useLang()
+  const lang = useLang()
   const t = useText()
 
-  const rootPathname = lang === 'en' ? '/' : `/${lang}`
+  const rootPathname = lang === defaultLang ? '/' : `/${lang}`
 
   return (
     <TopHeaderWrapper>

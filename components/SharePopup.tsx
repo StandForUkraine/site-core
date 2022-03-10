@@ -5,15 +5,16 @@ import styled from 'styled-components'
 import { useLang, useText } from 'core/utils/lang'
 import CopyButton from './CopyButton'
 import Popup from './Popup'
+import { defaultLang } from 'core/texts'
 
 const baseUrl = process.env.NEXT_PUBLIC_SITE_BASEURL
 
 export const SharePopup = ({ onClose }: { onClose: () => any }) => {
   const t = useText()
   const gtag = useGtag()
-  const { lang } = useLang()
+  const lang = useLang()
 
-  const link = baseUrl + (lang === 'en' ? '' : lang)
+  const link = baseUrl + (lang === defaultLang ? '' : lang)
 
   return (
     <Popup onClose={onClose}>

@@ -5,7 +5,7 @@ import { useLang } from 'core/utils/lang'
 import Chip from './Chip'
 
 export const Langs = () => {
-  const { lang } = useLang()
+  const lang = useLang()
   return (
     <LangsWrapper>
       {langs.map((langKey) => (
@@ -14,7 +14,11 @@ export const Langs = () => {
           href={langKey === defaultLang ? '/' : '/[lang]/'}
           as={langKey === defaultLang ? '/' : `/${langKey}/`}
         >
-          <Lang as="a" href={langKey === defaultLang ? '/' : `/${langKey}/`} isActive={langKey === lang}>
+          <Lang
+            as="a"
+            href={langKey === defaultLang ? '/' : `/${langKey}/`}
+            isActive={langKey === lang}
+          >
             {flagsMap[langKey]}
             <span>{langKey.toUpperCase()}</span>
           </Lang>

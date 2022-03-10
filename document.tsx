@@ -8,6 +8,7 @@ import Document, {
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import { langs } from 'core/texts'
+import { defaultLang } from 'core/texts'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 const baseUrl = process.env.NEXT_PUBLIC_SITE_BASEURL
@@ -83,7 +84,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
               key={lang}
               rel="alternate"
               hrefLang={lang}
-              href={`${this.props.origin}/${lang === 'en' ? '' : lang}`}
+              href={`${this.props.origin}/${lang === defaultLang ? '' : lang}`}
             />
           ))}
         </Head>
