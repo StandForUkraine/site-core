@@ -7,6 +7,7 @@ import MultipleSelection from './MultipleSelection'
 import DonationWidget from './DonationWidget'
 import styled from 'styled-components'
 import TextButton from './TextButton'
+import { useGtag } from 'core/utils/useGtag'
 
 export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const t = useText()
@@ -14,6 +15,7 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const [selectedMethods, setSelectedMethods] = useState<PayMethod[]>([])
   const [slice, setSlice] = useState(9)
   const { lang } = useLang()
+  const gtag = useGtag()
 
   const shouldBeSliced = slice > 0 && selectedTags.length === 0 && selectedMethods.length === 0;
 
@@ -87,7 +89,10 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
           shouldBeSliced && (
             <ButtonWrapper>
               <TextButton
-                onClick={() => setSlice(0)}
+                onClick={() => {
+                  gtag('event', 'show_all_orgs_click', { event_category: 'home_page' });
+                  setSlice(0)
+                }}
               >
                 {t('browseAll1')} {filteredDonations.length} {t('browseAll2')}
               </TextButton>
