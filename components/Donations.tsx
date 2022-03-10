@@ -85,6 +85,7 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
           (selectedTags.length > 0 || selectedMethods.length > 0) && (
             <ResetFilterButton
               onClick={() => {
+                gtag('event', 'reset_filter_click', { event_category: 'home_page' });
                 setSelectedTags([])
                 setSelectedMethods([])
               }}
