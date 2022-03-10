@@ -59,7 +59,9 @@ export default function About() {
             <JoinWrapper>
               <JoinWrapperHeader>{t('aboutTeamJoinHeader')}</JoinWrapperHeader>
               <JoinWrapperText>{t('aboutTeamJoinText')}</JoinWrapperText>
-              <JoinWrapperLink href={`mailto:${email}`}>{t('aboutTeamJoinLink')}</JoinWrapperLink>
+              <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
+                {t('aboutTeamJoinLink')}
+              </JoinWrapperLink>
             </JoinWrapper>
           </AboutFlexBlock>
         </AboutContent>
