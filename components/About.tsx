@@ -18,7 +18,7 @@ export default function About() {
     <>
       <TopHeader />
       <Page>
-        <Langs />
+        {/* <Langs /> */}
         <HeroWrapper>
           <HeroHeader>{t('aboutHeader')}</HeroHeader>
           <HeroText>{t('aboutHeaderText1')}</HeroText>
