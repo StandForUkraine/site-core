@@ -5,7 +5,7 @@ export default {
 
   share: 'Delen',
   donate: 'Doneren',
-  inform: 'Informeer',
+  inform: 'Informeren',
   donateButton: 'Doneren',
 
   heroHeader: `Help Oekraïense militaire en humanitaire organisaties`,
@@ -14,7 +14,7 @@ export default {
   heroText3: `Informeer het publiek door onze nieuwsbrieven te delen.`,
 
   close: 'Afsluiten',
-  sharePopupTitle: 'Verspreid de oorzaak',
+  sharePopupTitle: 'Deel deze boodschap',
   sharePopupText1: "Deel deze bron met je vrienden en collega's.",
   sharePopupText2: 'Laat mensen weten hoe ze Oekraïne kunnen steunen.',
   sharingText: 'Help Oekraïense militaire en humanitaire organisaties #StandForUkraine',
@@ -28,13 +28,13 @@ export default {
   Humanitarian: 'Humanitair',
   Refugees: 'Vluchtelingen',
   Press: 'Pers',
-  Veterancy: 'Veteraanchap',
+  Veterancy: 'Veteranenschap',
   'Non-lethal': 'Niet-dodelijk',
   'Non-government': 'Niet-gouvernementele',
   'Human Rights': 'Mensenrechten',
 
   // footer
-  footerHeader: `Stand For Ukraine is een aggregator van betrouwbare organisaties die helpen de Russische invasie te bestrijden en de gevolgen ervan te overwinnen.`,
+  footerHeader: `Stand For Ukraine - is een aggregator van betrouwbare organisaties die helpen de Russische invasie te bestrijden en de gevolgen ervan te overwinnen.`,
   footerGoals: 'Onze doelen',
   goal1: 'Help het Oekraïense leger met wapens, munitie en militaire benodigdheden',
   goal2: 'Rehabiliteer veteranen en oorlogsslachtoffers',
