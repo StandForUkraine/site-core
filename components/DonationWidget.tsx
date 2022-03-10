@@ -137,7 +137,9 @@ const DonationTags = styled.div`
 `
 
 const DonationPayMethods = styled.div`
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
 
   span {
     border: 1px solid #aaa;
@@ -145,6 +147,8 @@ const DonationPayMethods = styled.div`
     padding: 3px 5px;
     font-size: 13px;
     margin-right: 8px;
+    margin-bottom: 5px;
+    white-space: nowrap;
   }
 `
 
@@ -179,7 +183,7 @@ const LegalNumber = styled.button`
   }
 
   &:focus {
-    border-color: #2F80ED;
+    border-color: #2f80ed;
   }
 `
 
