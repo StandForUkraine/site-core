@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <FooterWrapper>
       <Column>
-        <FirstColumnText>{t('footerHeader')}.</FirstColumnText>
+        <FirstColumnText>{t('footerHeader')}</FirstColumnText>
         <Displaimler>{t('disclaimler')}</Displaimler>
       </Column>
       <Column>
@@ -30,6 +30,11 @@ export const Hero = () => {
           <li>{t('goal4')}</li>
           <li>{t('goal5')}</li>
         </SecondColumnList>
+        <Link href="/about">
+          <AboutProjButton breakpoint="mobile" as="a" href="/about">
+            {t('aboutProject')}
+          </AboutProjButton>
+        </Link>
       </Column>
       <Column>
         <p>{t('footerCreds')}</p>
@@ -55,7 +60,7 @@ export const Hero = () => {
       </Column>
       <FooterExtLinksWrapper>
         <Link href="/about">
-          <AboutProjButton as="a" href="/about">
+          <AboutProjButton breakpoint="desktop" as="a" href="/about">
             {t('aboutProject')}
           </AboutProjButton>
         </Link>
@@ -164,12 +169,24 @@ const SocialIcons = styled.div`
   }
 `
 
-const AboutProjButton = styled(TextButton)`
-  display: none;
+const AboutProjButton = styled(TextButton)<{breakpoint: 'mobile' | 'desktop'}>`
+  ${(props) => props.breakpoint === 'desktop' ? `
+    display: none;
 
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
+      display: inline-flex;
+    }
+  ` : ''}
+
+  ${(props) => props.breakpoint === 'mobile' ? `
     display: inline-flex;
-  }
+    width: 100%;
+    justify-content: center;
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  ` : ''}
 `
 
 const ExtLinkButton = styled(TextButton).attrs({
