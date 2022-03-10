@@ -1,6 +1,6 @@
 import { useState, useMemo, useCallback } from 'react'
 import { DonationItem } from 'core/utils/donations'
-import { useLang, useText } from 'core/utils/lang'
+import { useText } from 'core/utils/lang'
 import { allTags, Tag } from 'core/utils/tags'
 import { payMethods, PayMethod } from 'core/utils/payMethods'
 import MultipleSelection from './MultipleSelection'
@@ -14,30 +14,27 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const [selectedTags, setSelectedTags] = useState<Tag[]>([])
   const [selectedMethods, setSelectedMethods] = useState<PayMethod[]>([])
   const [slice, setSlice] = useState(9)
-  const { lang } = useLang()
   const gtag = useGtag()
 
-  const isFiltered = selectedTags.length > 0 || selectedMethods.length > 0;
-  const shouldBeSliced = slice > 0 && !isFiltered;
+  const isFiltered = selectedTags.length > 0 || selectedMethods.length > 0
+  const shouldBeSliced = slice > 0 && !isFiltered
 
   const filteredDonations = useMemo(
     () =>
-      donations
-        .filter((donation) => {
-          const tagResult =
-            selectedTags.length > 0
-              ? !!donation.tags.find((tag) => selectedTags.indexOf(tag) >= 0)
-              : true
+      donations.filter((donation) => {
+        const tagResult =
+          selectedTags.length > 0
+            ? !!donation.tags.find((tag) => selectedTags.indexOf(tag) >= 0)
+            : true
 
-          const methodResult =
-            selectedMethods.length > 0
-              ? !!donation.payMethods.find((method) => selectedMethods.indexOf(method) >= 0)
-              : true
+        const methodResult =
+          selectedMethods.length > 0
+            ? !!donation.payMethods.find((method) => selectedMethods.indexOf(method) >= 0)
+            : true
 
-          return tagResult && methodResult
-        })
-        .map((donation) => ({ ...donation, ...donation.byLang[lang] })),
-    [donations, selectedTags, selectedMethods, lang]
+        return tagResult && methodResult
+      }),
+    [donations, selectedTags, selectedMethods]
   )
 
   const onTagClick = useCallback(
@@ -64,9 +61,7 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
 
   return (
     <>
-      <FilterWrapper
-        isFiltered={isFiltered}
-      >
+      <FilterWrapper isFiltered={isFiltered}>
         <MultipleSelection
           title={t('filterTo')}
           allOptions={[...allTags]}
@@ -81,43 +76,39 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
           onOptionClick={onMethodClick}
         />
 
-        {
-          (selectedTags.length > 0 || selectedMethods.length > 0) && (
-            <ResetFilterButton
-              onClick={() => {
-                gtag('event', 'reset_filter_click', { event_category: 'home_page' });
-                setSelectedTags([])
-                setSelectedMethods([])
-              }}
-            >
-              {t('resetFilter')}
-            </ResetFilterButton>
-          )
-        }
+        {(selectedTags.length > 0 || selectedMethods.length > 0) && (
+          <ResetFilterButton
+            onClick={() => {
+              gtag('event', 'reset_filter_click', { event_category: 'home_page' })
+              setSelectedTags([])
+              setSelectedMethods([])
+            }}
+          >
+            {t('resetFilter')}
+          </ResetFilterButton>
+        )}
       </FilterWrapper>
 
       {filteredDonations.length < 1 && <NotFound>Nothing found.</NotFound>}
 
       <DonationWrapper>
-        {
-          (shouldBeSliced ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
+        {(shouldBeSliced ? filteredDonations.slice(0, slice) : filteredDonations).map(
+          (donation) => (
             <DonationWidget key={donation.id} donation={donation} />
-          ))
-        }
-        {
-          shouldBeSliced && (
-            <ButtonWrapper>
-              <TextButton
-                onClick={() => {
-                  gtag('event', 'show_all_orgs_click', { event_category: 'home_page' });
-                  setSlice(0)
-                }}
-              >
-                {t('browseAll1')} {filteredDonations.length} {t('browseAll2')}
-              </TextButton>
-            </ButtonWrapper>
           )
-        }
+        )}
+        {shouldBeSliced && (
+          <ButtonWrapper>
+            <TextButton
+              onClick={() => {
+                gtag('event', 'show_all_orgs_click', { event_category: 'home_page' })
+                setSlice(0)
+              }}
+            >
+              {t('browseAll1')} {filteredDonations.length} {t('browseAll2')}
+            </TextButton>
+          </ButtonWrapper>
+        )}
       </DonationWrapper>
     </>
   )
@@ -130,7 +121,7 @@ const DonationWrapper = styled.div`
   flex-flow: row wrap;
   padding-top: 16px;
   padding-bottom: 52px;
-  border-bottom: 1px solid #E0E0E0;
+  border-bottom: 1px solid #e0e0e0;
 
   @media (min-width: 1280px) {
     padding-top: 28px;
@@ -146,13 +137,16 @@ const ButtonWrapper = styled.div`
 const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
   position: relative;
 
-  ${(props) => props.isFiltered ? `
+  ${(props) =>
+    props.isFiltered
+      ? `
     padding-bottom: 24px;
 
     @media (min-width: 768px) {
       padding-bottom: 0;
     }
-  ` : ''}
+  `
+      : ''}
 `
 
 const ResetFilterButton = styled(TextButton).attrs({
@@ -166,7 +160,7 @@ const ResetFilterButton = styled(TextButton).attrs({
   @media (min-width: 768px) {
     bottom: 6px;
   }
-  
+
   @media (min-width: 1280px) {
     right: 0;
   }

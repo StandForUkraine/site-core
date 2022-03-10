@@ -5,6 +5,7 @@ import path from 'path'
 import fs from 'fs'
 import getConfig from 'next/config'
 import { PayMethod } from './payMethods'
+import { defaultLang } from 'core/texts'
 const { serverRuntimeConfig } = getConfig()
 
 export interface DonationItemBase {
@@ -28,25 +29,32 @@ export interface DonationItem extends DonationItemBase {
   }
 }
 
-export const loadDonations = () => {
-  const files = glob.sync(path.join(serverRuntimeConfig.PROJECT_ROOT, 'donations/**/en.yml'))
+export const loadDonations = (lang = defaultLang) => {
+  const files = glob.sync(
+    path.join(serverRuntimeConfig.PROJECT_ROOT, `donations/**/${defaultLang}.yml`)
+  )
   const data = files
     .map((file) => {
       const id = parseInt(path.basename(path.dirname(file)), 10)
-      const byLang: any = glob
-        .sync(path.join(path.dirname(file), '*.yml'))
-        .reduce((obj, langFile) => {
-          const lang = path.basename(langFile).replace('.yml', '')
+      const byLang: any = [lang, defaultLang]
+        .filter((v, i, a) => a.indexOf(v) === i) // unique langs
+        .reduce((obj, lng) => {
           try {
-            return { ...obj, [lang]: yaml.parse(fs.readFileSync(langFile, 'utf-8')) }
+            const langFile = path.join(
+              serverRuntimeConfig.PROJECT_ROOT,
+              `donations/${id}/${lng}.yml`
+            )
+
+            return { ...obj, [lng]: yaml.parse(fs.readFileSync(langFile, 'utf-8')) }
           } catch (err) {
-            console.error('Failed to load lang', lang, 'for', id, err)
+            console.error('Failed to load lang', lng, 'for', id, err)
             return { ...obj }
           }
         }, {})
 
       return {
-        ...byLang.en,
+        ...byLang[defaultLang],
+        ...byLang[lang],
         logo: `/logos/${id}.png`,
         id,
         byLang,
