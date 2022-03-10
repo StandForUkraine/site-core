@@ -17,8 +17,7 @@ export default {
   sharePopupTitle: 'Distribuie cauza noastră',
   sharePopupText1: 'Distribuie aceste informații cu prietenii și colegii tăi.',
   sharePopupText2: 'Spune-le și altora cum pot ajuta Ucraina.',
-  sharingText: 'Ajută armata Ucrainei și organizațiile militare
-#StandForUkraine',
+  sharingText: 'Ajută armata Ucrainei și organizațiile militare #StandForUkraine',
   copyLink: 'Copiază Linkul',
   copyLinkDone: 'Copiat!',
 
