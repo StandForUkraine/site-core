@@ -85,7 +85,7 @@ export const Hero = () => {
         </ExtLinkButton>
         <ExtLinkButton
           as="a"
-          href="https://forms.gle/EtBp1wrt4vU3zXE7A"
+          href="https://ukrforeignlegion.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
