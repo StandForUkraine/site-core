@@ -45,6 +45,7 @@ export default function About() {
 
           <AboutHeaderImage src="/about/ukraine.png" />
         </AboutHeader>
+
         <AboutContent>
           <AboutContentHeader>{t('aboutTeamHeader')}</AboutContentHeader>
           {teamMembers.map((member, i) => (
@@ -137,6 +138,7 @@ const HeroHeader = styled.h1`
   line-height: 44px;
   text-align: center;
   margin: 0;
+
   @media (min-width: 768px) {
     font-size: 64px;
     line-height: 78px;
@@ -149,19 +151,24 @@ const HeroText = styled.p`
   text-align: center;
   color: #333;
 `
+
 const AboutHeader = styled.div`
   display: flex;
   flex-direction: column;
   border-top: 1px solid #e0e0e0;
   padding: 16px;
+
   @media (min-width: 768px) {
     align-items: center;
     flex-direction: row;
-    padding: 40px 0;
+    padding: 40px 20px;
   }
 `
 
 const AboutHeaderContent = styled.div`
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.8);
+
   @media (min-width: 768px) {
     max-width: 640px;
   }
@@ -184,7 +191,7 @@ const AboutContent = styled.div`
   padding: 16px;
 
   @media (min-width: 768px) {
-    padding: 40px 0;
+    padding: 40px 20px;
   }
 `
 

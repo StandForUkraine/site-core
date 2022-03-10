@@ -112,7 +112,7 @@ const FooterWrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 `
 
