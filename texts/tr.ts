@@ -55,6 +55,7 @@ export default {
   // filter
   filterTo: 'La',
   filterPayVia: 'Prin intermediul',
+  resetFilter: 'Filtreyi sıfırla',
 
   // payment methods
   IBAN: 'IBAN',

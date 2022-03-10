@@ -54,6 +54,7 @@ export default {
   // filter
   filterTo: 'Pour',
   filterPayVia: 'Via',
+  resetFilter: 'Réinitialiser le filtre',
 
   // payment methods
   IBAN: 'IBAN',

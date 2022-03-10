@@ -53,6 +53,7 @@ export default {
   // filter
   filterTo: 'La',
   filterPayVia: 'Prin intermediul',
+  resetFilter: 'Resetați filtrul',
 
   // payment methods
   IBAN: 'IBAN',
