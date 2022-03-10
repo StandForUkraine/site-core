@@ -7,13 +7,18 @@ import MultipleSelection from './MultipleSelection'
 import DonationWidget from './DonationWidget'
 import styled from 'styled-components'
 import TextButton from './TextButton'
+import { useGtag } from 'core/utils/useGtag'
 
 export const Donations = ({ donations }: { donations: DonationItem[] }) => {
   const t = useText()
   const [selectedTags, setSelectedTags] = useState<Tag[]>([])
   const [selectedMethods, setSelectedMethods] = useState<PayMethod[]>([])
-  const [slice, setSlice] = useState(9);
+  const [slice, setSlice] = useState(9)
   const { lang } = useLang()
+  const gtag = useGtag()
+
+  const isFiltered = selectedTags.length > 0 || selectedMethods.length > 0;
+  const shouldBeSliced = slice > 0 && !isFiltered;
 
   const filteredDonations = useMemo(
     () =>
@@ -59,33 +64,54 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
 
   return (
     <>
-      <MultipleSelection
-        title={t('filterTo')}
-        allOptions={[...allTags]}
-        selectedOptions={selectedTags}
-        onOptionClick={onTagClick}
-      />
+      <FilterWrapper
+        isFiltered={isFiltered}
+      >
+        <MultipleSelection
+          title={t('filterTo')}
+          allOptions={[...allTags]}
+          selectedOptions={selectedTags}
+          onOptionClick={onTagClick}
+        />
 
-      <MultipleSelection
-        title={t('filterPayVia')}
-        allOptions={payMethods.filter((m) => m !== 'Western Union')}
-        selectedOptions={selectedMethods}
-        onOptionClick={onMethodClick}
-      />
+        <MultipleSelection
+          title={t('filterPayVia')}
+          allOptions={payMethods.filter((m) => m !== 'Western Union')}
+          selectedOptions={selectedMethods}
+          onOptionClick={onMethodClick}
+        />
 
-      {filteredDonations.length < 1 && <h1>Nothing found.</h1>}
+        {
+          (selectedTags.length > 0 || selectedMethods.length > 0) && (
+            <ResetFilterButton
+              onClick={() => {
+                gtag('event', 'reset_filter_click', { event_category: 'home_page' });
+                setSelectedTags([])
+                setSelectedMethods([])
+              }}
+            >
+              {t('resetFilter')}
+            </ResetFilterButton>
+          )
+        }
+      </FilterWrapper>
+
+      {filteredDonations.length < 1 && <NotFound>Nothing found.</NotFound>}
 
       <DonationWrapper>
         {
-          (slice > 0 ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
+          (shouldBeSliced ? filteredDonations.slice(0, slice) : filteredDonations).map((donation) => (
             <DonationWidget key={donation.id} donation={donation} />
           ))
         }
         {
-          slice > 0 && (
+          shouldBeSliced && (
             <ButtonWrapper>
               <TextButton
-                onClick={() => setSlice(0)}
+                onClick={() => {
+                  gtag('event', 'show_all_orgs_click', { event_category: 'home_page' });
+                  setSlice(0)
+                }}
               >
                 {t('browseAll1')} {filteredDonations.length} {t('browseAll2')}
               </TextButton>
@@ -109,10 +135,43 @@ const DonationWrapper = styled.div`
   @media (min-width: 1280px) {
     padding-top: 28px;
   }
-`;
+`
 
 const ButtonWrapper = styled.div`
   text-align: center;
   padding-top: 9px;
   width: 100%;
-`;
+`
+
+const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
+  position: relative;
+
+  ${(props) => props.isFiltered ? `
+    padding-bottom: 24px;
+
+    @media (min-width: 768px) {
+      padding-bottom: 0;
+    }
+  ` : ''}
+`
+
+const ResetFilterButton = styled(TextButton).attrs({
+  variant: 'external-link',
+  size: 'small',
+})`
+  position: absolute;
+  bottom: -12px;
+  right: 20px;
+
+  @media (min-width: 768px) {
+    bottom: 6px;
+  }
+  
+  @media (min-width: 1280px) {
+    right: 0;
+  }
+`
+
+const NotFound = styled.h1`
+  text-align: center;
+`

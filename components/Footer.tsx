@@ -5,6 +5,7 @@ import FacebookIcon from 'core/assets/facebook.svg'
 import TwitterIcon from 'core/assets/twitter.svg'
 import TextButton from './TextButton'
 import LinkIcon from './LinkIcon'
+import Link from 'next/link'
 
 const email = process.env.NEXT_PUBLIC_EMAIL
 const instagramLink = process.env.NEXT_PUBLIC_INSTAGRAM_LINK
@@ -17,7 +18,7 @@ export const Hero = () => {
   return (
     <FooterWrapper>
       <Column>
-        <FirstColumnText>{t('footerHeader')}.</FirstColumnText>
+        <FirstColumnText>{t('footerHeader')}</FirstColumnText>
         <Displaimler>{t('disclaimler')}</Displaimler>
       </Column>
       <Column>
@@ -29,6 +30,11 @@ export const Hero = () => {
           <li>{t('goal4')}</li>
           <li>{t('goal5')}</li>
         </SecondColumnList>
+        <Link href="/about">
+          <AboutProjButton breakpoint="mobile" as="a" href="/about">
+            {t('aboutProject')}
+          </AboutProjButton>
+        </Link>
       </Column>
       <Column>
         <p>{t('footerCreds')}</p>
@@ -53,13 +59,11 @@ export const Hero = () => {
         </SocialIcons>
       </Column>
       <FooterExtLinksWrapper>
-        {/* @todo Use as next/link */}
-        <AboutProjButton
-          as="a"
-          href="/about"
-        >
-          {t('aboutProject')}
-        </AboutProjButton>
+        <Link href="/about">
+          <AboutProjButton breakpoint="desktop" as="a" href="/about">
+            {t('aboutProject')}
+          </AboutProjButton>
+        </Link>
         <Spacer />
         <ExtLinkButton
           as="a"
@@ -81,7 +85,7 @@ export const Hero = () => {
         </ExtLinkButton>
         <ExtLinkButton
           as="a"
-          href="https://forms.gle/EtBp1wrt4vU3zXE7A"
+          href="https://ukrforeignlegion.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -108,7 +112,7 @@ const FooterWrapper = styled.div`
   }
 
   @media (min-width: 768px) {
-    padding: 30px 0;
+    padding: 30px 20px;
   }
 `
 
@@ -155,7 +159,7 @@ const SocialIcons = styled.div`
   span {
     margin-right: 12px;
   }
-  
+
   svg {
     margin-right: 10px;
 
@@ -165,13 +169,25 @@ const SocialIcons = styled.div`
   }
 `
 
-const AboutProjButton = styled(TextButton)`
-  display: none;
+const AboutProjButton = styled(TextButton)<{breakpoint: 'mobile' | 'desktop'}>`
+  ${(props) => props.breakpoint === 'desktop' ? `
+    display: none;
 
-  @media (min-width: 768px) {
+    @media (min-width: 768px) {
+      display: inline-flex;
+    }
+  ` : ''}
+
+  ${(props) => props.breakpoint === 'mobile' ? `
     display: inline-flex;
-  }
-`;
+    width: 100%;
+    justify-content: center;
+    
+    @media (min-width: 768px) {
+      display: none;
+    }
+  ` : ''}
+`
 
 const ExtLinkButton = styled(TextButton).attrs({
   variant: 'external-link',
@@ -184,7 +200,7 @@ const ExtLinkButton = styled(TextButton).attrs({
     display: inline-block;
     margin-right: 4px;
   }
-  
+
   @media (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -196,14 +212,14 @@ const FooterExtLinksWrapper = styled.div`
   align-items: flex-end;
   flex-flow: column nowrap;
   margin-top: 26px;
-  
+
   @media (min-width: 768px) {
     align-items: center;
     flex-direction: row;
     margin-top: 36px;
   }
-`;
+`
 
 const Spacer = styled.div`
   flex-grow: 1;
-`;
+`
