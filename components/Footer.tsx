@@ -18,7 +18,7 @@ export const Hero = () => {
   return (
     <FooterWrapper>
       <Column>
-        <FirstColumnText>{t('footerHeader')}.</FirstColumnText>
+        <FirstColumnText>{t('footerHeader')}</FirstColumnText>
         <Displaimler>{t('disclaimler')}</Displaimler>
       </Column>
       <Column>
