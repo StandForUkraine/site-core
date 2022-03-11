@@ -116,9 +116,9 @@ const DonationPost = styled.div`
   }
 `
 
-const DonationLogo = styled.img``
+export const DonationLogo = styled.img``
 
-const DonationTitle = styled.a`
+export const DonationTitle = styled.a`
   display: block;
   color: #000;
   width: 100%;
@@ -132,11 +132,11 @@ const DonationTitle = styled.a`
   }
 `
 
-const DonationTags = styled.div`
+export const DonationTags = styled.div`
   color: #777;
 `
 
-const DonationPayMethods = styled.div`
+export const DonationPayMethods = styled.div`
   margin-bottom: 10px;
   display: flex;
   flex-wrap: wrap;
@@ -152,16 +152,16 @@ const DonationPayMethods = styled.div`
   }
 `
 
-const DonationDescription = styled.p`
+export const DonationDescription = styled.p`
   margin: 10px 0 20px;
 `
 
-const DonationFooter = styled.div`
+export const DonationFooter = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
 
-const LegalNumber = styled.button`
+export const LegalNumber = styled.button`
   border: none;
   padding: 5px 10px;
   margin-left: 10px;
@@ -187,6 +187,6 @@ const LegalNumber = styled.button`
   }
 `
 
-const DonationButton = styled(Button).attrs({
+export const DonationButton = styled(Button).attrs({
   color: 'dark',
 })``
