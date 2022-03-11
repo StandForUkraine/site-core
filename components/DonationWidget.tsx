@@ -101,7 +101,7 @@ export const DonationWidget = ({ donation }: { donation: DonationItem }) => {
 
 export default DonationWidget
 
-const DonationPost = styled.div`
+export const DonationPost = styled.div`
   padding: 20px;
   max-width: 556px;
   width: 100%;

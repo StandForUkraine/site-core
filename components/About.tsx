@@ -123,18 +123,18 @@ const teamMembers = [
   },
 ]
 
-const Page = styled.div`
+export const Page = styled.div`
   padding-top: 60px;
   max-width: 100%;
   width: 1112px;
   margin: auto;
 `
-const HeroWrapper = styled.div`
+export const HeroWrapper = styled.div`
   padding: 20px;
   padding-top: 0;
 `
 
-const HeroHeader = styled.h1`
+export const HeroHeader = styled.h1`
   font-size: 36px;
   font-weight: 900;
   line-height: 44px;
@@ -147,14 +147,14 @@ const HeroHeader = styled.h1`
   }
 `
 
-const HeroText = styled.p`
+export const HeroText = styled.p`
   font-size: 20px;
   line-height: 24px;
   text-align: center;
   color: #333;
 `
 
-const AboutHeader = styled.div`
+export const AboutHeader = styled.div`
   display: flex;
   flex-direction: column;
   border-top: 1px solid #e0e0e0;
@@ -167,7 +167,7 @@ const AboutHeader = styled.div`
   }
 `
 
-const AboutHeaderContent = styled.div`
+export const AboutHeaderContent = styled.div`
   z-index: 1;
   background: rgba(255, 255, 255, 0.8);
 
@@ -176,7 +176,7 @@ const AboutHeaderContent = styled.div`
   }
 `
 
-const AboutHeaderImage = styled.img`
+export const AboutHeaderImage = styled.img`
   display: none;
 
   @media (min-width: 768px) {
@@ -188,7 +188,7 @@ const AboutHeaderImage = styled.img`
   }
 `
 
-const AboutContent = styled.div`
+export const AboutContent = styled.div`
   border-top: 1px solid #e0e0e0;
   padding: 16px;
 
@@ -197,7 +197,7 @@ const AboutContent = styled.div`
   }
 `
 
-const AboutContentHeader = styled.h3`
+export const AboutContentHeader = styled.h3`
   font-weight: 900;
   font-size: 24px;
   line-height: 29px;
@@ -208,7 +208,7 @@ const AboutContentHeader = styled.h3`
     font-size: 36px;
   }
 `
-const AboutHeaderText = styled.p`
+export const AboutHeaderText = styled.p`
   font-size: 16px;
   line-height: 140%;
   color: #4f4f4f;
