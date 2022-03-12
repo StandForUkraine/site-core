@@ -4,7 +4,7 @@ const glob = require('glob')
 
 const matches = glob.sync(path.join(__dirname, '../..', 'out/**/*.html'))
 const filesToMove = matches.filter(
-  (f) => !(f.indexOf('404.html') >= 0 || f.indexOf('index.html') >= 0)
+  (f) => !(f.indexOf('404.html') >= 0 || f.indexOf('index.html') >= 0 || f.indexOf('nortonsw') >= 0)
 )
 for (const file of filesToMove) {
   const dir = path.dirname(file)
