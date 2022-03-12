@@ -99,7 +99,7 @@ export const Hero = () => {
 
 export default Hero
 
-const FooterWrapper = styled.div`
+export const FooterWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -116,7 +116,7 @@ const FooterWrapper = styled.div`
   }
 `
 
-const Column = styled.div`
+export const Column = styled.div`
   width: 100%;
   margin-bottom: 20px;
 
@@ -126,33 +126,33 @@ const Column = styled.div`
   }
 `
 
-const FirstColumnText = styled.p`
+export const FirstColumnText = styled.p`
   font-size: 20px;
 `
 
-const Displaimler = styled.div`
+export const Displaimler = styled.div`
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
 `
 
-const SecondColumnTitle = styled.h3`
+export const SecondColumnTitle = styled.h3`
   margin: 0;
   font-weight: 400;
   font-size: 20px;
 `
 
-const SecondColumnList = styled.ul`
+export const SecondColumnList = styled.ul`
   li {
     margin-bottom: 5px;
   }
 `
 
-const Flags = styled.p`
+export const Flags = styled.p`
   font-size: 20px;
 `
 
-const SocialIcons = styled.div`
+export const SocialIcons = styled.div`
   display: flex;
   align-items: center;
 
@@ -169,16 +169,21 @@ const SocialIcons = styled.div`
   }
 `
 
-const AboutProjButton = styled(TextButton)<{breakpoint: 'mobile' | 'desktop'}>`
-  ${(props) => props.breakpoint === 'desktop' ? `
+export const AboutProjButton = styled(TextButton)<{ breakpoint: 'mobile' | 'desktop' }>`
+  ${(props) =>
+    props.breakpoint === 'desktop'
+      ? `
     display: none;
 
     @media (min-width: 768px) {
       display: inline-flex;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.breakpoint === 'mobile' ? `
+  ${(props) =>
+    props.breakpoint === 'mobile'
+      ? `
     display: inline-flex;
     width: 100%;
     justify-content: center;
@@ -186,10 +191,11 @@ const AboutProjButton = styled(TextButton)<{breakpoint: 'mobile' | 'desktop'}>`
     @media (min-width: 768px) {
       display: none;
     }
-  ` : ''}
+  `
+      : ''}
 `
 
-const ExtLinkButton = styled(TextButton).attrs({
+export const ExtLinkButton = styled(TextButton).attrs({
   variant: 'external-link',
   size: 'small',
 })`
@@ -206,7 +212,7 @@ const ExtLinkButton = styled(TextButton).attrs({
   }
 `
 
-const FooterExtLinksWrapper = styled.div`
+export const FooterExtLinksWrapper = styled.div`
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -220,6 +226,6 @@ const FooterExtLinksWrapper = styled.div`
   }
 `
 
-const Spacer = styled.div`
+export const Spacer = styled.div`
   flex-grow: 1;
 `
