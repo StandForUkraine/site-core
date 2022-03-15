@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Supporta l'Ucraina attaccata dalle forze militare russe. Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari. Informa le persone e condividi le nostre informazioni.`,
+  siteDescription: `Supporta l'Ucraina attaccata dalle forze militari russe. Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari. Informa le persone e condividi le nostre informazioni.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Condividi',
@@ -9,7 +9,7 @@ export default {
   donateButton: 'Dona',
 
   heroHeader: `Aiuta le forze armate ucraine e le organizzazioni umanitarie`,
-  heroText1: `Supporta l'Ucraina attaccata dalle forze militare russe.`,
+  heroText1: `Supporta l'Ucraina attaccata dalle forze militari russe.`,
   heroText2: `Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari.`,
   heroText3: `Informa le persone e condividi le nostre informazioni.`,
 
