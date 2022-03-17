@@ -28,7 +28,7 @@ export const LegalPopup = ({
         <CopyButton content={donation.edrpou!} buttonChildren={t('copyCode')} />
 
         <Description>
-          ЄДРПОУ(EDRPOU) is a code of the legal enity from State Tax Service of Ukraine.
+          ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.
           <hr />
           1. Copy EDRPOU code
           <hr />

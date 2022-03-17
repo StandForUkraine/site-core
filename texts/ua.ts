@@ -35,7 +35,7 @@ export default {
 
   // footer
   footerHeader:
-    'Stand for Ukraine це добірка надійних організацій, що допомагає боротися із російським вторгненням та долати його наслідки.',
+    'Stand for Ukraine — це добірка надійних організацій, що допомагає боротися із російським вторгненням та долати його наслідки.',
   footerGoals: 'Наші цілі',
   goal1: 'Допомогти українським військовим із забезпеченням зброєю і боєприпасами',
   goal2: 'Підтримати ветеранів і жертв війни',
@@ -45,12 +45,12 @@ export default {
   footerCreds:
     'Цей сайт створено розробниками, менеджерами, дизайнерами, копірайтерами, перекладачами, журналістами і активістами зі всієї України і світу.',
   footerContact: 'Зв\'язатись з нами',
-  joinUs: 'Приєднайся до нас',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  joinUs: 'Підписатись',
+  disclaimler: 'Ми не приймаємо платежі; ми лише надаємо посилання на сторінки відповідних організацій.',
+  aboutProject: 'Про проєкт',
+  suggestOrgLink: 'Запропонувати організацію',
+  sharedFeedbackLink: 'Написати відгук',
+  joinFormLink: 'Приєднатися до Міжнародного легіону',
 
   // filter
   filterTo: 'Організації',
@@ -66,9 +66,9 @@ export default {
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
 
-  copyCode: 'Копіювати код',
-  browseAll1: 'Browse all',
-  browseAll2: 'organizatios',
+  copyCode: 'Скопіювати номер',
+  browseAll1: 'Переглянути усі',
+  browseAll2: 'організацій',
 
   // about page
   aboutHeader: `About the Project`,
