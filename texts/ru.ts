@@ -115,8 +115,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
-  legalDesc2: 'Copy EDRPOU code',
-  legalDesc3: 'Verify the organization by the code in the register',
-  legalFooterLink: 'State Tax Service of Ukraine',
+  legalDesc1: 'ЄДРПОУ(ЕГРПОУ) – идентификационный номер юридического лица в Едином государственном реестре предприятий и организаций Украины.',
+  legalDesc2: 'Скопировать ЄДРПОУ',
+  legalDesc3: 'Проверить организацию по номеру в реестре',
+  legalFooterLink: 'Государственная налоговая служба Украины',
 }
