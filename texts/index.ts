@@ -10,6 +10,7 @@ import ru from './ru'
 import el from './el'
 import lv from './lv'
 import ro from './ro'
+import ja from './ja'
 import ua from './ua'
 
 export const defaultLang = process.env.NEXT_PUBLIC_DEFAULT_LANG as Lang
@@ -26,6 +27,7 @@ export const byLang = {
   tr,
   lv,
   pl,
+  ja,
   ro,
   ru,
 } as const
@@ -43,6 +45,7 @@ export const flagsMap: Record<Lang, string> = {
   tr: '🇹🇷',
   pl: '🇵🇱',
   ua: '🇺🇦',
+  ja: '🇯🇵',
   ru: '🏳',
 }
 
