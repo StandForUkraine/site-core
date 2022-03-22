@@ -36,7 +36,7 @@ export const DonationWidget = ({ donation }: { donation: DonationItem }) => {
         {donation.title}
       </DonationTitle>
 
-      <DonationTags>{donation.tags.map(tag => t(tag)).join(', ')}</DonationTags>
+      <DonationTags>{donation.tags.map((tag) => t(tag)).join(', ')}</DonationTags>
       <DonationDescription>{donation.description}</DonationDescription>
       <DonationPayMethods>
         {donation.payMethods.map((method) => (
