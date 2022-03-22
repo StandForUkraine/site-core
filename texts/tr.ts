@@ -46,16 +46,16 @@ export default {
     "Bu web sitesi, Ukrayna'nın her yerinden ve ötesinden IT mühendisleri, yöneticiler, tasarımcılar, yazarlar, çevirmenler, gazeteciler ve aktivistler tarafından yapılmıştır.",
   footerContact: 'Bize Ulaşın',
   joinUs: 'Bize katılın',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  disclaimler: 'Ödeme kabul etmiyoruz; sadece bağış sayfalarına doğrudan bağlantılar sağlıyoruz.',
+  aboutProject: 'Proje Hakkında',
+  suggestOrgLink: 'Bir Kuruluş Öner',
+  sharedFeedbackLink: 'Geri Bildirimi Paylaşın',
+  joinFormLink: 'Uluslararası Lejyona Katılın',
 
   // filter
-  filterTo: 'La',
-  filterPayVia: 'Prin intermediul',
-  resetFilter: 'Filtreyi sıfırla',
+  filterTo: 'Kuruluşlar',
+  filterPayVia: 'Ödeme Seçenekleri',
+  resetFilter: 'Filtreleri sıfırla',
 
   // payment methods
   IBAN: 'IBAN',
@@ -67,8 +67,8 @@ export default {
   Kuna: 'Kuna',
 
   copyCode: 'Kodu Kopyala',
-  browseAll1: 'Browse all',
-  browseAll2: 'organizations',
+  browseAll1: 'Tümüne Göz At',
+  browseAll2: 'kuruluşlar',
 
   // about page
   aboutHeader: `About the Project`,
@@ -112,11 +112,11 @@ export default {
   verifyUKText2: '🔍 Find EDRPOU code in the organization listing or on the respective website.',
   verifyUKText3:
     '✔︎ Verify the organization by the code in the register of the State Tax Service of Ukraine.',
-    
+
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
-  legalDesc2: 'Copy EDRPOU code',
-  legalDesc3: 'Verify the organization by the code in the register',
-  legalFooterLink: 'State Tax Service of Ukraine',
+  legalDesc1: 'ЄДРПОУ(EDRPOU), Ukrayna Devlet Vergi Dairesi\'nden tüzel kişiliğin bir kodudur.',
+  legalDesc2: 'EDRPOU kodunu kopyalayın',
+  legalDesc3: 'Kayıttaki kodla organizasyonu doğrulayın',
+  legalFooterLink: 'Ukrayna Devlet Vergi Dairesi',
 }

@@ -47,16 +47,16 @@ export default {
     'Diese Webseite wurde erstellt von IT technikern, Managern, Designern, Textern, Übersetzern, Journalisten, und Aktivisten aus der Ukraine und der ganzen Welt.',
   footerContact: 'Hier erreichst du uns',
   joinUs: 'Begleiten Sie uns',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  disclaimler: 'Wir akzeptieren keine Bezahlungen; wir teilen nur direkte Links zu Spendeseiten mit.',
+  aboutProject: 'Über das Projekt',
+  suggestOrgLink: 'Schlage eine Organisation vor!',
+  sharedFeedbackLink: 'Bewerte die Seite!',
+  joinFormLink: 'Schließe dich der Internationalen Legion!',
 
   // filter
-  filterTo: 'Zu',
-  filterPayVia: 'Über',
-  resetFilter: 'Filter zurücksetzen',
+  filterTo: 'Organisationen',
+  filterPayVia: 'Bezahlungsmöglichkeiten',
+  resetFilter: 'Löschen',
 
   // payment methods
   IBAN: 'IBAN',
@@ -67,9 +67,9 @@ export default {
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
 
-  copyCode: 'Code kopieren',
-  browseAll1: 'Browse all',
-  browseAll2: 'organizations',
+  copyCode: 'Den Code kopieren',
+  browseAll1: 'Überblick über alle',
+  browseAll2: 'organisationen verschaffen',
 
   // about page
   aboutHeader: `About the Project`,
@@ -116,8 +116,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
-  legalDesc2: 'Copy EDRPOU code',
-  legalDesc3: 'Verify the organization by the code in the register',
-  legalFooterLink: 'State Tax Service of Ukraine',
+  legalDesc1: 'EDRPOU ist ein Code zur Identifizierung einer juristischen Person in der Datenbank von Steuernzahlern der Ukraine',
+  legalDesc2: 'Den EDRPOU-Code kopieren',
+  legalDesc3: 'Die Organisation nach dem Code in der Datenbank überprüfen',
+  legalFooterLink: 'Das Steueramt der Ukraine',
 }
