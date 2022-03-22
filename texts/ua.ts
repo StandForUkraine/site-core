@@ -112,4 +112,11 @@ export default {
   verifyUKText2: '🔍 Find EDRPOU code in the organization listing or on the respective website.',
   verifyUKText3:
     '✔︎ Verify the organization by the code in the register of the State Tax Service of Ukraine.',
+
+  // legal popup
+  legalCodeLabel: 'ЄДРПОУ',
+  legalDesc1: 'ЄДРПОУ — ідентифікаційний номер юридичної особи в Єдиному державному реєстрі підприємств та організацій України.',
+  legalDesc2: 'Скопіювати ЄДРПОУ',
+  legalDesc3: 'Перевірити організацію за номером у реєстрі',
+  legalFooterLink: 'Державна податкова служба України',
 }

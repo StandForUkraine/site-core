@@ -40,7 +40,7 @@ export default {
   goal1: 'Help the Ukrainian military with weapons, ammunition, and supplies',
   goal2: 'Recover the veterans & victims of war',
   goal3: 'Shelter and feed the refugees',
-  goal4: 'Aid children, elders, and other vulnerable groups',
+  goal4: 'Aid children, elderly, and other vulnerable groups',
   goal5: 'Support independent press',
   footerCreds:
     'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
@@ -112,4 +112,11 @@ export default {
   verifyUKText2: '🔍 Find EDRPOU code in the organization listing or on the respective website.',
   verifyUKText3:
     '✔︎ Verify the organization by the code in the register of the State Tax Service of Ukraine.',
+
+  // legal popup
+  legalCodeLabel: 'ЄДРПОУ',
+  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
+  legalDesc2: 'Copy EDRPOU code',
+  legalDesc3: 'Verify the organization by the code in the register',
+  legalFooterLink: 'State Tax Service of Ukraine',
 }

@@ -22,17 +22,17 @@ export const LegalPopup = ({
         <Logo src={donation.logo} alt={donation.logoAlt || donation.title} />
 
         <Title>{donation.title}</Title>
-        <CodeLabel>ЄДРПОУ</CodeLabel>
+        <CodeLabel>{t('legalCodeLabel')}</CodeLabel>
         <Code>{donation.edrpou!}</Code>
 
         <CopyButton content={donation.edrpou!} buttonChildren={t('copyCode')} />
 
         <Description>
-          ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.
+          {t('legalDesc1')}
           <hr />
-          1. Copy EDRPOU code
+          1. {t('legalDesc2')}
           <hr />
-          2. Verify the organization by the code in the register:
+          2. {t('legalDesc3')}:
         </Description>
 
         <ServiceLink
@@ -46,7 +46,7 @@ export const LegalPopup = ({
             })
           }
         >
-          State Tax Service of Ukraine <OutIcon />
+          {t('legalFooterLink')} <OutIcon />
         </ServiceLink>
       </PopupContent>
     </Popup>
