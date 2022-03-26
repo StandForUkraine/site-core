@@ -32,7 +32,7 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
             ? !!donation.payMethods.find((method) => selectedMethods.indexOf(method) >= 0)
             : true
 
-        return tagResult && methodResult
+        return tagResult && methodResult && !donation.hidden
       }),
     [donations, selectedTags, selectedMethods]
   )

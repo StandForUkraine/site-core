@@ -20,6 +20,7 @@ export interface DonationItemBase {
   payMethods: PayMethod[]
   edrpou?: string
   ein?: string
+  hidden?: boolean
 }
 
 export interface DonationItem extends DonationItemBase {
