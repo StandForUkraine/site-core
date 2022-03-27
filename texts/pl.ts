@@ -44,16 +44,16 @@ export default {
   footerCreds: `Ta strona internetowa jest tworzona przez inżynierów IT, menedżerów, projektantów, pisarzy, tłumaczy, dziennikarzy i aktywistów z całej Ukrainy i spoza niej.`,
   footerContact: 'Dotrzyj do nas',
   joinUs: 'Dołącz do nas',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  disclaimler: 'Nie przyjmujemy płatności; udostępniamy tylko bezpośrednie łącza do stron darowizn.',
+  aboutProject: 'O projekcie',
+  suggestOrgLink: 'Zaproponuj organizację',
+  sharedFeedbackLink: 'Podziel się opinią',
+  joinFormLink: 'Dołącz do Legii Międzynarodowej',
 
   // filter
-  filterTo: 'W celu',
-  filterPayVia: 'Przez',
-  resetFilter: 'Zresetuj filtr',
+  filterTo: 'Organizacje',
+  filterPayVia: 'Metody Płatności',
+  resetFilter: 'Resetuj filtry',
 
   // payment methods
   IBAN: 'IBAN',
@@ -65,8 +65,8 @@ export default {
   Kuna: 'Kuna',
 
   copyCode: 'Skopiuj kod',
-  browseAll1: 'Browse all',
-  browseAll2: 'organizations',
+  browseAll1: 'Przeglądać wszystkie',
+  browseAll2: 'organizacje',
 
   // about page
   aboutHeader: `About the Project`,
@@ -113,8 +113,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
-  legalDesc2: 'Copy EDRPOU code',
-  legalDesc3: 'Verify the organization by the code in the register',
-  legalFooterLink: 'State Tax Service of Ukraine',
+  legalDesc1: 'EDRPOU jest kodeksem podmiotu prawnego z Państwowej Służby Podatkowej Ukrainy.',
+  legalDesc2: 'Skopiuj kod EDRPOU',
+  legalDesc3: 'Zweryfikuj kodem w rejestrze organizacji non-profit',
+  legalFooterLink: 'Państwowa Służba Podatkowa Ukrainy',
 }
