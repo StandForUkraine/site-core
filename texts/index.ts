@@ -3,6 +3,7 @@ import fr from './fr'
 import pl from './pl'
 import it from './it'
 import nl from './nl'
+import sw from './sw'
 import es from './es'
 import de from './de'
 import tr from './tr'
@@ -24,6 +25,7 @@ export const byLang = {
   es,
   el,
   nl,
+  sw,
   tr,
   lv,
   pl,
@@ -38,6 +40,7 @@ export const flagsMap: Record<Lang, string> = {
   es: '🇪🇸',
   fr: '🇫🇷',
   nl: '🇳🇱',
+  sw: '🇸🇪',
   it: '🇮🇹',
   el: '🇬🇷',
   lv: '🇱🇻',
