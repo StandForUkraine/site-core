@@ -3,20 +3,31 @@ import styled from 'styled-components'
 import { defaultLang, flagsMap, langs } from 'core/texts'
 import { useLang } from 'core/utils/lang'
 import Chip from './Chip'
+import { useRouter } from 'next/router'
 
 export const Langs = () => {
   const lang = useLang()
+  const router = useRouter();
+
+  const rootForDefLang = router.route.replace(/\[lang\]\/?/, '')
+
   return (
     <LangsWrapper>
       {langs.map((langKey) => (
         <Link
           key={langKey}
-          href={langKey === defaultLang ? '/' : '/[lang]/'}
-          as={langKey === defaultLang ? '/' : `/${langKey}/`}
+          href={langKey === defaultLang
+              ? rootForDefLang
+              : lang === defaultLang
+                ? `/[lang]${router.route}`
+                : router.route}
+          as={langKey === defaultLang
+              ? rootForDefLang
+              : lang === defaultLang
+                ? `/${langKey}${router.route}`
+                : router.route.replace(/^\/\[lang\]/, `/${langKey}`)}
         >
           <Lang
-            as="a"
-            href={langKey === defaultLang ? '/' : `/${langKey}/`}
             isActive={langKey === lang}
           >
             {flagsMap[langKey]}

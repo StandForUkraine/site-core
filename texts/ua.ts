@@ -7,11 +7,15 @@ export default {
   donate: 'Підтримай',
   inform: 'Поділись',
   donateButton: 'Підтримати',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Підтримай Українську Армію та благодійні організації`,
   heroText1: `Допоможи Україні впоратись з військовою агресією з боку Росії.`,
   heroText2: `Роби пожертви до перевірених проектів і благодійних фондів та підтримай Збройні Сили України.`,
   heroText3: `Розповсюджуйте наші матеріали поміж друзів та колег.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Закрити',
   sharePopupTitle: 'Поділись сайтом',

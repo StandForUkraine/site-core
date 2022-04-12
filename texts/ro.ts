@@ -7,11 +7,15 @@ export default {
   donate: 'Donează',
   inform: 'Informează',
   donateButton: 'Donează',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Ajută armata ucraineană și Organizațiile Umanitare`,
   heroText1: `Susține Ucraina în fața agresiunilor armatei rusești.`,
   heroText2: `Donează către proiecte verificate pentru a ajuta forțele armate sau organizații caritabile ucrainiene.`,
   heroText3: `Informează publicul, distribuind publicațiile noastre.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Închide',
   sharePopupTitle: 'Distribuie cauza noastră',

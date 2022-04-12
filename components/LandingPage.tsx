@@ -1,34 +1,17 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
-import TopHeader from 'core/components/TopHeader'
+import * as React from 'react'
 import Hero from 'core/components/Hero'
-import Footer from 'core/components/Footer'
-import PageTabs, { Tab } from 'core/components/PageTabs'
+import PageTabs from 'core/components/PageTabs'
 import Donations from 'core/components/Donations'
-import SocialPosts from 'core/components/SocialPosts'
 import { DonationItem } from 'core/utils/donations'
+import Langs from './Langs'
 
 export default function LandingPage({ donations }: { donations: DonationItem[] }) {
-  const [currentTab, setTab] = useState<Tab>('donate')
-
   return (
     <>
-      <TopHeader />
-      <Page>
-        <Hero />
-        <PageTabs currentTab={currentTab} onTabChange={setTab} />
-
-        {currentTab === 'donate' && <Donations donations={donations} />}
-        {currentTab === 'inform' && <SocialPosts />}
-        <Footer />
-      </Page>
+      <Langs />
+      <Hero />
+      <PageTabs currentTab={'donate'} />
+      <Donations donations={donations} />
     </>
   )
 }
-
-const Page = styled.div`
-  padding-top: 60px;
-  max-width: 100%;
-  width: 1112px;
-  margin: auto;
-`

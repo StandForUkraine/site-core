@@ -7,11 +7,15 @@ export default {
   donate: 'Ziedo',
   inform: 'Informē',
   donateButton: 'Ziedo',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Palīdzi Ukrainas Karavīriem un Humanitārajām Organizācijām`,
   heroText1: `Atbalsti Ukrainu Krievijas militārās agresijas priekšā.`,
   heroText2: `Ziedo pārbaudītiem projektiem, lai palīdzētu Ukrainas Bruņotajiem Spēkiem vai humanitārajām labdarībām .`,
   heroText3: `Informē sabiedrību daloties ar mūsu ziņām`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Aizvērt',
   sharePopupTitle: 'Nodod tālāk šo ziņu',

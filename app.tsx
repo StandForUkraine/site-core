@@ -4,6 +4,9 @@ import { LangContextProvider } from 'core/utils/lang'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import Head from 'next/head'
+import TopHeader from './components/TopHeader'
+import Page from './components/Page'
+import Footer from './components/Footer'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -60,7 +63,13 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <GlobalStyles />
       <LangContextProvider>
-        <Component {...pageProps} />
+        <>
+          <TopHeader />
+          <Page>
+            <Component {...pageProps} />
+            <Footer />
+          </Page>
+        </>
       </LangContextProvider>
     </>
   )

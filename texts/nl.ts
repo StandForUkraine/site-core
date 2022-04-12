@@ -7,11 +7,15 @@ export default {
   donate: 'Doneren',
   inform: 'Informeren',
   donateButton: 'Doneren',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Help Oekraïense militaire en humanitaire organisaties`,
   heroText1: `Steun Oekraïne in het licht van de Russische militaire agressie.`,
   heroText2: `Doneer aan geverifieerde projecten om de strijdkrachten van Oekraïne of humanitaire liefdadigheidsinstellingen te helpen`,
   heroText3: `Informeer het publiek door onze nieuwsbrieven te delen.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Afsluiten',
   sharePopupTitle: 'Deel deze boodschap',

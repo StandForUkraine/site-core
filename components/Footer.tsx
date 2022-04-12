@@ -12,7 +12,7 @@ const instagramLink = process.env.NEXT_PUBLIC_INSTAGRAM_LINK
 const facebookLink = process.env.NEXT_PUBLIC_FACEBOOK_LINK
 const twitterLink = 'https://twitter.com/' + process.env.NEXT_PUBLIC_TWITTER_USER
 
-export const Hero = () => {
+export const Footer = () => {
   const t = useText()
 
   return (
@@ -97,7 +97,7 @@ export const Hero = () => {
   )
 }
 
-export default Hero
+export default Footer
 
 export const FooterWrapper = styled.div`
   display: flex;

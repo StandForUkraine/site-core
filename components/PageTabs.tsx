@@ -1,24 +1,30 @@
 import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
+import Link from 'next/link'
+import useLangLinkPrefix from 'core/utils/useLangLinkPrefix'
 
 export type Tab = 'donate' | 'inform'
 
 export const PageTabs = ({
   currentTab,
-  onTabChange,
 }: {
   currentTab: Tab
-  onTabChange: (value: Tab) => any
 }) => {
   const t = useText()
+  const linkPrefix = useLangLinkPrefix();
+
   return (
     <TabsWrapper>
-      <Tab isActive={currentTab === 'donate'} onClick={() => onTabChange('donate')}>
-        {t('donate')}
-      </Tab>
-      <Tab isActive={currentTab === 'inform'} onClick={() => onTabChange('inform')}>
-        {t('inform')}
-      </Tab>
+      <Link href={linkPrefix}>
+        <Tab isActive={currentTab === 'donate'}>
+          {t('donate')}
+        </Tab>
+      </Link>
+      <Link href={`${linkPrefix}spread-the-word`}>
+        <Tab isActive={currentTab === 'inform'}>
+          {t('spreadTheWorld')}
+        </Tab>
+      </Link>
     </TabsWrapper>
   )
 }

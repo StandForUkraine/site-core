@@ -1,13 +1,7 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import styled from 'styled-components'
-import TopHeader from 'core/components/TopHeader'
-import Langs from 'core/components/Langs'
-import Footer from 'core/components/Footer'
 import { useText } from 'core/utils/lang'
 import AboutTeamItem from './AboutTeamItem'
-import Link from 'next/link'
-import Button from 'core/components/Button'
-import AboutOrganization from './AboutOrganization'
 
 const email = process.env.NEXT_PUBLIC_EMAIL
 
@@ -16,60 +10,55 @@ export default function About() {
 
   return (
     <>
-      <TopHeader />
-      <Page>
-        {/* <Langs /> */}
-        <HeroWrapper>
-          <HeroHeader>{t('aboutHeader')}</HeroHeader>
-          <HeroText>{t('aboutHeaderText1')}</HeroText>
-        </HeroWrapper>
-        <AboutHeader>
-          <AboutHeaderContent>
-            <AboutContentHeader>{t('aboutManifestoHeader')}</AboutContentHeader>
-            <AboutHeaderText>
-              <i>{t('aboutManifestoText1')}</i>
-            </AboutHeaderText>
-            <AboutHeaderText>{t('aboutManifestoText2')}</AboutHeaderText>
-            <AboutHeaderText>{t('aboutManifestoText3')}</AboutHeaderText>
-            <AboutHeaderText>{t('aboutManifestoText4')}</AboutHeaderText>
-            <AboutHeaderText>
-              {t('aboutDonateLink')}
-              {/* <AboutHeaderLink href="">{t('aboutDonateLink')}</AboutHeaderLink> */}
-              {t('aboutManifestoText5')}
+      {/* <Langs /> */}
+      <HeroWrapper>
+        <HeroHeader>{t('aboutHeader')}</HeroHeader>
+        <HeroText>{t('aboutHeaderText1')}</HeroText>
+      </HeroWrapper>
+      <AboutHeader>
+        <AboutHeaderContent>
+          <AboutContentHeader>{t('aboutManifestoHeader')}</AboutContentHeader>
+          <AboutHeaderText>
+            <i>{t('aboutManifestoText1')}</i>
+          </AboutHeaderText>
+          <AboutHeaderText>{t('aboutManifestoText2')}</AboutHeaderText>
+          <AboutHeaderText>{t('aboutManifestoText3')}</AboutHeaderText>
+          <AboutHeaderText>{t('aboutManifestoText4')}</AboutHeaderText>
+          <AboutHeaderText>
+            {t('aboutDonateLink')}
+            {/* <AboutHeaderLink href="">{t('aboutDonateLink')}</AboutHeaderLink> */}
+            {t('aboutManifestoText5')}
 
-              {/* <AboutHeaderLink href="">{t('aboutShareLink')}</AboutHeaderLink> */}
-              {t('aboutShareLink')}
-              {t('aboutManifestoText6')}
-            </AboutHeaderText>
-          </AboutHeaderContent>
+            {/* <AboutHeaderLink href="">{t('aboutShareLink')}</AboutHeaderLink> */}
+            {t('aboutShareLink')}
+            {t('aboutManifestoText6')}
+          </AboutHeaderText>
+        </AboutHeaderContent>
 
-          <AboutHeaderImage src="/about/ukraine.png" />
-        </AboutHeader>
+        <AboutHeaderImage src="/about/ukraine.png" />
+      </AboutHeader>
 
-        <AboutContent>
-          <AboutContentHeader>{t('aboutTeamHeader')}</AboutContentHeader>
-          {teamMembers.map((member, i) => (
-            <AboutTeamItem key={i} member={member} />
-          ))}
-          <AboutFlexBlock>
-            <AboutTeamMore>
-              <AboutTeamMoreText>{t('aboutTeamMore')}</AboutTeamMoreText>
-              🇺🇦 🇬🇧 🇪🇸 🇫🇷 🇩🇪 🇦🇹 🇵🇱 🇷🇴 🇭🇺 🇬🇷 🇹🇷 🇮🇱
-            </AboutTeamMore>
-            <JoinWrapper>
-              <JoinWrapperHeader>{t('aboutTeamJoinHeader')}</JoinWrapperHeader>
-              <JoinWrapperText>{t('aboutTeamJoinText')}</JoinWrapperText>
-              <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
-                {t('aboutTeamJoinLink')}
-              </JoinWrapperLink>
-            </JoinWrapper>
-          </AboutFlexBlock>
-        </AboutContent>
+      <AboutContent>
+        <AboutContentHeader>{t('aboutTeamHeader')}</AboutContentHeader>
+        {teamMembers.map((member, i) => (
+          <AboutTeamItem key={i} member={member} />
+        ))}
+        <AboutFlexBlock>
+          <AboutTeamMore>
+            <AboutTeamMoreText>{t('aboutTeamMore')}</AboutTeamMoreText>
+            🇺🇦 🇬🇧 🇪🇸 🇫🇷 🇩🇪 🇦🇹 🇵🇱 🇷🇴 🇭🇺 🇬🇷 🇹🇷 🇮🇱
+          </AboutTeamMore>
+          <JoinWrapper>
+            <JoinWrapperHeader>{t('aboutTeamJoinHeader')}</JoinWrapperHeader>
+            <JoinWrapperText>{t('aboutTeamJoinText')}</JoinWrapperText>
+            <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
+              {t('aboutTeamJoinLink')}
+            </JoinWrapperLink>
+          </JoinWrapper>
+        </AboutFlexBlock>
+      </AboutContent>
 
-        {/* <AboutOrganization /> */}
-
-        <Footer />
-      </Page>
+      {/* <AboutOrganization /> */}
     </>
   )
 }

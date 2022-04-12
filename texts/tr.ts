@@ -7,11 +7,15 @@ export default {
   donate: 'Bağışta Bulun',
   inform: 'Haberdar Et',
   donateButton: 'Bağışta',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Ukrayna Ordusuna ve İnsani Kuruluşlarına Yardım Edin`,
   heroText1: `Rus askeri saldırganlığı karşısında Ukrayna'yı destekleyin.`,
   heroText2: `Ukrayna Silahlı Kuvvetlerine veya insani yardım kuruluşlarına yardım etmek için doğrulanmış projelere bağış yapın.`,
   heroText3: `Bültenlerimizi paylaşarak kamuoyunu bilgilendirin.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Kapat',
   sharePopupTitle: 'Herkese Duyur',

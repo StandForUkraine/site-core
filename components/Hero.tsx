@@ -1,20 +1,15 @@
 import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
-import Langs from './Langs'
 
 export const Hero = () => {
   const t = useText()
 
   return (
-    <>
-      <Langs />
-      <HeroWrapper>
-        <HeroHeader>{t('heroHeader')}</HeroHeader>
-        <HeroText>{t('heroText1')}</HeroText>
-        <HeroText>{t('heroText2')}</HeroText>
-        <HeroText>{t('heroText3')}</HeroText>
-      </HeroWrapper>
-    </>
+    <HeroWrapper>
+      <HeroHeader>{t('heroHeader1')}</HeroHeader>
+      <HeroText>{t('heroText4')}</HeroText>
+      <HeroText>{t('heroText5')}</HeroText>
+    </HeroWrapper>
   )
 }
 

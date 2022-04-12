@@ -7,11 +7,15 @@ export default {
   donate: 'Πρόσφερε',
   inform: 'Ενημέρωσε',
   donateButton: 'Πρόσφερε',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Βοηθήστε τις Ουκρανικές Στρατιωτικές & Ανθρωπιστικές Οργανώσεις`,
   heroText1: `Υποστηρίξτε την Ουκρανία απέναντι στη ρωσική στρατιωτική επίθεση.`,
   heroText2: `Κάντε δωρεά σε εγκεκριμένα οργαμώσεις για να βοηθήσετε τις Ένοπλες Δυνάμεις της Ουκρανίας ή ανθρωπιστικές οργανώσεις.`,
   heroText3: ` Ενημερώστε το κοινό κοινοποιώντας τα ενημερωτικά μας δελτία.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Κλείσε',
   sharePopupTitle: 'Διαδώστε τον σκοπό',

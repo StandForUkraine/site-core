@@ -7,11 +7,15 @@ export default {
   donate: 'Wpłać',
   inform: 'Poinformuj',
   donateButton: 'Wpłać',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Pomóż ukraińskiej armii i organizacjom humanitarnym`,
   heroText1: `Wspieraj Ukrainę w obliczu rosyjskiej agresji militarnej.`,
   heroText2: `Przekaż darowizny na zwerfikowane projekty pomocy Siłom Zbrojnym Ukrainy lub organizacje charytatywne.`,
   heroText3: `Poinformuj opinię publiczną udostępniając nasze biuletyny.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Zamknij',
   sharePopupTitle: 'Rozpowszechnij',

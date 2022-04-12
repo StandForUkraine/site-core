@@ -7,11 +7,15 @@ export default {
   donate: 'Dona',
   inform: 'Informa',
   donateButton: 'Dona',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Aiuta le forze armate ucraine e le organizzazioni umanitarie`,
   heroText1: `Supporta l'Ucraina attaccata dalle forze militari russe.`,
   heroText2: `Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari.`,
   heroText3: `Informa le persone e condividi le nostre informazioni.`,
+  heroHeader1: 'Support in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Chiudi',
   sharePopupTitle: 'Condividi',
