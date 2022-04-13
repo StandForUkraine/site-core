@@ -1,5 +1,4 @@
 import { SocialFeedPost } from 'core/utils/social-feed/feed';
-import { CSSProperties } from 'react';
 import LazyLoad from 'react-lazyload';
 import { FacebookEmbed, TwitterEmbed, InstagramEmbed } from 'react-social-media-embed';
 import styled from 'styled-components';

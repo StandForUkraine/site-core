@@ -8,6 +8,7 @@ import { socialNetworks } from 'core/utils/socialNetworks'
 import { useText } from 'core/utils/lang'
 import { useGtag } from 'core/utils/useGtag'
 import SocialEmbedPostWidget from './SocialEmbedPostWidget'
+import DeferredRender from './DeferredRender'
 
 export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
   const t = useText();
@@ -24,7 +25,9 @@ export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
         filter2={socialNetworks.map((item) => item.name)}
         filter2Field="network"
         itemBuilder={(post) => (
-          <SocialEmbedPostWidget key={post.id} post={post} />
+          <DeferredRender key={post.id}>
+            <SocialEmbedPostWidget post={post} />
+          </DeferredRender>
         )}
         filter1Title={t('filterTo')}
         filter2Title={t('filterPayVia')}
