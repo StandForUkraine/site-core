@@ -13,7 +13,7 @@ export default {
   heroText1: `Support Ukraine in the face of Russian military aggression.`,
   heroText2: `Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities.`,
   heroText3: `Inform the public by sharing our newslets.`,
-  heroHeader1: 'Support in the face of Russian aggression',
+  heroHeader1: 'Support Ukraine in the face of Russian aggression',
   heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
   heroText5: 'Spread the word by sharing our posts',
 

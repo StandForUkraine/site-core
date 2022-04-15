@@ -13,7 +13,7 @@ export default {
   heroText1: `Wir helfen der Ukraine im Kampf gegen Russland's Invasion.`,
   heroText2: `Deine Spende dient den Ukrainischen Streitkräften und akkreditierten humanitären Organisationen.`,
   heroText3: `Informiert euch und teilt diese Seite!`,
-  heroHeader1: 'Support in the face of Russian aggression',
+  heroHeader1: 'Support Ukraine in the face of Russian aggression',
   heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
   heroText5: 'Spread the word by sharing our posts',
 

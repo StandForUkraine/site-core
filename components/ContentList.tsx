@@ -17,8 +17,8 @@ export interface ContentListProps<I extends Item, F1 extends string, F2 extends 
   filter2: F2[]
   filter2Field: string
   itemBuilder: (item: I) => ReactElement
-  filter1Title: string
-  filter2Title: string
+  filter1Title: string | false
+  filter2Title: string | false
   onResetFilterClick: () => void
   onShowAllClick: () => void
   showAllButtonChildren: ReactNode

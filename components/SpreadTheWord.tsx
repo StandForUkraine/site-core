@@ -29,8 +29,8 @@ export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
             <SocialEmbedPostWidget post={post} />
           </DeferredRender>
         )}
-        filter1Title={t('filterTo')}
-        filter2Title={t('filterPayVia')}
+        filter1Title={false}
+        filter2Title={false}
         onResetFilterClick={() => {
           gtag('event', 'reset_filter_click', { event_category: 'home_page' })
         }}

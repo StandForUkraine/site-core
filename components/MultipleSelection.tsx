@@ -4,7 +4,7 @@ import ChipsWrapper from './ChipsWrapper'
 import FilterLabel from './FilterLabel'
 
 export interface MultipleSelectionProps<T extends string> {
-  title: string
+  title: string | false
   allOptions: T[]
   selectedOptions: T[]
   onOptionClick: (value: T) => any
@@ -22,7 +22,11 @@ export default function MultipleSelection<T extends string>({
 
   return (
     <ChipsWrapper>
-      <FilterLabel>{title}</FilterLabel>
+      {
+        title !== false && (
+          <FilterLabel>{title}</FilterLabel>
+        )
+      }
       {allOptions.map((option) => (
         <Chip
           key={option}

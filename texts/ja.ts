@@ -13,7 +13,7 @@ export default {
   heroText1: `ロシアの軍事攻撃に直面しているウクライナを支援します。`,
   heroText2: `ウクライナの軍隊を支援する検証済みプロジェクトや人道的慈善団体に寄付しましょう。`,
   heroText3: `リーフレットを共有して拡散させよう。`,
-  heroHeader1: 'Support in the face of Russian aggression',
+  heroHeader1: 'Support Ukraine in the face of Russian aggression',
   heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
   heroText5: 'Spread the word by sharing our posts',
 
