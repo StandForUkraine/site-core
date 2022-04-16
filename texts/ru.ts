@@ -73,6 +73,7 @@ export default {
   copyCode: 'Скопировать номер',
   browseAll1: 'Посмотреть все',
   browseAll2: 'организации',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

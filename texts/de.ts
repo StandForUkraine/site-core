@@ -74,6 +74,7 @@ export default {
   copyCode: 'Den Code kopieren',
   browseAll1: 'Überblick über alle',
   browseAll2: 'organisationen verschaffen',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

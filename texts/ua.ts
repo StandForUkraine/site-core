@@ -73,6 +73,7 @@ export default {
   copyCode: 'Скопіювати номер',
   browseAll1: 'Переглянути усі',
   browseAll2: 'організацій',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

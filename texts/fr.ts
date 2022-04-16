@@ -72,6 +72,7 @@ export default {
   copyCode: 'Copier le code', /*used in EDRPOU popup*/
   browseAll1: 'Parcourir les',
   browseAll2: 'associations',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

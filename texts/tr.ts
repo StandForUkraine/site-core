@@ -73,6 +73,7 @@ export default {
   copyCode: 'Kodu Kopyala',
   browseAll1: 'Tümüne Göz At',
   browseAll2: 'kuruluşlar',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

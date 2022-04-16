@@ -71,6 +71,7 @@ export default {
   copyCode: 'Copiați codul',
   browseAll1: 'Browse all',
   browseAll2: 'organizations',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,

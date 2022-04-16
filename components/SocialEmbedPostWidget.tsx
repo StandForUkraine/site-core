@@ -57,20 +57,32 @@ const IntagramEmbedStyled = styled(InstagramEmbed).attrs({
   width: '100%',
 })`
   iframe {
-    padding-right: 1px !important
+    padding-right: 1px !important;
+  }
+
+  @media (min-width: 768px) {
+    iframe {
+      max-width: 330px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    iframe {
+      max-width: 330px;
+    }
   }
 `
 const FacebookEmbedStyled = styled(FacebookEmbed).attrs({
   width: '100%',
 })`
   iframe {
-    padding-right: 1px !important
+    padding-right: 1px !important;
   }
 `
 const TwitterEmbedStyled = styled(TwitterEmbed).attrs({
   width: '100%',
 })`
   iframe {
-    padding-right: 1px !important
+    padding-right: 1px !important;
   }
 `

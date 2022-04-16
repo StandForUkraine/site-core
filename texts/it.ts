@@ -58,6 +58,7 @@ export default {
   filterTo: 'Organizzazioni',
   filterPayVia: 'Pagamento',
   resetFilter: 'Ripristina i filtri',
+  browseAll3: 'posts',
 
   // payment methods
   IBAN: 'IBAN',

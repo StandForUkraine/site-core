@@ -73,6 +73,7 @@ export default {
   copyCode: 'コードをコピーする',
   browseAll1: 'すべて表示',
   browseAll2: '団体',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,
