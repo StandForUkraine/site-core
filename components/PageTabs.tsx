@@ -58,7 +58,7 @@ const Tab = styled.button<{ isActive?: boolean }>`
     background: rgba(255, 255, 255, 0.3);
   }
 
-  @media (min-width: 400px) {
+  @media (min-width: 430px) {
     font-size: 24px;
   }
 
