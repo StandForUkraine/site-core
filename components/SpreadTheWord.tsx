@@ -4,7 +4,6 @@ import PageTabs from 'core/components/PageTabs'
 import Langs from './Langs'
 import { SocialFeedPost } from 'core/utils/social-feed/feed'
 import ContentList from './ContentList'
-import { socialNetworks } from 'core/utils/socialNetworks'
 import { useText } from 'core/utils/lang'
 import { useGtag } from 'core/utils/useGtag'
 import SocialEmbedPostWidget from './SocialEmbedPostWidget'
@@ -18,6 +17,11 @@ export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
     () => [...new Set(feed.map((post) => post.tags).flat())],
     [],
   )
+
+  const filter2 = React.useMemo(
+    () => [...new Set(feed.map((post) => post.network))],
+    [],
+  )
   
   return (
     <>
@@ -27,7 +31,7 @@ export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
       <ContentList
         list={feed}
         filter1={filter1}
-        filter2={socialNetworks.map((item) => item.name)}
+        filter2={filter2}
         filter2Field="network"
         itemBuilder={(post) => (
           <DeferredRender key={post.id}>

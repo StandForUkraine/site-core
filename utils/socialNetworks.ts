@@ -2,7 +2,7 @@ import React from 'react'
 import FacebookIcon from 'core/assets/facebook.svg'
 import TwitterIcon from 'core/assets/twitter.svg'
 
-export type SocialNetworkName = 'instagram' | 'facebook' | 'twitter';
+export type SocialNetworkName = 'instagram' | 'facebook' | 'twitter' | 'youtube' | 'tiktok';
 
 export interface SocialNetwork {
   name: SocialNetworkName

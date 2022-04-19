@@ -1,7 +1,7 @@
 import { SocialFeedPost } from 'core/utils/social-feed/feed';
 import { PureComponent } from 'react';
 import LazyLoad from 'react-lazyload';
-import { FacebookEmbed, TwitterEmbed, InstagramEmbed } from 'react-social-media-embed';
+import { FacebookEmbed, TwitterEmbed, InstagramEmbed, YouTubeEmbed, TikTokEmbed } from 'react-social-media-embed';
 import styled from 'styled-components';
 
 export class SocialEmbedPostWidget extends PureComponent<{ post: SocialFeedPost }> {
@@ -28,6 +28,16 @@ export class SocialEmbedPostWidget extends PureComponent<{ post: SocialFeedPost 
         {
           post.network === 'instagram' && (
             <IntagramEmbedStyled url={post.link} />
+          )
+        }
+        {
+          post.network === 'youtube' && (
+            <YoutubeEmbedStyled url={post.link} />
+          )
+        }
+        {
+          post.network === 'tiktok' && (
+            <TikTokEmbedStyled url={post.link} />
           )
         }
       </LazyLoad>
@@ -80,6 +90,22 @@ const FacebookEmbedStyled = styled(FacebookEmbed).attrs({
   }
 `
 const TwitterEmbedStyled = styled(TwitterEmbed).attrs({
+  width: '100%',
+})`
+  iframe {
+    padding-right: 1px !important;
+  }
+`
+
+const YoutubeEmbedStyled = styled(YouTubeEmbed).attrs({
+  width: '100%',
+})`
+  iframe {
+    padding-right: 1px !important;
+  }
+`
+
+const TikTokEmbedStyled = styled(TikTokEmbed).attrs({
   width: '100%',
 })`
   iframe {
