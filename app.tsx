@@ -2,11 +2,20 @@ import { AppProps } from 'next/app'
 import { createGlobalStyle } from 'styled-components'
 import { LangContextProvider } from 'core/utils/lang'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
+import { ReactElement, ReactNode, useEffect } from 'react'
 import Head from 'next/head'
 import TopHeader from './components/TopHeader'
 import Page from './components/Page'
 import Footer from './components/Footer'
+import type { NextPage } from 'next'
+
+export type NextPageWithLayout = NextPage & {
+  getLayout?: (page: ReactElement) => ReactNode
+}
+
+type AppPropsWithLayout = AppProps & {
+  Component: NextPageWithLayout
+}
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 
@@ -41,7 +50,7 @@ const GlobalStyles = createGlobalStyle`
   }
 `
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppPropsWithLayout) {
   const router = useRouter()
 
   useEffect(() => {
@@ -58,19 +67,23 @@ function App({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <GlobalStyles />
-      <LangContextProvider>
+      {typeof Component.getLayout === 'function' ? Component.getLayout(<Component {...pageProps} />) : (
         <>
-          <TopHeader />
-          <Page>
-            <Component {...pageProps} />
-            <Footer />
-          </Page>
+          <Head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          </Head>
+          <GlobalStyles />
+          <LangContextProvider>
+            <>
+              <TopHeader />
+              <Page>
+                <Component {...pageProps} />
+                <Footer />
+              </Page>
+            </>
+          </LangContextProvider>
         </>
-      </LangContextProvider>
+      )}
     </>
   )
 }

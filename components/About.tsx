@@ -112,12 +112,6 @@ const teamMembers = [
   },
 ]
 
-export const Page = styled.div`
-  padding-top: 60px;
-  max-width: 100%;
-  width: 1112px;
-  margin: auto;
-`
 export const HeroWrapper = styled.div`
   padding: 20px;
   padding-top: 0;

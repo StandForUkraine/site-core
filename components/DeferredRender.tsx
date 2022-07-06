@@ -1,4 +1,4 @@
-import { ReactElement, ReactNode, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react';
 
 export const DeferredRender = ({ children }: { children: ReactElement }): ReactElement | null => {
   const [rendered, setRendered] = useState(false);
@@ -9,7 +9,7 @@ export const DeferredRender = ({ children }: { children: ReactElement }): ReactE
     },
     [],
   );
-  
+
   if (!rendered) {
     return null;
   }
