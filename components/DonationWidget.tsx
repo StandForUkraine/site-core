@@ -62,13 +62,16 @@ export const DonationWidget = ({ donation }: { donation: DonationItem }) => {
 
         {showEdrpou && (
           <LegalNumber
-            onClick={() => {
+            as="a"
+            target="_blank"
+            rel="noopener"
+            href={`https://youcontrol.com.ua/en/catalog/company_details/${donation.edrpou}/`}
+            onClick={() =>
               gtag('event', 'legal_info_click', {
                 event_category: 'edrpou',
                 event_label: donation.edrpou,
               })
-              setVisibleLegalPopup(true)
-            }}
+            }
           >
             ЄДРПОУ: {donation.edrpou} <InfoIcon />
           </LegalNumber>
