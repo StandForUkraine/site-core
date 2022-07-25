@@ -5,7 +5,12 @@ import { PostItem, posts } from 'core/utils/posts'
 import { langs } from 'core/texts'
 import { DonationItem } from 'core/utils/donations'
 
-export default ({ postData, donations }: { postData: PostItem; donations: DonationItem[] }) => {
+export interface PostPageParams {
+  postData: PostItem
+  donations: DonationItem[]
+}
+
+export default ({ postData, donations }: PostPageParams) => {
   const renderMetadata = useMetadataRenderer()
   return (
     <>

@@ -9,14 +9,14 @@ export type WidgetItemProps = {
 
 export const WidgetItem = (props: WidgetItemProps) => {
   const t = useText();
-  const content = `<script id="sfuw" type="text/javascript" async="true" src="https://cdn.jsdelivr.net/gh/StandForUkraine/site-widget@1.0/artifacts/index.iife.min.js${props.params}"></script>`;
+  const content = `<script id="sfuw" type="text/javascript" async="true" src="https://cdn.jsdelivr.net/gh/StandForUkraine/site-widget@1.0/artifacts/index.iife.min.js?${props.params}"></script>`;
 
   return (
     <ContainerWrapper>
       <Container>
         <Iframe
           sandbox="allow-scripts allow-same-origin allow-popups"
-          src={`/codesandbox${props.params}`}
+          src={`/codesandbox?${props.params}`}
         />
         <ButtonWrapper>
           <CopyButton

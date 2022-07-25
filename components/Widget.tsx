@@ -20,13 +20,13 @@ export default function Widget() {
         </ol>
         <SizedBox height={16} />
         <strong>{t('widgetVariant1')}</strong>
-        <WidgetItem params="?variant=button&button-position=bottom-left" />
+        <WidgetItem params="variant=button&button-position=bottom-left" />
         <SizedBox height={16} />
         <strong>{t('widgetVariant2')}</strong>
-        <WidgetItem params="?variant=strip&strip-color=ua-colors" />
+        <WidgetItem params="variant=strip&strip-color=ua-colors" />
         <SizedBox height={16} />
         <strong>{t('widgetVariant3')}</strong>
-        <WidgetItem params="?variant=strip&strip-color=black" />
+        <WidgetItem params="variant=strip&strip-color=black" />
         <SizedBox height={16} />
         <SubTitle>{t('widgetGTagManager')}</SubTitle>
         <ol>
