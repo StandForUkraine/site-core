@@ -1,19 +1,21 @@
 export default {
   siteName: `Stå For Ukraina`,
-  siteDescription: `Støtt Ukraina i møte med
-russisk aggresjon. Doner til den ukrainske hæren eller til verifiserte humanitære organisasjoner. Spre ordet ved å dele innleggene våre.`,
+  siteDescription: `Støtt Ukraina i møte med russisk aggresjon. Doner til den ukrainske hæren eller til verifiserte humanitære organisasjoner. Spre ordet ved å dele innleggene våre.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Del',
   donate: 'Doner',
   inform: 'Spre ordet',
   donateButton: 'Doner',
+  spreadTheWorld: 'Spread the word',
 
   heroHeader: `Help Ukrainian Military & Humanitarian Organizations`,
-  heroText1: `Støtt Ukraina i møte med
-russisk militær aggresjon`,
+  heroText1: `Støtt Ukraina i møte med russisk militær aggresjon`,
   heroText2: `Doner til den ukrainske hæren eller til verifiserte humanitære organisasjoner.`,
   heroText3: `Spre ordet ved å dele innleggene våre.`,
+  heroHeader1: 'Support Ukraine in the face of Russian aggression',
+  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
+  heroText5: 'Spread the word by sharing our posts',
 
   close: 'Lukke',
   sharePopupTitle: 'Spread The Cause',
@@ -71,6 +73,7 @@ russisk militær aggresjon`,
   copyCode: 'Kopier kode',
   browseAll1: 'Bla gjennom alle',
   browseAll2: 'organisasjoner',
+  browseAll3: 'posts',
 
   // about page
   aboutHeader: `About the Project`,
@@ -121,4 +124,25 @@ russisk militær aggresjon`,
   legalDesc2: 'Copy EDRPOU code',
   legalDesc3: 'Verify the organization by the code in the register',
   legalFooterLink: 'State Tax Service of Ukraine',
+
+  // widget page
+  widgetPageTitle: 'Add the widget to your site and let the audience know how to support Ukraine',
+  widgetPageHowInstall: 'How to install',
+  widgetInstallStep1: 'Pick a design version from listed below',
+  widgetInstallStep2: 'Copy widget code',
+  widgetInstallStep3: 'Add it at your website at the <head> tag',
+  widgetCopyCode: 'Copy code',
+  widgetVariant1: 'Tiny button at the bottom left',
+  widgetVariant2: 'Blue and yellow stripe stuck to top',
+  widgetVariant3: 'Black stripe with a tiny flag stuck to top',
+  widgetGTagManager: 'Alterative way: via Google Tag manager',
+  widgetGTagStep1: 'Open your workspace. Go to Tags',
+  widgetGTagStep2: 'Create a new one',
+  widgetGTagStep3: 'Set any name you want',
+  widgetGTagStep4: 'Pick Custom HTML at the Tag configuration',
+  widgetGTagStep5: 'Paste widget code (any among above)',
+  widgetGTagStep6: 'Set All pages at Triggering. Save',
+  widgetGTagStep7: 'Refresh your site. The widget should already be there',
+  widgetWordPress: 'Alterative way: via Wordpress plugin',
+  widgetWordPressSoon: 'coming soon...',
 }
