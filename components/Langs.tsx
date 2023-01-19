@@ -43,7 +43,7 @@ export default Langs
 
 const LangsWrapper = styled.div`
   overflow-x: auto;
-  padding: 14px 16px;
+  padding: 14px 10px;
   margin: auto;
   width: 100%;
   display: flex;
