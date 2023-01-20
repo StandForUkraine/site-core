@@ -50,7 +50,6 @@ const LangsWrapper = styled.div`
   justify-content: flex-start;
 
   @media (min-width: 600px) {
-    justify-content: center;
     padding-top: 38px;
   }
 `

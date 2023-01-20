@@ -7,8 +7,7 @@ import Document, {
   DocumentInitialProps,
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { langs } from 'core/texts'
-import { defaultLang } from 'core/texts'
+import { langs, defaultLang } from 'core/texts'
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID
 const baseUrl = process.env.NEXT_PUBLIC_SITE_BASEURL
