@@ -1,32 +1,32 @@
 export default {
   siteName: `Stå For Ukraine`,
-  siteDescription: `Støt Ukraine i lyset af russisk aggression. Doner til den ukrainske hær eller til verificerede humanitære organisationer. Spred budskabet ved at dele vores indlæg.`,
+  siteDescription: `Ukraine. Doner til den ukrainske hær, velgørenhedsorganisationer og andre verificerede militære og humanitære projekter.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Del',
   donate: 'Donere',
-  inform: 'Spred budskabet',
+  inform: 'Informere',
   donateButton: 'Donere',
   spreadTheWorld: 'Spred budskabet',
 
-  heroHeader: `Help Ukrainian Military & Humanitarian Organizations`,
-  heroText1: `Support Ukraine in the face of Russian military aggression.`,
+  heroHeader: `Doner eller spred budskabet`,
+  heroText1: `Støt den ukrainske hær og andre troværdige humanitære fundraisere`,
   heroText2: `Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities.`,
-  heroText3: `Inform the public by sharing our newslets.`,
+  heroText3: `Del vores indlæg på sociale medier`,
   heroHeader1: 'Support Ukraine in the face of Russian aggression',
   heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
   heroText5: 'Spread the word by sharing our posts',
 
-  close: 'Close',
-  sharePopupTitle: 'Spread The Cause',
-  sharePopupText1: 'Share this resource to your friends and colleagues.',
-  sharePopupText2: 'Let people know how to support Ukraine.',
-  sharingText: 'Help Ukrainian Military & Humanitarian Organizations #StandForUkraine',
-  copyLink: 'Copy Link',
-  copyLinkDone: 'Copied!',
+  close: 'Lukke',
+  sharePopupTitle: 'Spred budskabet',
+  sharePopupText1: 'Del det her med dine venner og kolleger.',
+  sharePopupText2: ' Lad folk vide hvordan man støtter Ukraine.',
+  sharingText: 'Hjælp de væpnede ukrainske styrkene og humanitære organisationer #StandForUkraine',
+  copyLink: 'Kopiere link',
+  copyLinkDone: 'Kopieres!',
 
   // tags
-  All: 'All',
+  All: 'Al',
   Military: 'Militær',
   Medical: 'Medicinsk',
   Humanitarian: 'Humanitær',
@@ -57,9 +57,9 @@ export default {
   joinFormLink: 'Bliv medlem af den internationale legion',
 
   // filter
-  filterTo: 'To',
-  filterPayVia: 'Via',
-  resetFilter: 'Reset filter',
+  filterTo: 'Organisation',
+  filterPayVia: 'Betalingsmetoder',
+  resetFilter: 'Nulstil filtrering',
 
   // payment methods
   IBAN: 'IBAN',
@@ -70,10 +70,10 @@ export default {
   'Western Union': 'Western Union',
   Kuna: 'Kuna',
 
-  copyCode: 'Copy Code',
-  browseAll1: 'Browse all',
-  browseAll2: 'organizations',
-  browseAll3: 'posts',
+  copyCode: 'Kopier organisationsnummeret',
+  browseAll1: 'Se alt',
+  browseAll2: 'organisationer',
+  browseAll3: 'indlæg',
 
   // about page
   aboutHeader: `About the Project`,
@@ -120,10 +120,10 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
-  legalDesc2: 'Copy EDRPOU code',
-  legalDesc3: 'Verify the organization by the code in the register',
-  legalFooterLink: 'State Tax Service of Ukraine',
+  legalDesc1: 'ЄДРПОУ (EDRPOU) er en type organisationsnummer fra den ukrainske skatteforvaltning.',
+  legalDesc2: 'Kopier EDRPOU kode',
+  legalDesc3: 'Bekræft med organisationsnummeret i registret over ikke-kommercielle organisationer',
+  legalFooterLink: 'Den ukrainske skatteforvaltning',
 
   // widget page
   widgetPageTitle: 'Add the widget to your site and let the audience know how to support Ukraine',
