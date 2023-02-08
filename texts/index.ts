@@ -34,7 +34,7 @@ export const byLang = {
   pl,
   ja,
   ro,
-  ar,
+  // ar,
   ru,
 } as const
 
@@ -54,7 +54,7 @@ export const flagsMap: Record<Lang, string> = {
   pl: '🇵🇱',
   ua: '🇺🇦',
   ja: '🇯🇵',
-  ar: '🇦🇪',
+  // ar: '🇦🇪',
   ru: '🏳',
 }
 
