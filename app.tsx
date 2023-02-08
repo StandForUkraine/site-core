@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
-import { createGlobalStyle } from 'styled-components'
-import { LangContextProvider } from 'core/utils/lang'
+import { createGlobalStyle, StyleSheetManager } from 'styled-components'
+import { LangContext, LangContextProvider } from 'core/utils/lang'
 import { useRouter } from 'next/router'
 import { ReactElement, ReactNode, useEffect } from 'react'
 import Head from 'next/head'
@@ -8,6 +8,8 @@ import TopHeader from './components/TopHeader'
 import Page from './components/Page'
 import Footer from './components/Footer'
 import type { NextPage } from 'next'
+import stylisRTLPlugin from 'stylis-plugin-rtl'
+import { rtlLangs } from './texts'
 
 export type NextPageWithLayout = NextPage & {
   getLayout?: (page: ReactElement) => ReactNode
@@ -74,13 +76,25 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
           </Head>
           <GlobalStyles />
           <LangContextProvider>
-            <>
-              <TopHeader />
-              <Page>
-                <Component {...pageProps} />
-                <Footer />
-              </Page>
-            </>
+            <LangContext.Consumer>
+              {(value) => {
+                const content = (
+                  <>
+                    <TopHeader />
+                    <Page>
+                      <Component {...pageProps} />
+                      <Footer />
+                    </Page>
+                  </>
+                )
+
+                return rtlLangs.includes(value) ? (
+                  <StyleSheetManager stylisPlugins={[stylisRTLPlugin as never]}>
+                    {content}
+                  </StyleSheetManager>
+                ) : content;
+              }}
+            </LangContext.Consumer>
           </LangContextProvider>
         </>
       )}

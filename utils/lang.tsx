@@ -1,5 +1,5 @@
-import { createContext, useContext } from 'react'
-import { defaultLang, Lang, byLang, TextKeys } from 'core/texts'
+import { createContext, useContext, useEffect } from 'react'
+import { defaultLang, Lang, byLang, TextKeys, rtlLangs } from 'core/texts'
 import { useRouter } from 'next/router'
 
 export interface LangContextValue {
@@ -17,6 +17,13 @@ export const LangContextProvider = ({
 }) => {
   const router = useRouter()
   const lang = (router.query.lang || injectedDefaultLang || defaultLang) as Lang
+
+  useEffect(() => {
+    /**
+     * Not an ideal solution, but... (we don't have `router.query.lang` in _app)
+     */
+    document.body.setAttribute('dir', rtlLangs.includes(lang) ? 'rtl' : 'ltr')
+  }, [lang])
 
   return <LangContext.Provider value={lang}>{children}</LangContext.Provider>
 }

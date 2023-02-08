@@ -14,6 +14,7 @@ import ro from './ro'
 import ja from './ja'
 import no from './no'
 import ua from './ua'
+import ar from './ar'
 
 export const defaultLang = process.env.NEXT_PUBLIC_DEFAULT_LANG as Lang
 
@@ -33,6 +34,7 @@ export const byLang = {
   pl,
   ja,
   ro,
+  ar,
   ru,
 } as const
 
@@ -52,12 +54,15 @@ export const flagsMap: Record<Lang, string> = {
   pl: '🇵🇱',
   ua: '🇺🇦',
   ja: '🇯🇵',
+  ar: '🇦🇪',
   ru: '🏳',
 }
 
 export type Lang = keyof typeof byLang
 
 export const langs = Object.keys(byLang) as Lang[]
+
+export const rtlLangs = ['ar'];
 
 const defaultLangTexts = byLang[defaultLang]
 
