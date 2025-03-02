@@ -61,6 +61,7 @@ export const loadDonations = (lang = defaultLang) => {
         byLang,
       }
     })
+    .filter((d) => !d.hidden)
     .sort((a, b) => a.id - b.id)
   return data as DonationItem[]
 }
