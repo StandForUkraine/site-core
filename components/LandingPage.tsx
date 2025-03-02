@@ -10,7 +10,7 @@ export default function LandingPage({ donations }: { donations: DonationItem[] }
     <>
       <Langs />
       <Hero />
-      <PageTabs currentTab={'donate'} />
+      {/* <PageTabs currentTab={'donate'} /> */}
       <Donations donations={donations} />
     </>
   )
