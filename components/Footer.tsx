@@ -83,15 +83,6 @@ export const Footer = () => {
           <span>{t('sharedFeedbackLink')}</span>
           <LinkIcon />
         </ExtLinkButton>
-        <ExtLinkButton
-          as="a"
-          href="https://ukrforeignlegion.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>{t('joinFormLink')}</span>
-          <LinkIcon />
-        </ExtLinkButton>
       </FooterExtLinksWrapper>
     </FooterWrapper>
   )
