@@ -43,14 +43,24 @@ export default Langs
 
 const LangsWrapper = styled.div`
   overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   padding: 14px 10px;
   margin: auto;
-  width: 100%;
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: flex-start;
 
   @media (min-width: 600px) {
     padding-top: 38px;
+    justify-content: center;
   }
 `
 

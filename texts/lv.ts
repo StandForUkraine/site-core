@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Atbalsti Ukrainu Krievijas militārās agresijas priekšā. Ziedo pārbaudītiem projektiem, lai palīdzētu Ukrainas Bruņotajiem Spēkiem vai humanitārajām labdarībām. Informē sabiedrību, daloties ar mūsu ziņām.`,
+  siteDescription: `Ziedojiet Ukrainas militārajām un humanitārajām organizācijām. Pārlūkojiet pārbaudītas labdarības organizācijas un militārās palīdzības fondus, lai atbalstītu Ukrainas bruņotos spēkus.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Dalies',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Ziedo',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Palīdzi Ukrainas Karavīriem un Humanitārajām Organizācijām`,
-  heroText1: `Atbalsti Ukrainu Krievijas militārās agresijas priekšā.`,
-  heroText2: `Ziedo pārbaudītiem projektiem, lai palīdzētu Ukrainas Bruņotajiem Spēkiem vai humanitārajām labdarībām .`,
-  heroText3: `Informē sabiedrību daloties ar mūsu ziņām`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Ziedojiet Ukrainas militārajām un humanitārajām organizācijām',
+  heroSubtitle: 'Pārlūkojiet pārbaudītu labdarības organizāciju un militārās palīdzības fondu sarakstu, lai atbalstītu Ukrainas bruņotos spēkus un sniegtu humanitāro palīdzību.',
+  heroTagline: 'Stand for Ukraine Krievijas pilna mēroga iebrukuma priekšā.',
 
   close: 'Aizvērt',
   sharePopupTitle: 'Nodod tālāk šo ziņu',

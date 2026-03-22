@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `ロシアの軍事攻撃に直面しているウクライナを支援します。 ウクライナ軍隊を支援するための検証済みプロジェクトや人道的慈善団体に寄付しましょう。 広報用バナーを共有して拡散してください。`,
+  siteDescription: `ウクライナの軍事・人道支援団体に寄付する。ウクライナ軍を支援するための検証済み慈善団体と軍事支援基金をご覧ください。`,
   thumbnail: `/thumbnail.png`,
 
   share: '共有',
@@ -9,13 +9,10 @@ export default {
   donateButton: '寄付する',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `ウクライナの軍と人道支援団体を支援しよう`,
-  heroText1: `ロシアの軍事攻撃に直面しているウクライナを支援します。`,
-  heroText2: `ウクライナの軍隊を支援する検証済みプロジェクトや人道的慈善団体に寄付しましょう。`,
-  heroText3: `リーフレットを共有して拡散させよう。`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'ウクライナの軍事・人道支援団体に寄付する',
+  heroSubtitle: 'ウクライナ軍を支援し、人道的支援を提供するための検証済み慈善団体と軍事支援基金のリストをご覧ください。',
+  heroTagline: 'ロシアの全面侵攻に立ち向かうウクライナを支援する。',
 
   close: '閉じる',
   sharePopupTitle: '運動を広げよう',

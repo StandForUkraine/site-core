@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Gemeinsam unterstützen wir die Ukraine im Kampf gegen die Offensive Russland's. Deine Spende dient den Ukrainischen Streitkräften und akkreditierten humanitären Organisationen. Informiert euch und teilt diese Seite!`,
+  siteDescription: `Spenden Sie an ukrainische Militär- und Hilfsorganisationen. Durchsuchen Sie geprüfte Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Teilen',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Spenden',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Unterstütze Ukrainische Streitkräfte und humanitäre Organisationen.`,
-  heroText1: `Wir helfen der Ukraine im Kampf gegen Russland's Invasion.`,
-  heroText2: `Deine Spende dient den Ukrainischen Streitkräften und akkreditierten humanitären Organisationen.`,
-  heroText3: `Informiert euch und teilt diese Seite!`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Spenden Sie an ukrainische Militär- und Hilfsorganisationen',
+  heroSubtitle: 'Durchsuchen Sie eine Liste geprüfter Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine und humanitärer Hilfe.',
+  heroTagline: 'Stand for Ukraine angesichts der russischen Vollinvasion.',
 
   close: 'Schliessen',
   sharePopupTitle: 'Erzähle davon',

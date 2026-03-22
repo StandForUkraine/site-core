@@ -1,6 +1,6 @@
 export default {
   siteName: `Stå For Ukraine`,
-  siteDescription: `Ukraine. Doner til den ukrainske hær, velgørenhedsorganisationer og andre verificerede militære og humanitære projekter.`,
+  siteDescription: `Doner til ukrainske militære og humanitære organisationer. Gennemse verificerede velgørenhedsorganisationer og militære hjælpefonde for at støtte Ukraines væbnede styrker.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Del',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Donere',
   spreadTheWorld: 'Spred budskabet',
 
-  heroHeader: `Doner eller spred budskabet`,
-  heroText1: `Støt den ukrainske hær og andre troværdige humanitære fundraisere`,
-  heroText2: `Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities.`,
-  heroText3: `Del vores indlæg på sociale medier`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Doner til ukrainske militære og humanitære organisationer',
+  heroSubtitle: 'Gennemse en liste over verificerede velgørenhedsorganisationer og militære hjælpefonde for at støtte Ukraines væbnede styrker og yde humanitær bistand.',
+  heroTagline: 'Stand for Ukraine i lyset af Ruslands fuldskala invasion.',
 
   close: 'Lukke',
   sharePopupTitle: 'Spred budskabet',

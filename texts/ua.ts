@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Допоможи Україні впоратись з військовою агресією з боку Росії. Роби пожертви до перевірених проектів і благодійних фондів та підтримай Збройні Сили України. Розповсюджуйте наші матеріали поміж друзів та колег.`,
+  siteDescription: `Допоможіть українським військовим та гуманітарним організаціям. Перегляньте перевірені благодійні фонди та фонди військової допомоги для підтримки Збройних Сил України та надання гуманітарної допомоги.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Поділись',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Підтримати',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Підтримай Українську Армію та благодійні організації`,
-  heroText1: `Допоможи Україні впоратись з військовою агресією з боку Росії.`,
-  heroText2: `Роби пожертви до перевірених проектів і благодійних фондів та підтримай Збройні Сили України.`,
-  heroText3: `Розповсюджуйте наші матеріали поміж друзів та колег.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Допоможіть українським військовим та гуманітарним організаціям',
+  heroSubtitle: 'Перегляньте перевірені благодійні фонди та фонди військової допомоги для підтримки Збройних Сил України та надання гуманітарної допомоги.',
+  heroTagline: 'Stand for Ukraine перед обличчям повномасштабного вторгнення Росії.',
 
   close: 'Закрити',
   sharePopupTitle: 'Поділись сайтом',

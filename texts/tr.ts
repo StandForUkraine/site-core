@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Rus askeri saldırganlığı karşısında Ukrayna'yı destekleyin. Ukrayna Silahlı Kuvvetlerine veya insani yardım kuruluşlarına yardım etmek için doğrulanmış projelere bağış yapın. Bültenlerimizi paylaşarak kamuoyunu bilgilendirin.`,
+  siteDescription: `Ukrayna'nın askeri ve insani yardım kuruluşlarına bağış yapın. Ukrayna Silahlı Kuvvetlerine yardım etmek için doğrulanmış hayır kurumları ve askeri yardım fonlarına göz atın.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Paylaş',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Bağışta',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Ukrayna Ordusuna ve İnsani Kuruluşlarına Yardım Edin`,
-  heroText1: `Rus askeri saldırganlığı karşısında Ukrayna'yı destekleyin.`,
-  heroText2: `Ukrayna Silahlı Kuvvetlerine veya insani yardım kuruluşlarına yardım etmek için doğrulanmış projelere bağış yapın.`,
-  heroText3: `Bültenlerimizi paylaşarak kamuoyunu bilgilendirin.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Ukrayna\'nın askeri ve insani yardım kuruluşlarına bağış yapın',
+  heroSubtitle: 'Ukrayna Silahlı Kuvvetlerine yardım etmek ve insani yardım sağlamak için doğrulanmış hayır kurumları ve askeri yardım fonlarının listesine göz atın.',
+  heroTagline: 'Rusya\'nın tam ölçekli işgali karşısında Stand for Ukraine.',
 
   close: 'Kapat',
   sharePopupTitle: 'Herkese Duyur',

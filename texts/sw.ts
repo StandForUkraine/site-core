@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Stöd Ukraina i kampen mot den Ryska militärens aggression. Donera till verifierade projekt för att hjälpa Ukrainas försvarsmakt eller humanitära välgörenhetsorganisationer. Informera allmänheten genom att dela vårt nyhetsbrev.`,
+  siteDescription: `Donera till ukrainska militära och humanitära organisationer. Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Dela',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Donera',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Hjälp Ukrainsk militär & Humanitära organisationer`,
-  heroText1: `Stöd Ukraina mot den Ryska militära aggressionen.`,
-  heroText2: `Donera till verifierade projekt för att hjälpa Ukrainas försvarsmakt eller humanitära välgörenhetsorganisationer.`,
-  heroText3: `Informera allmänheten genom att dela vårt nyhetsbrev.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Donera till ukrainska militära och humanitära organisationer',
+  heroSubtitle: 'Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt och ge humanitärt bistånd.',
+  heroTagline: 'Stand for Ukraine inför Rysslands fullskaliga invasion.',
 
   close: 'Stäng',
   sharePopupTitle: 'Sprid uppropet',

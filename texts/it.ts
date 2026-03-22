@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Supporta l'Ucraina attaccata dalle forze militari russe. Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari. Informa le persone e condividi le nostre informazioni.`,
+  siteDescription: `Dona alle organizzazioni militari e umanitarie ucraine. Sfoglia enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell'Ucraina.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Condividi',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Dona',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Aiuta le forze armate ucraine e le organizzazioni umanitarie`,
-  heroText1: `Supporta l'Ucraina attaccata dalle forze militari russe.`,
-  heroText2: `Dona a progetti verificati per aiutare le forze armate ucraine o enti di beneficenza umanitari.`,
-  heroText3: `Informa le persone e condividi le nostre informazioni.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Dona alle organizzazioni militari e umanitarie ucraine',
+  heroSubtitle: 'Sfoglia un elenco di enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell\'Ucraina e fornire assistenza umanitaria.',
+  heroTagline: 'Stand for Ukraine di fronte all\'invasione su larga scala della Russia.',
 
   close: 'Chiudi',
   sharePopupTitle: 'Condividi',

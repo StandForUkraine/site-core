@@ -29,7 +29,7 @@ export const TopHeader = () => {
 
       <TopHeaderTitle>
         <Link href={rootPathname} passHref>
-          <TopNavLink>{t('siteName')}</TopNavLink>
+          <TopNavLink>Stand <em>for</em> Ukraine</TopNavLink>
         </Link>
       </TopHeaderTitle>
 
@@ -71,6 +71,11 @@ const TopHeaderFlag = styled.img`
   position: absolute;
   left: 0px;
   top: 0px;
+
+  @media (min-width: 768px) {
+    width: 90px;
+    height: 84px;
+  }
 `
 
 const TopHeaderTitle = styled.h1`
@@ -80,6 +85,11 @@ const TopHeaderTitle = styled.h1`
   font-weight: 700;
   flex-grow: 1;
 
+  em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
   @media (min-width: 375px) {
     font-size: 20px;
     line-height: 24px;
@@ -87,7 +97,7 @@ const TopHeaderTitle = styled.h1`
 
   @media (min-width: 768px) {
     text-align: left;
-    padding-left: 92px;
+    padding-left: 104px;
   }
 `
 

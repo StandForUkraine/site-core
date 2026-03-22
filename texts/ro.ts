@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Susține Ucraina în fața agresiunilor armatei rusești. Donează către proiecte verificate pentru a ajuta Forțele Armate ale Ucrainei și organizații caritabile. Informează publicul despre inițiativa noastră, distribuind publicațiile noastre.`,
+  siteDescription: `Donați organizațiilor militare și umanitare ucrainene. Răsfoiți organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Distribuie',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Donează',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Ajută armata ucraineană și Organizațiile Umanitare`,
-  heroText1: `Susține Ucraina în fața agresiunilor armatei rusești.`,
-  heroText2: `Donează către proiecte verificate pentru a ajuta forțele armate sau organizații caritabile ucrainiene.`,
-  heroText3: `Informează publicul, distribuind publicațiile noastre.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Donați organizațiilor militare și umanitare ucrainene',
+  heroSubtitle: 'Răsfoiți o listă de organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei și a oferi asistență umanitară.',
+  heroTagline: 'Stand for Ukraine în fața invaziei pe scară largă a Rusiei.',
 
   close: 'Închide',
   sharePopupTitle: 'Distribuie cauza noastră',

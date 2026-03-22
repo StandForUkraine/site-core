@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Wspieraj Ukrainę w obliczu rosyjskiej agresji militarnej. Przekaż darowizny na zweryfikowane projekty pomocy Siłom Zbrojnym Ukrainy lub organizacje charytatywne. Poinformuj opinię publiczną, udostępniając nasze biuletyny.`,
+  siteDescription: `Wspieraj ukraińskie organizacje wojskowe i humanitarne. Przeglądaj zweryfikowane organizacje charytatywne i fundusze pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Podziel się',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Wpłać',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Pomóż ukraińskiej armii i organizacjom humanitarnym`,
-  heroText1: `Wspieraj Ukrainę w obliczu rosyjskiej agresji militarnej.`,
-  heroText2: `Przekaż darowizny na zwerfikowane projekty pomocy Siłom Zbrojnym Ukrainy lub organizacje charytatywne.`,
-  heroText3: `Poinformuj opinię publiczną udostępniając nasze biuletyny.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Wspieraj ukraińskie organizacje wojskowe i humanitarne',
+  heroSubtitle: 'Przeglądaj listę zweryfikowanych organizacji charytatywnych i funduszy pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy i zapewnić pomoc humanitarną.',
+  heroTagline: 'Stand for Ukraine w obliczu pełnoskalowej inwazji Rosji.',
 
   close: 'Zamknij',
   sharePopupTitle: 'Rozpowszechnij',

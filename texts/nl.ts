@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Steun Oekraïne in het licht van Russische militaire agressie. Doneer aan geverifieerde projecten om de strijdkrachten van Oekraïne of humanitaire liefdadigheidsinstellingen te helpen. Informeer het publiek door onze nieuwsbrieven te delen.`,
+  siteDescription: `Doneer aan Oekraïense militaire en humanitaire organisaties. Bekijk geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Delen',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Doneren',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Help Oekraïense militaire en humanitaire organisaties`,
-  heroText1: `Steun Oekraïne in het licht van de Russische militaire agressie.`,
-  heroText2: `Doneer aan geverifieerde projecten om de strijdkrachten van Oekraïne of humanitaire liefdadigheidsinstellingen te helpen`,
-  heroText3: `Informeer het publiek door onze nieuwsbrieven te delen.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Doneer aan Oekraïense militaire en humanitaire organisaties',
+  heroSubtitle: 'Bekijk een lijst van geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen en humanitaire hulp te bieden.',
+  heroTagline: 'Stand for Ukraine in het licht van de grootschalige Russische invasie.',
 
   close: 'Afsluiten',
   sharePopupTitle: 'Deel deze boodschap',
