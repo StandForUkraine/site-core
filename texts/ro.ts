@@ -30,8 +30,8 @@ export default {
   Refugees: 'Refugiați',
   Press: 'Presă',
   Veterancy: 'Veterani',
-  'Non-lethal': 'Ne-letal',
-  'Non-government': 'Non-guvernamental',
+  'Non-combat': 'Non-combat',
+  NGO: 'ONG',
   'Human Rights': 'Drepturile Omului',
 
   // footer
@@ -58,12 +58,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Cripto',
   'Credit Card': 'Card de credit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copiați codul',
   browseAll1: 'Browse all',

@@ -30,8 +30,8 @@ export default {
   Refugees: 'Убежища',
   Press: 'Пресса',
   Veterancy: 'Ветераны',
-  'Non-lethal': 'Нелетальные',
-  'Non-government': 'Негосударственные',
+  'Non-combat': 'Небоевое',
+  NGO: 'НКО',
   'Human Rights': 'Права человека',
 
   // footer
@@ -60,12 +60,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Крипто',
   'Credit Card': 'Card de credit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Скопировать номер',
   browseAll1: 'Посмотреть все',

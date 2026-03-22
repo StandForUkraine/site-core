@@ -30,8 +30,8 @@ export default {
   Refugees: 'Bēgļi',
   Press: 'Prese',
   Veterancy: 'Veterāns',
-  'Non-lethal': 'Ne letāls',
-  'Non-government': 'Sabeidrības',
+  'Non-combat': 'Nekauja',
+  NGO: 'NVO',
   'Human Rights': 'Cilvēktiesības',
 
   // footer
@@ -60,12 +60,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Kripto',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copy Code',
   browseAll1: 'Browse all',

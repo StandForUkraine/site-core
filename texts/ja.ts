@@ -30,8 +30,8 @@ export default {
   Refugees: '避難・保護',
   Press: 'プレス',
   Veterancy: 'ベテランシー',
-  'Non-lethal': '防衛装備',
-  'Non-government': 'NGO',
+  'Non-combat': '非戦闘',
+  NGO: 'NGO',
   'Human Rights': '人権',
 
   // footer
@@ -60,12 +60,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: '暗号通貨',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'コードをコピーする',
   browseAll1: 'すべて表示',

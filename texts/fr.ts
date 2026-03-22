@@ -31,8 +31,8 @@ export default {
   Refugees: 'Réfugiés',
   Press: 'Presse',
   Veterancy: 'Vétérans',
-  'Non-lethal': 'Non létal',
-  'Non-government': 'Non gouvernemental',
+  'Non-combat': 'Non-combattant',
+  NGO: 'ONG',
   'Human Rights': 'Droits de l’homme',
 
   // footer
@@ -59,12 +59,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Crypto',
   'Credit Card': 'Carte de crédit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copier le code', /*used in EDRPOU popup*/
   browseAll1: 'Parcourir les',

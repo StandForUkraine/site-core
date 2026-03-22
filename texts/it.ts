@@ -30,8 +30,8 @@ export default {
   Refugees: 'Rifugiati',
   Press: 'Stampa',
   Veterancy: 'Veterani',
-  'Non-lethal': 'Non letale',
-  'Non-government': 'Non governativo',
+  'Non-combat': 'Non-combattimento',
+  NGO: 'ONG',
   'Human Rights': 'Diritti umani',
 
   // footer
@@ -59,12 +59,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Crypto',
   'Credit Card': 'Carta di credito',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copia il codice',
   browseAll1: 'Scopri tutte le',

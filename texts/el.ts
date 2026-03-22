@@ -30,8 +30,8 @@ export default {
   Refugees: 'Πρόσφυγες',
   Press: 'Τύπος',
   Veterancy: 'Βετεράνοι',
-  'Non-lethal': 'Μη θανατηφόρο',
-  'Non-government': 'Μη κυβερνητικό',
+  'Non-combat': 'Μη μαχητικά',
+  NGO: 'ΜΚΟ',
   'Human Rights': 'Ανθρώπινα δικαιώματα',
 
   // footer
@@ -60,12 +60,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Κρυπτο',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copy Code',
   browseAll1: 'Browse all',

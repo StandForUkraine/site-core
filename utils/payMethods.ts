@@ -3,9 +3,7 @@ export const payMethods = [
   'Credit Card',
   'PayPal',
   'Patreon',
-  'Bitcoin',
-  'Kuna',
-  'Western Union',
+  'Crypto',
 ] as const
 
 export type PayMethod = typeof payMethods[number]

@@ -30,8 +30,8 @@ export default {
   Refugees: 'Mülteciler',
   Press: 'Basın',
   Veterancy: 'Gazilik',
-  'Non-lethal': 'Hayati Olmayan',
-  'Non-government': 'Sivil Toplum',
+  'Non-combat': 'Savaş dışı',
+  NGO: 'STK',
   'Human Rights': 'Human Rights',
 
   // footer
@@ -60,12 +60,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Kripto',
   'Credit Card': 'Card de credit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Kodu Kopyala',
   browseAll1: 'Tümüne Göz At',

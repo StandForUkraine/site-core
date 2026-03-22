@@ -115,7 +115,7 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
           selectedOptions={selectedFilter2}
           onOptionClick={onFilter2ItemClick}
           toLabel={filter2ToLabel}
-          collapsedCount={3}
+          collapsedCount={4}
         />
 
         {(selectedFilter1.length > 0 || selectedFilter2.length > 0) && (

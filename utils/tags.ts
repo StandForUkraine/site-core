@@ -1,13 +1,12 @@
 export const allTags = [
   'Military',
-  'Non-government',
+  'NGO',
   'Medical',
   'Humanitarian',
-  'Non-lethal',
+  'Non-combat',
   'Refugees',
   'Human Rights',
   'Press',
-  // 'Veterancy',
 ] as const
 
 export type Tag = typeof allTags[number]

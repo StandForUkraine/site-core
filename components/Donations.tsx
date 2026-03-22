@@ -15,7 +15,7 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
     <ContentList
       list={donations}
       filter1={[...allTags]}
-      filter2={payMethods.filter((m) => m !== 'Western Union')}
+      filter2={[...payMethods]}
       filter2Field="payMethods"
       itemBuilder={(donation) => (
         <DonationWidget key={donation.id} donation={donation} />
