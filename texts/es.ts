@@ -4,9 +4,9 @@ export default {
   thumbnail: `/thumbnail.png`,
 
   share: 'Comparte',
-  donate: 'Donate',
+  donate: 'Donar',
   inform: 'Informa',
-  donateButton: 'Donate',
+  donateButton: 'Donar',
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
