@@ -51,7 +51,7 @@ export default {
     'Diese Webseite wurde erstellt von IT technikern, Managern, Designern, Textern, Übersetzern, Journalisten, und Aktivisten aus der Ukraine und der ganzen Welt.',
   footerContact: 'Hier erreichst du uns',
   joinUs: 'Begleiten Sie uns',
-  disclaimler: 'Wir akzeptieren keine Bezahlungen; wir teilen nur direkte Links zu Spendeseiten mit.',
+  disclaimer: 'Wir akzeptieren keine Bezahlungen; wir teilen nur direkte Links zu Spendeseiten mit.',
   aboutProject: 'Über das Projekt',
   suggestOrgLink: 'Schlage eine Organisation vor!',
   sharedFeedbackLink: 'Bewerte die Seite!',

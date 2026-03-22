@@ -48,7 +48,7 @@ export default {
   footerCreds: `Ta strona internetowa jest tworzona przez inżynierów IT, menedżerów, projektantów, pisarzy, tłumaczy, dziennikarzy i aktywistów z całej Ukrainy i spoza niej.`,
   footerContact: 'Dotrzyj do nas',
   joinUs: 'Dołącz do nas',
-  disclaimler: 'Nie przyjmujemy płatności; udostępniamy tylko bezpośrednie łącza do stron darowizn.',
+  disclaimer: 'Nie przyjmujemy płatności; udostępniamy tylko bezpośrednie łącza do stron darowizn.',
   aboutProject: 'O projekcie',
   suggestOrgLink: 'Zaproponuj organizację',
   sharedFeedbackLink: 'Podziel się opinią',

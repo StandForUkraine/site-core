@@ -49,7 +49,7 @@ export default {
   footerCreds: `Ce site Web a été créé par des ingénieurs, managers, désigners, écrivains, traducteurs, journalistes et activistes de toute l'Ukraine et d'ailleurs.`,
   footerContact: 'Contactez-nous',
   joinUs: 'Rejoignez-nous',
-  disclaimler: 'Nous n’acceptons pas de paiement; nous ne fournissons que des liens directs vers des pages de dons.',
+  disclaimer: 'Nous n’acceptons pas de paiement; nous ne fournissons que des liens directs vers des pages de dons.',
   aboutProject: 'À propos du projet',
   suggestOrgLink: 'Suggérer une association',
   sharedFeedbackLink: 'Partager des commentaires',

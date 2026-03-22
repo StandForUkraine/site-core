@@ -48,7 +48,7 @@ export default {
   footerCreds: `Questo sito è fatto da ingegneri IT, dirigenti, designers, scrittori, traduttori, giornalisti e attivisti dall'Ucraina e non solo.`,
   footerContact: 'Contattaci',
   joinUs: 'Unisciti a noi',
-  disclaimler: 'Non accettiamo i pagamenti; offriamo solo i link diretti alle pagine delle fondazioni.',
+  disclaimer: 'Non accettiamo i pagamenti; offriamo solo i link diretti alle pagine delle fondazioni.',
   aboutProject: 'Informazioni sul progetto',
   suggestOrgLink: 'Suggerisci una organizzazione',
   sharedFeedbackLink: 'Condividi l\'opinione',

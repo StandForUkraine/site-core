@@ -48,7 +48,7 @@ export default {
   footerCreds: `Deze website is gemaakt door IT-ingenieurs, managers, ontwerpers, schrijvers, vertalers, journalisten en activisten uit heel Oekraïne en daarbuiten.`,
   footerContact: 'Bereik ons',
   joinUs: 'Doe met ons mee',
-  disclaimler: 'We aanvaarden geen betalingen; we bieden alleen directe links naar donatiepagina\'s.',
+  disclaimer: 'We aanvaarden geen betalingen; we bieden alleen directe links naar donatiepagina\'s.',
   aboutProject: 'Over het project',
   suggestOrgLink: 'Een organisatie voorstellen',
   sharedFeedbackLink: 'Feedback delen',

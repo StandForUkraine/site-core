@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Support Ukraine in the face of Russian military aggression. Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities. Inform the public by sharing our newslets.`,
+  siteDescription: `Donate to Ukrainian military and humanitarian organizations. Browse vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Share',
@@ -50,11 +50,11 @@ export default {
     'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
   footerContact: 'Reach us',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
   aboutProject: 'About The Project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  joinFormLink: 'Join International Legion',
 
   // filter
   filterTo: 'To',
@@ -77,7 +77,7 @@ export default {
 
   // about page
   aboutHeader: `About the Project`,
-  aboutHeaderText1: `Who we are and what’s our paramount.`,
+  aboutHeaderText1: `Who we are and what we stand for.`,
 
   aboutManifestoHeader: 'Our Manifesto',
   aboutManifestoText1:
@@ -113,7 +113,7 @@ export default {
   verifyHeader: 'Verify by yourself',
   verifyUK: 'Ukrainian',
   verifyUS: 'US-based',
-  verifyUKText1: 'You can verify the Ukraninan organizations by legal entity code: ЄДРПОУ(EDRPOU)',
+  verifyUKText1: 'You can verify the Ukrainian organizations by legal entity code: ЄДРПОУ (EDRPOU)',
   verifyUKText2: '🔍 Find EDRPOU code in the organization listing or on the respective website.',
   verifyUKText3:
     '✔︎ Verify the organization by the code in the register of the State Tax Service of Ukraine.',
@@ -135,7 +135,7 @@ export default {
   widgetVariant1: 'Tiny button at the bottom left',
   widgetVariant2: 'Blue and yellow stripe stuck to top',
   widgetVariant3: 'Black stripe with a tiny flag stuck to top',
-  widgetGTagManager: 'Alterative way: via Google Tag manager',
+  widgetGTagManager: 'Alternative way: via Google Tag Manager',
   widgetGTagStep1: 'Open your workspace. Go to Tags',
   widgetGTagStep2: 'Create a new one',
   widgetGTagStep3: 'Set any name you want',
@@ -143,6 +143,6 @@ export default {
   widgetGTagStep5: 'Paste widget code (any among above)',
   widgetGTagStep6: 'Set All pages at Triggering. Save',
   widgetGTagStep7: 'Refresh your site. The widget should already be there',
-  widgetWordPress: 'Alterative way: via Wordpress plugin',
+  widgetWordPress: 'Alternative way: via WordPress plugin',
   widgetWordPressSoon: 'coming soon...',
 }

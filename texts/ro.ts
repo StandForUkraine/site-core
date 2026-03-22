@@ -48,7 +48,7 @@ export default {
   footerCreds: `Acest site este realizat de ingineri IT, manageri, designeri, scriitori, translatori, jurnaliști, și activiști din Ucraina și de peste granițe.`,
   footerContact: 'Contactează-ne',
   joinUs: 'Alăturați-ne',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
   aboutProject: 'Despre Proiect',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',

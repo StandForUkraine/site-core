@@ -50,7 +50,7 @@ export default {
     'Dette nettstedet er lagd av dataingeniører, ledere, designere, skribenter, oversettere, journalister og aktivister fra hele Ukraina og utenfra.',
   footerContact: 'Nå oss',
   joinUs: 'Bli med oss',
-  disclaimler: 'Transaksjonene går ikke via oss; vi står kun for direkte linker til nettsteder for donasjoner.',
+  disclaimer: 'Transaksjonene går ikke via oss; vi står kun for direkte linker til nettsteder for donasjoner.',
   aboutProject: 'Om prosjektet',
   suggestOrgLink: 'Foreslå en organisasjon',
   sharedFeedbackLink: 'Del tilbakemelding',

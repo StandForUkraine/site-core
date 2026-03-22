@@ -50,7 +50,7 @@ export default {
     'Denne hjemmeside er lavet af computeringeniører, ledere, designere, forfattere, oversættere, journalister og aktivister fra hele Ukraine og udefra.',
   footerContact: 'Nå os',
   joinUs: 'Join os',
-  disclaimler: 'Transaktionerne går ikke gennem os; vi leverer kun direkte links til websteder for donationer.',
+  disclaimer: 'Transaktionerne går ikke gennem os; vi leverer kun direkte links til websteder for donationer.',
   aboutProject: 'Om projektet',
   suggestOrgLink: 'Foreslå en organisation',
   sharedFeedbackLink: 'Del feedback',

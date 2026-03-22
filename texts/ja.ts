@@ -50,7 +50,7 @@ export default {
     'このWebサイトは、ウクライナと全世界のITエンジニア、ITマネジャ、デザイナ、ライター、翻訳者、ジャーナリスト、活動家によって立ちあげられました。',
   footerContact: '連絡先',
   joinUs: 'ご参加ください',
-  disclaimler: '支払いは受け付けていません。 寄付ページへの直接リンクのみを提供します。',
+  disclaimer: '支払いは受け付けていません。 寄付ページへの直接リンクのみを提供します。',
   aboutProject: 'プロジェクトについて',
   suggestOrgLink: '組織を提案します',
   sharedFeedbackLink: 'フィードバックを共有する',

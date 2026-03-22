@@ -50,7 +50,7 @@ export default {
     'Αυτός ο ιστότοπος δημιουργήθηκε από μηχανικούς ηλεκτρονικών υπολογιστών, διευθυντές, σχεδιαστές, συγγραφείς, μεταφραστές, δημοσιογράφους και ακτιβιστές από την Ουκρανία και όλο τον κόσμο.',
   footerContact: 'Επικοινωνήστε μαζί μας',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
   aboutProject: 'About The Project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',

@@ -50,7 +50,7 @@ export default {
     'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
   footerContact: 'Reach us',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
   aboutProject: 'About The Project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',

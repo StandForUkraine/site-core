@@ -19,7 +19,7 @@ export const Footer = () => {
     <FooterWrapper>
       <Column>
         <FirstColumnText>{t('footerHeader')}</FirstColumnText>
-        <Displaimler>{t('disclaimler')}</Displaimler>
+        <Disclaimer>{t('disclaimer')}</Disclaimer>
       </Column>
       <Column>
         <SecondColumnTitle>{t('footerGoals')}</SecondColumnTitle>
@@ -121,7 +121,7 @@ export const FirstColumnText = styled.p`
   font-size: 20px;
 `
 
-export const Displaimler = styled.div`
+export const Disclaimer = styled.div`
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;

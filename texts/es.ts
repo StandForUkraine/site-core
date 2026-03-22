@@ -50,7 +50,7 @@ export default {
     'Este sitio web está hecho por ingenieros de TI, gerentes, diseñadores, escritores, traductores, periodistas y activistas de toda Ucrania y más allá.',
   footerContact: 'Contáctanos',
   joinUs: 'Únete a nosotros',
-  disclaimler: 'No aceptamos pagos, solo proporcionamos enlaces directos a páginas de donaciones.',
+  disclaimer: 'No aceptamos pagos, solo proporcionamos enlaces directos a páginas de donaciones.',
   aboutProject: 'Sobre el proyecto',
   suggestOrgLink: 'Sugerir una organización',
   sharedFeedbackLink: 'Comparte tus comentarios',

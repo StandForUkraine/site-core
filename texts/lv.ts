@@ -50,7 +50,7 @@ export default {
     'Šo mājas lapu ir veidojuši IT inženieri, menedžeri, dizaineri, rakstnieki, tulkotāji, žurnālisti un aktīvisti no vsas Ukrainas un tālāk.',
   footerContact: 'Sasniedz mūs',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
   aboutProject: 'About The Project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',

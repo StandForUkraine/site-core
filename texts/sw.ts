@@ -49,7 +49,7 @@ export default {
   footerCreds: `Denna hemsida är gjord av IT ingenjörer, managers, designers, författare, översättare, journalister, och aktivister från Ukraina och annorstädes.`,
   footerContact: 'Kontakta oss',
   joinUs: 'Följ oss',
-  disclaimler: 'Vi hanterar inga betalningar; vi förmedlar enbart länkar till sidor för att donera.',
+  disclaimer: 'Vi hanterar inga betalningar; vi förmedlar enbart länkar till sidor för att donera.',
   aboutProject: 'Om projektet',
   suggestOrgLink: 'Föreslå en organisation',
   sharedFeedbackLink: 'Ge feedback',

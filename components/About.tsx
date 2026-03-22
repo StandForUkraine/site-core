@@ -97,7 +97,7 @@ const teamMembers = [
       telegram: 'tg.com',
     },
     description:
-      'Product manager & consultant from Kyiv. He’s into startups, long distance swimming, and road trips on motobike.',
+      'Product manager & consultant from Kyiv. He’s into startups, long distance swimming, and road trips on motorbike.',
   },
   {
     name: 'Anastasiia Pogorielova',

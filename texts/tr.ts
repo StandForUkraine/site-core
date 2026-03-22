@@ -50,7 +50,7 @@ export default {
     "Bu web sitesi, Ukrayna'nın her yerinden ve ötesinden IT mühendisleri, yöneticiler, tasarımcılar, yazarlar, çevirmenler, gazeteciler ve aktivistler tarafından yapılmıştır.",
   footerContact: 'Bize Ulaşın',
   joinUs: 'Bize katılın',
-  disclaimler: 'Ödeme kabul etmiyoruz; sadece bağış sayfalarına doğrudan bağlantılar sağlıyoruz.',
+  disclaimer: 'Ödeme kabul etmiyoruz; sadece bağış sayfalarına doğrudan bağlantılar sağlıyoruz.',
   aboutProject: 'Proje Hakkında',
   suggestOrgLink: 'Bir Kuruluş Öner',
   sharedFeedbackLink: 'Geri Bildirimi Paylaşın',
