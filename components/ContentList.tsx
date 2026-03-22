@@ -53,19 +53,19 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
   const filteredList = useMemo(
     () =>
       list.filter((item) => {
+        const tags = item.tags || []
         const tagResult =
           selectedFilter1.length > 0
-            ? !!(item.tags as F1[]).find((tag) => selectedFilter1.indexOf(tag) >= 0)
+            ? !!(tags as F1[]).find((tag) => selectedFilter1.indexOf(tag) >= 0)
             : true
 
         const fieldValue = item[filter2Field]
+        const fieldArray = fieldValue
+          ? (typeof fieldValue === 'string' ? [fieldValue] : fieldValue) as F2[]
+          : []
         const methodResult =
           selectedFilter2.length > 0
-            ? !!(fieldValue
-              ? ((typeof fieldValue === 'string'
-                ? [fieldValue]
-                : fieldValue) as F2[]).find((method) => selectedFilter2.indexOf(method) >= 0)
-              : false)
+            ? !!fieldArray.find((method) => selectedFilter2.indexOf(method) >= 0)
             : true
 
         return tagResult && methodResult && !item.hidden
