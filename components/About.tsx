@@ -11,13 +11,41 @@ export default function About() {
 
   return (
     <>
-      {/* <Langs /> */}
       <HeroWrapper>
         <HeroHeader>{t('aboutHeader')}</HeroHeader>
         <HeroText>{t('aboutHeaderText1')}</HeroText>
       </HeroWrapper>
+
+      <AboutContent>
+        <AboutContentHeader>Our Mission</AboutContentHeader>
+        <AboutHeaderText>
+          Stand For Ukraine is an open-source, volunteer-run directory of vetted Ukrainian military and humanitarian organizations. We help international donors find trusted ways to support Ukraine through its ongoing resistance against Russia's full-scale invasion.
+        </AboutHeaderText>
+        <AboutHeaderText>
+          We do not accept donations ourselves. Every link on this site goes directly to the organization's own donation page. Our role is curation, verification, and trust.
+        </AboutHeaderText>
+      </AboutContent>
+
+      <AboutOrganization />
+
+      <AboutContent>
+        <AboutContentHeader>Transparency</AboutContentHeader>
+        <AboutHeaderText>
+          This project is fully open source. You can review our code, data, and editorial decisions on{' '}
+          <AboutHeaderLink href="https://github.com/StandForUkraine" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </AboutHeaderLink>.
+          All organization data is stored as plain YAML files, and every change is tracked in version control.
+        </AboutHeaderText>
+        <AboutHeaderText>
+          Have a question, correction, or suggestion? Reach us at{' '}
+          <a href={`mailto:${email}`}>{email}</a>.
+        </AboutHeaderText>
+      </AboutContent>
+
       <AboutHeader>
         <AboutHeaderContent>
+          <ManifestoLabel>Written on February 24, 2022</ManifestoLabel>
           <AboutContentHeader>{t('aboutManifestoHeader')}</AboutContentHeader>
           <AboutHeaderText>
             <i>{t('aboutManifestoText1')}</i>
@@ -27,15 +55,11 @@ export default function About() {
           <AboutHeaderText>{t('aboutManifestoText4')}</AboutHeaderText>
           <AboutHeaderText>
             {t('aboutDonateLink')}
-            {/* <AboutHeaderLink href="">{t('aboutDonateLink')}</AboutHeaderLink> */}
             {t('aboutManifestoText5')}
-
-            {/* <AboutHeaderLink href="">{t('aboutShareLink')}</AboutHeaderLink> */}
             {t('aboutShareLink')}
             {t('aboutManifestoText6')}
           </AboutHeaderText>
         </AboutHeaderContent>
-
         <AboutHeaderImage src="/about/ukraine.png" />
       </AboutHeader>
 
@@ -50,16 +74,14 @@ export default function About() {
             🇺🇦 🇬🇧 🇪🇸 🇫🇷 🇩🇪 🇦🇹 🇵🇱 🇷🇴 🇭🇺 🇬🇷 🇹🇷 🇮🇱
           </AboutTeamMore>
           <JoinWrapper>
-            <JoinWrapperHeader>{t('aboutTeamJoinHeader')}</JoinWrapperHeader>
-            <JoinWrapperText>{t('aboutTeamJoinText')}</JoinWrapperText>
+            <JoinWrapperHeader>Want to contribute?</JoinWrapperHeader>
+            <JoinWrapperText>We welcome volunteers: translators, researchers, developers, and anyone who wants to help keep this directory accurate and useful.</JoinWrapperText>
             <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
               {t('aboutTeamJoinLink')}
             </JoinWrapperLink>
           </JoinWrapper>
         </AboutFlexBlock>
       </AboutContent>
-
-      <AboutOrganization />
     </>
   )
 }
@@ -179,6 +201,15 @@ export const AboutContent = styled.div`
   @media (min-width: 768px) {
     padding: 40px 20px;
   }
+`
+
+const ManifestoLabel = styled.div`
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #828282;
+  margin-bottom: 8px;
 `
 
 export const AboutContentHeader = styled.h3`
