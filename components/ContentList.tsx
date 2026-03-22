@@ -107,6 +107,8 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
           collapsedCount={4}
         />
 
+        <FilterSeparator />
+
         <MultipleSelection
           title={filter2Title}
           allOptions={filter2}
@@ -177,6 +179,18 @@ const ButtonWrapper = styled.div`
 const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
   position: relative;
 
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0 16px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
+
   ${(props) =>
     props.isFiltered
       ? `
@@ -187,6 +201,19 @@ const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
     }
   `
       : ''}
+`
+
+const FilterSeparator = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 1px;
+    height: 24px;
+    background: #e0e0e0;
+    margin: 0 12px;
+    flex-shrink: 0;
+  }
 `
 
 const ResetFilterButton = styled(TextButton).attrs({

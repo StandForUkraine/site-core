@@ -31,27 +31,56 @@ export default function MultipleSelection<T extends string>({
   const hasMore = shouldCollapse && allOptions.length > collapsedCount
 
   return (
-    <ChipsWrapper>
+    <FilterGroup>
       {
         title !== false && (
-          <FilterLabel>{title}</FilterLabel>
+          <MobileOnlyLabel>{title}</MobileOnlyLabel>
         )
       }
       {visibleOptions.map((option) => (
-        <Chip
+        <FilterChip
           key={option}
           isActive={selectedOptions.indexOf(option) >= 0}
           onClick={() => onOptionClick(option)}
         >
           {t(option)}
-        </Chip>
+        </FilterChip>
       ))}
       {hasMore && (
         <MoreLink onClick={() => setExpanded(true)}>More</MoreLink>
       )}
-    </ChipsWrapper>
+    </FilterGroup>
   )
 }
+
+const FilterGroup = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 16px;
+  margin-top: 15px;
+
+  @media (min-width: 768px) {
+    overflow: visible;
+    margin-top: 0;
+    padding: 0;
+  }
+`
+
+const MobileOnlyLabel = styled(FilterLabel)`
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
+const FilterChip = styled(Chip)`
+  @media (min-width: 768px) {
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+`
 
 const MoreLink = styled.button`
   background: none;
@@ -70,5 +99,9 @@ const MoreLink = styled.button`
 
   @media (max-width: 767px) {
     display: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
   }
 `
