@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
 import AboutTeamItem from './AboutTeamItem'
+import AboutOrganization from './AboutOrganization'
 
 const email = process.env.NEXT_PUBLIC_EMAIL
 
@@ -58,7 +59,7 @@ export default function About() {
         </AboutFlexBlock>
       </AboutContent>
 
-      {/* <AboutOrganization /> */}
+      <AboutOrganization />
     </>
   )
 }

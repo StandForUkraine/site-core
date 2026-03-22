@@ -20,6 +20,7 @@ export const Footer = () => {
       <Column>
         <FirstColumnText>{t('footerHeader')}</FirstColumnText>
         <Disclaimer>{t('disclaimer')}</Disclaimer>
+        <LastUpdated>Last reviewed: March 2026</LastUpdated>
       </Column>
       <Column>
         <SecondColumnTitle>{t('footerGoals')}</SecondColumnTitle>
@@ -125,6 +126,13 @@ export const Disclaimer = styled.div`
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
+`
+
+const LastUpdated = styled.div`
+  margin-top: 8px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
 `
 
 export const SecondColumnTitle = styled.h3`
