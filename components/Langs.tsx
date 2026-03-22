@@ -6,9 +6,7 @@ import { useLang } from 'core/utils/lang'
 import Chip from './Chip'
 import { useRouter } from 'next/router'
 
-const VISIBLE_COUNT = 5
-
-function useLangLink(langKey: LangType) {
+function LangChip({ langKey, isActive }: { langKey: LangType; isActive: boolean }) {
   const lang = useLang()
   const router = useRouter()
   const rootForDefLang = router.route.replace(/\[lang\]\/?/, '')
@@ -25,13 +23,8 @@ function useLangLink(langKey: LangType) {
       ? `/${langKey}${router.route}`
       : router.route.replace(/^\/\[lang\]/, `/${langKey}`)
 
-  return { href, as }
-}
-
-function LangChip({ langKey, isActive }: { langKey: LangType; isActive: boolean }) {
-  const { href, as } = useLangLink(langKey)
   return (
-    <Link key={langKey} href={href} as={as}>
+    <Link href={href} as={as}>
       <LangButton isActive={isActive}>
         {flagsMap[langKey]}
         <span>{langKey.toUpperCase()}</span>
@@ -44,10 +37,6 @@ export const Langs = () => {
   const lang = useLang()
   const [dropdownOpen, setDropdownOpen] = useState(false)
   const wrapperRef = useRef<HTMLDivElement>(null)
-
-  const visibleLangs = langs.slice(0, VISIBLE_COUNT)
-  const overflowLangs = langs.slice(VISIBLE_COUNT)
-  const activeInOverflow = overflowLangs.includes(lang)
 
   useEffect(() => {
     if (!dropdownOpen) return
@@ -63,28 +52,24 @@ export const Langs = () => {
   return (
     <LangsWrapper ref={wrapperRef}>
       <LangsInner>
-        {visibleLangs.map((langKey) => (
-          <LangChip key={langKey} langKey={langKey} isActive={langKey === lang} />
+        {langs.map((langKey) => (
+          <LangChipWrapper key={langKey}>
+            <LangChip langKey={langKey} isActive={langKey === lang} />
+          </LangChipWrapper>
         ))}
 
-        {activeInOverflow && (
-          <LangChip langKey={lang} isActive={true} />
-        )}
-
-        {overflowLangs.length > 0 && (
-          <MoreWrapper>
-            <MoreButton onClick={() => setDropdownOpen(!dropdownOpen)}>
-              More languages...
-            </MoreButton>
-            {dropdownOpen && (
-              <Dropdown>
-                {overflowLangs.map((langKey) => (
-                  <LangChip key={langKey} langKey={langKey} isActive={langKey === lang} />
-                ))}
-              </Dropdown>
-            )}
-          </MoreWrapper>
-        )}
+        <MoreWrapper>
+          <MoreButton onClick={() => setDropdownOpen(!dropdownOpen)}>
+            More languages...
+          </MoreButton>
+          {dropdownOpen && (
+            <Dropdown>
+              {langs.map((langKey) => (
+                <LangChip key={langKey} langKey={langKey} isActive={langKey === lang} />
+              ))}
+            </Dropdown>
+          )}
+        </MoreWrapper>
       </LangsInner>
     </LangsWrapper>
   )
@@ -128,6 +113,21 @@ const LangsInner = styled.div`
   }
 `
 
+/* ~68px per chip (63px width + 5px margin). Breakpoint thresholds: */
+const LangChipWrapper = styled.div`
+  display: inline-flex;
+
+  @media (min-width: 600px) and (max-width: 767px) {
+    &:nth-child(n+8) { display: none; }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    &:nth-child(n+11) { display: none; }
+  }
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    &:nth-child(n+15) { display: none; }
+  }
+`
+
 const LangButton = styled(Chip)`
   display: inline-flex;
   justify-content: center;
@@ -148,7 +148,7 @@ const MoreWrapper = styled.div`
   position: relative;
   display: none;
 
-  @media (min-width: 600px) {
+  @media (min-width: 600px) and (max-width: 1279px) {
     display: inline-flex;
   }
 `
