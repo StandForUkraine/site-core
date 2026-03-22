@@ -94,11 +94,6 @@ const TopHeaderTitle = styled.h1`
     font-size: 20px;
     line-height: 24px;
   }
-
-  @media (min-width: 768px) {
-    text-align: left;
-    padding-left: 104px;
-  }
 `
 
 const ShareButton = styled(Button)`

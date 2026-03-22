@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Doner til ukrainske militære og humanitære organisasjoner',
   heroSubtitle: 'Se gjennom en liste over verifiserte veldedighetsorganisasjoner og militære hjelpefond for å støtte Ukrainas væpnede styrker og gi humanitær hjelp.',
-  heroTagline: 'Stand for Ukraine i møte med Russlands fullskala invasjon.',
+  heroTagline: "Støtt Ukraina i møte med Russlands fullskala invasjon.",
 
   close: 'Lukk',
   sharePopupTitle: 'Spre budskapet',

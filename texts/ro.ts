@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Donați organizațiilor militare și umanitare ucrainene',
   heroSubtitle: 'Răsfoiți o listă de organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei și a oferi asistență umanitară.',
-  heroTagline: 'Stand for Ukraine în fața invaziei pe scară largă a Rusiei.',
+  heroTagline: "Susține Ucraina în fața invaziei pe scară largă a Rusiei.",
 
   close: 'Închide',
   sharePopupTitle: 'Distribuie cauza noastră',

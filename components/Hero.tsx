@@ -6,9 +6,9 @@ export const Hero = () => {
 
   return (
     <HeroWrapper>
+      <HeroTagline>{t('heroTagline')}</HeroTagline>
       <HeroTitle>{t('heroTitle')}</HeroTitle>
       <HeroSubtitle>{t('heroSubtitle')}</HeroSubtitle>
-      <HeroTagline>{t('heroTagline')}</HeroTagline>
     </HeroWrapper>
   )
 }
@@ -18,6 +18,20 @@ export default Hero
 const HeroWrapper = styled.div`
   padding: 20px;
   padding-top: 0;
+`
+
+const HeroTagline = styled.p`
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #2F80ED;
+  font-weight: 600;
+  margin: 0 auto 12px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 `
 
 const HeroTitle = styled.h1`
@@ -45,18 +59,5 @@ const HeroSubtitle = styled.p`
   @media (min-width: 768px) {
     font-size: 18px;
     line-height: 28px;
-  }
-`
-
-const HeroTagline = styled.p`
-  font-size: 14px;
-  line-height: 20px;
-  text-align: center;
-  color: #4f4f4f;
-  margin: 12px auto 0;
-
-  @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 24px;
   }
 `

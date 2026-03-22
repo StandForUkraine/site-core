@@ -101,6 +101,7 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
           selectedOptions={selectedFilter1}
           onOptionClick={onFilter1ItemClick}
           toLabel={filter1ToLabel}
+          collapsedCount={4}
         />
 
         <MultipleSelection
@@ -109,6 +110,7 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
           selectedOptions={selectedFilter2}
           onOptionClick={onFilter2ItemClick}
           toLabel={filter2ToLabel}
+          collapsedCount={3}
         />
 
         {(selectedFilter1.length > 0 || selectedFilter2.length > 0) && (

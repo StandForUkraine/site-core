@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Spenden Sie an ukrainische Militär- und Hilfsorganisationen',
   heroSubtitle: 'Durchsuchen Sie eine Liste geprüfter Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine und humanitärer Hilfe.',
-  heroTagline: 'Stand for Ukraine angesichts der russischen Vollinvasion.',
+  heroTagline: "Für die Ukraine — angesichts der russischen Vollinvasion.",
 
   close: 'Schliessen',
   sharePopupTitle: 'Erzähle davon',

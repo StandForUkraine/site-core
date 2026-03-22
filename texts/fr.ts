@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Faites un don aux organisations militaires et humanitaires ukrainiennes',
   heroSubtitle: 'Parcourez une liste d\'organisations caritatives vérifiées et de fonds d\'aide militaire pour soutenir les Forces armées de l\'Ukraine et fournir une aide humanitaire.',
-  heroTagline: 'Stand for Ukraine face à l\'invasion à grande échelle de la Russie.',
+  heroTagline: "Soutenir l'Ukraine face à l'invasion russe à grande échelle.",
 
   close: 'Fermer',
   sharePopupTitle: 'Faire circuler la cause',

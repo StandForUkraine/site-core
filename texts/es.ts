@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Done a organizaciones militares y humanitarias ucranianas',
   heroSubtitle: 'Explore una lista de organizaciones benéficas verificadas y fondos de ayuda militar para apoyar a las Fuerzas Armadas de Ucrania y brindar asistencia humanitaria.',
-  heroTagline: 'Stand for Ukraine ante la invasión a gran escala de Rusia.',
+  heroTagline: "Apoya a Ucrania frente a la invasión rusa a gran escala.",
 
   close: 'Cerrar',
   sharePopupTitle: 'Propaga La Causa',

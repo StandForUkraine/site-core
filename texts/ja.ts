@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'ウクライナの軍事・人道支援団体に寄付する',
   heroSubtitle: 'ウクライナ軍を支援し、人道的支援を提供するための検証済み慈善団体と軍事支援基金のリストをご覧ください。',
-  heroTagline: 'ロシアの全面侵攻に立ち向かうウクライナを支援する。',
+  heroTagline: "ロシアの全面侵攻に立ち向かうウクライナを支援しよう。",
 
   close: '閉じる',
   sharePopupTitle: '運動を広げよう',

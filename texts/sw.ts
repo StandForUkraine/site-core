@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Donera till ukrainska militära och humanitära organisationer',
   heroSubtitle: 'Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt och ge humanitärt bistånd.',
-  heroTagline: 'Stand for Ukraine inför Rysslands fullskaliga invasion.',
+  heroTagline: "Stöd Ukraina i mötet med Rysslands fullskaliga invasion.",
 
   close: 'Stäng',
   sharePopupTitle: 'Sprid uppropet',

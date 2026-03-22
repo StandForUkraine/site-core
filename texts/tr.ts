@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Ukrayna\'nın askeri ve insani yardım kuruluşlarına bağış yapın',
   heroSubtitle: 'Ukrayna Silahlı Kuvvetlerine yardım etmek ve insani yardım sağlamak için doğrulanmış hayır kurumları ve askeri yardım fonlarının listesine göz atın.',
-  heroTagline: 'Rusya\'nın tam ölçekli işgali karşısında Stand for Ukraine.',
+  heroTagline: "Rusya'nın tam ölçekli işgali karşısında Ukrayna'nın yanında dur.",
 
   close: 'Kapat',
   sharePopupTitle: 'Herkese Duyur',

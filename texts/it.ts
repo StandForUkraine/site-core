@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Dona alle organizzazioni militari e umanitarie ucraine',
   heroSubtitle: 'Sfoglia un elenco di enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell\'Ucraina e fornire assistenza umanitaria.',
-  heroTagline: 'Stand for Ukraine di fronte all\'invasione su larga scala della Russia.',
+  heroTagline: "Sostieni l'Ucraina di fronte all'invasione su larga scala della Russia.",
 
   close: 'Chiudi',
   sharePopupTitle: 'Condividi',

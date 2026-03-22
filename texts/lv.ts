@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Ziedojiet Ukrainas militārajām un humanitārajām organizācijām',
   heroSubtitle: 'Pārlūkojiet pārbaudītu labdarības organizāciju un militārās palīdzības fondu sarakstu, lai atbalstītu Ukrainas bruņotos spēkus un sniegtu humanitāro palīdzību.',
-  heroTagline: 'Stand for Ukraine Krievijas pilna mēroga iebrukuma priekšā.',
+  heroTagline: "Atbalsti Ukrainu Krievijas pilna mēroga iebrukuma priekšā.",
 
   close: 'Aizvērt',
   sharePopupTitle: 'Nodod tālāk šo ziņu',

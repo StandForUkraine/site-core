@@ -125,8 +125,8 @@ export const DonationTitle = styled.a`
   display: block;
   color: #000;
   width: 100%;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 22px;
+  font-weight: 700;
   margin: 10px 0;
   text-decoration: none;
 

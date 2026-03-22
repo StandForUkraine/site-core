@@ -98,9 +98,23 @@ export const FooterWrapper = styled.div`
   padding: 20px;
   line-height: 1.3;
   flex-wrap: wrap;
+  background: #1a1a1a;
+  color: #e0e0e0;
 
   p {
     margin: 0;
+  }
+
+  a {
+    color: #6baaee;
+
+    &:hover {
+      color: #93c5f7;
+    }
+
+    &:visited {
+      color: #b39ddb;
+    }
   }
 
   @media (min-width: 768px) {
@@ -120,25 +134,29 @@ export const Column = styled.div`
 
 export const FirstColumnText = styled.p`
   font-size: 20px;
+  color: #fff;
+  font-weight: 600;
 `
 
 export const Disclaimer = styled.div`
   margin-top: 12px;
   font-size: 14px;
   line-height: 20px;
+  color: #aaa;
 `
 
 const LastUpdated = styled.div`
   margin-top: 8px;
   font-size: 12px;
   line-height: 16px;
-  color: #828282;
+  color: #777;
 `
 
 export const SecondColumnTitle = styled.h3`
   margin: 0;
   font-weight: 400;
   font-size: 20px;
+  color: #fff;
 `
 
 export const SecondColumnList = styled.ul`
@@ -162,13 +180,27 @@ export const SocialIcons = styled.div`
   svg {
     margin-right: 10px;
 
+    path {
+      fill: #999;
+    }
+
     &:hover path {
-      fill: #666;
+      fill: #fff;
     }
   }
 `
 
 export const AboutProjButton = styled(TextButton)<{ breakpoint: 'mobile' | 'desktop' }>`
+  color: #6baaee;
+
+  &:hover {
+    color: #93c5f7;
+  }
+
+  &:visited {
+    color: #b39ddb;
+  }
+
   ${(props) =>
     props.breakpoint === 'desktop'
       ? `
@@ -200,6 +232,15 @@ export const ExtLinkButton = styled(TextButton).attrs({
 })`
   margin-left: 8px;
   margin-bottom: 24px;
+  color: #999;
+
+  &:hover {
+    color: #6baaee;
+  }
+
+  svg path {
+    fill: #999;
+  }
 
   span {
     display: inline-block;

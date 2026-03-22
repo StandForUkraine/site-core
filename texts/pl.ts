@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Wspieraj ukraińskie organizacje wojskowe i humanitarne',
   heroSubtitle: 'Przeglądaj listę zweryfikowanych organizacji charytatywnych i funduszy pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy i zapewnić pomoc humanitarną.',
-  heroTagline: 'Stand for Ukraine w obliczu pełnoskalowej inwazji Rosji.',
+  heroTagline: "Wesprzyj Ukrainę w obliczu pełnoskalowej inwazji Rosji.",
 
   close: 'Zamknij',
   sharePopupTitle: 'Rozpowszechnij',

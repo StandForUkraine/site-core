@@ -12,7 +12,7 @@ export default {
   // AI-translated, pending native review
   heroTitle: 'Doneer aan Oekraïense militaire en humanitaire organisaties',
   heroSubtitle: 'Bekijk een lijst van geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen en humanitaire hulp te bieden.',
-  heroTagline: 'Stand for Ukraine in het licht van de grootschalige Russische invasie.',
+  heroTagline: "Steun Oekraïne in het aangezicht van de grootschalige Russische invasie.",
 
   close: 'Afsluiten',
   sharePopupTitle: 'Deel deze boodschap',
