@@ -58,11 +58,14 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
             ? !!(item.tags as F1[]).find((tag) => selectedFilter1.indexOf(tag) >= 0)
             : true
 
+        const fieldValue = item[filter2Field]
         const methodResult =
           selectedFilter2.length > 0
-            ? !!((typeof item[filter2Field] === 'string'
-              ? [item[filter2Field]]
-              : item[filter2Field]) as F2[]).find((method) => selectedFilter2.indexOf(method) >= 0)
+            ? !!(fieldValue
+              ? ((typeof fieldValue === 'string'
+                ? [fieldValue]
+                : fieldValue) as F2[]).find((method) => selectedFilter2.indexOf(method) >= 0)
+              : false)
             : true
 
         return tagResult && methodResult && !item.hidden
