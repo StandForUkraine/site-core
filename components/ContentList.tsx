@@ -1,8 +1,12 @@
 import { useState, useMemo, useCallback, ReactElement, ReactNode } from 'react'
 import { useText } from 'core/utils/lang'
 import MultipleSelection from './MultipleSelection'
+import { FilterChip } from './MultipleSelection'
 import styled from 'styled-components'
 import TextButton from './TextButton'
+
+const PINNED_TAGS = ['Military', 'Humanitarian', 'Medical']
+const PINNED_PAYMENTS = ['Credit Card', 'Crypto']
 
 interface Item {
   id: string | number
@@ -42,13 +46,15 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
   filter1ToLabel,
   filter2ToLabel,
 }: ContentListProps<I, F1, F2>) => {
-  const t = useText()
+  const t: any = useText()
   const [selectedFilter1, setSelectedFilter1] = useState<F1[]>([])
   const [selectedFilter2, setSelectedFilter2] = useState<F2[]>([])
   const [slice, setSlice] = useState(sliceAmount as number)
+  const [expanded, setExpanded] = useState(false)
 
   const isFiltered = selectedFilter1.length > 0 || selectedFilter2.length > 0
   const shouldBeSliced = slice > 0 && !isFiltered && list.length > (sliceAmount as number);
+  const showExpanded = expanded || isFiltered
 
   const filteredList = useMemo(
     () =>
@@ -75,6 +81,7 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
 
   const onFilter1ItemClick = useCallback(
     (item: F1) => {
+      setExpanded(true)
       const newTags =
         selectedFilter1.indexOf(item) >= 0
           ? selectedFilter1.filter((_t) => _t !== item)
@@ -86,6 +93,7 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
 
   const onFilter2ItemClick = useCallback(
     (item: F2) => {
+      setExpanded(true)
       const newMethods =
         selectedFilter2.indexOf(item) >= 0
           ? selectedFilter2.filter((m) => m !== item)
@@ -95,19 +103,53 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
     [selectedFilter2, setSelectedFilter2]
   )
 
+  const tLabel: any = filter1ToLabel || t
+
+  const pinnedTagChips = PINNED_TAGS.filter(tag => filter1.includes(tag as F1)) as F1[]
+  const pinnedPayChips = PINNED_PAYMENTS.filter(pm => filter2.includes(pm as F2)) as F2[]
+
   return (
     <>
-      <FilterWrapper isFiltered={isFiltered}>
+      {/* Collapsed: desktop only, single row with pinned chips */}
+      {!showExpanded && (
+        <CollapsedRow>
+          {pinnedTagChips.map((option) => (
+            <FilterChip
+              key={option}
+              isActive={false}
+              onClick={() => onFilter1ItemClick(option)}
+            >
+              {tLabel(option)}
+            </FilterChip>
+          ))}
+
+          <CollapsedSeparator />
+
+          {pinnedPayChips.map((option) => (
+            <FilterChip
+              key={option}
+              isActive={false}
+              onClick={() => onFilter2ItemClick(option)}
+            >
+              {t(option)}
+            </FilterChip>
+          ))}
+
+          <MoreFiltersButton onClick={() => setExpanded(true)}>
+            More filters
+          </MoreFiltersButton>
+        </CollapsedRow>
+      )}
+
+      {/* Expanded: full 2-row layout with labels */}
+      <ExpandedWrapper show={showExpanded}>
         <MultipleSelection
           title={filter1Title}
           allOptions={filter1}
           selectedOptions={selectedFilter1}
           onOptionClick={onFilter1ItemClick}
           toLabel={filter1ToLabel}
-          collapsedCount={4}
         />
-
-        <FilterSeparator />
 
         <MultipleSelection
           title={filter2Title}
@@ -115,10 +157,9 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
           selectedOptions={selectedFilter2}
           onOptionClick={onFilter2ItemClick}
           toLabel={filter2ToLabel}
-          collapsedCount={4}
         />
 
-        {(selectedFilter1.length > 0 || selectedFilter2.length > 0) && (
+        {isFiltered && (
           <ResetFilterButton
             onClick={() => {
               onResetFilterClick()
@@ -129,7 +170,38 @@ export const ContentList = <I extends Item, F1 extends string, F2 extends string
             {t('resetFilter')}
           </ResetFilterButton>
         )}
-      </FilterWrapper>
+      </ExpandedWrapper>
+
+      {/* Mobile: always show 2-row layout */}
+      <MobileFilterWrapper>
+        <MultipleSelection
+          title={filter1Title}
+          allOptions={filter1}
+          selectedOptions={selectedFilter1}
+          onOptionClick={onFilter1ItemClick}
+          toLabel={filter1ToLabel}
+        />
+
+        <MultipleSelection
+          title={filter2Title}
+          allOptions={filter2}
+          selectedOptions={selectedFilter2}
+          onOptionClick={onFilter2ItemClick}
+          toLabel={filter2ToLabel}
+        />
+
+        {isFiltered && (
+          <ResetFilterButton
+            onClick={() => {
+              onResetFilterClick()
+              setSelectedFilter1([])
+              setSelectedFilter2([])
+            }}
+          >
+            {t('resetFilter')}
+          </ResetFilterButton>
+        )}
+      </MobileFilterWrapper>
 
       {filteredList.length < 1 && <NotFound>Nothing found.</NotFound>}
 
@@ -158,6 +230,71 @@ ContentList.defaultProps = {
 
 export default ContentList
 
+/* Collapsed row: desktop only */
+const CollapsedRow = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
+`
+
+const CollapsedSeparator = styled.div`
+  width: 1px;
+  height: 24px;
+  background: #e0e0e0;
+  margin: 0 12px;
+  flex-shrink: 0;
+`
+
+const MoreFiltersButton = styled.button`
+  background: none;
+  border: none;
+  color: #2F80ED;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-family: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+/* Expanded: desktop only when expanded */
+const ExpandedWrapper = styled.div<{ show: boolean }>`
+  display: none;
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: ${(props) => props.show ? 'block' : 'none'};
+    padding: 0 16px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: 1280px) {
+    padding: 0;
+  }
+`
+
+/* Mobile: always visible below 768px */
+const MobileFilterWrapper = styled.div`
+  position: relative;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+`
+
 const ListWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -176,46 +313,6 @@ const ButtonWrapper = styled.div`
   width: 100%;
 `
 
-const FilterWrapper = styled.div<{ isFiltered?: boolean }>`
-  position: relative;
-
-  @media (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    gap: 0;
-    padding: 0 16px;
-    margin-top: 15px;
-  }
-
-  @media (min-width: 1280px) {
-    padding: 0;
-  }
-
-  ${(props) =>
-    props.isFiltered
-      ? `
-    padding-bottom: 24px;
-
-    @media (min-width: 768px) {
-      padding-bottom: 0;
-    }
-  `
-      : ''}
-`
-
-const FilterSeparator = styled.div`
-  display: none;
-
-  @media (min-width: 768px) {
-    display: block;
-    width: 1px;
-    height: 24px;
-    background: #e0e0e0;
-    margin: 0 12px;
-    flex-shrink: 0;
-  }
-`
-
 const ResetFilterButton = styled(TextButton).attrs({
   variant: 'external-link',
   size: 'small',
@@ -225,7 +322,9 @@ const ResetFilterButton = styled(TextButton).attrs({
   right: 20px;
 
   @media (min-width: 768px) {
-    bottom: 6px;
+    position: static;
+    margin-top: 8px;
+    display: inline-flex;
   }
 
   @media (min-width: 1280px) {
