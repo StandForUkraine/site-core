@@ -16,10 +16,20 @@ export const DonationWidget = ({ donation }: { donation: DonationItem }) => {
   const showEin = !!donation.ein
   const showEdrpou = !!donation.edrpou && !showEin
 
+  const tags = donation.tags ?? []
+  const payMethods = donation.payMethods ?? []
+  const isSvgLogo = donation.logo.toLowerCase().endsWith('.svg')
+
   return (
     <DonationPost>
       <LazyLoad once offset={500}>
-        <DonationLogo src={donation.logo} alt={donation.logoAlt || donation.title} />
+        <DonationLogoBox>
+          <DonationLogo
+            src={donation.logo}
+            alt={donation.logoAlt || donation.title}
+            $isSvg={isSvgLogo}
+          />
+        </DonationLogoBox>
       </LazyLoad>
 
       <DonationTitle
@@ -36,10 +46,10 @@ export const DonationWidget = ({ donation }: { donation: DonationItem }) => {
         {donation.title}
       </DonationTitle>
 
-      <DonationTags>{donation.tags.map((tag) => t(tag)).join(', ')}</DonationTags>
+      <DonationTags>{tags.map((tag) => t(tag)).join(', ')}</DonationTags>
       <DonationDescription>{donation.description}</DonationDescription>
       <DonationPayMethods>
-        {donation.payMethods.map((method) => (
+        {payMethods.map((method) => (
           <span key={method}>{method}</span>
         ))}
       </DonationPayMethods>
@@ -119,7 +129,20 @@ export const DonationPost = styled.div`
   }
 `
 
-export const DonationLogo = styled.img``
+export const DonationLogoBox = styled.div`
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`
+
+export const DonationLogo = styled.img<{ $isSvg?: boolean }>`
+  display: block;
+  max-height: 64px;
+  object-fit: contain;
+  width: ${(props) => (props.$isSvg ? '40%' : 'auto')};
+  max-width: ${(props) => (props.$isSvg ? '40%' : '100%')};
+`
 
 export const DonationTitle = styled.a`
   display: block;

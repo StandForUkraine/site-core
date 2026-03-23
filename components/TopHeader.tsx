@@ -19,8 +19,8 @@ export const TopHeader = () => {
       <Link href={rootPathname} passHref>
         <TopNavLink>
           <TopHeaderFlag
-            srcSet={`/ua-flag.png 1x,
-            /ua-flag@2x.png`}
+            srcSet={`/ua-flag.png?v=20260323 1x,
+            /ua-flag@2x.png?v=20260323`}
             width={78}
             height={72}
           />
@@ -29,7 +29,9 @@ export const TopHeader = () => {
 
       <TopHeaderTitle>
         <Link href={rootPathname} passHref>
-          <TopNavLink>Stand <em>for</em> Ukraine</TopNavLink>
+          <TopNavLink>
+            Stand <em>for</em> Ukraine
+          </TopNavLink>
         </Link>
       </TopHeaderTitle>
 
@@ -87,7 +89,7 @@ const TopHeaderTitle = styled.h1`
 
   em {
     font-style: italic;
-    font-weight: 400;
+    font-weight: 700;
   }
 
   @media (min-width: 375px) {

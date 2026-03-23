@@ -18,8 +18,13 @@ for (const file of filesToMove) {
 // Move logos of donations
 const logosDest = path.join(__dirname, '../..', 'out/logos')
 fs.mkdirSync(logosDest)
-const logos = glob.sync(path.join(__dirname, '../..', 'donations/**/logo.png'))
-for (const logo of logos) {
+const pngLogos = glob.sync(path.join(__dirname, '../..', 'donations/**/logo.png'))
+for (const logo of pngLogos) {
   const id = path.basename(path.dirname(logo)) * 1
   fs.copyFileSync(logo, path.join(logosDest, `${id}.png`))
+}
+const svgLogos = glob.sync(path.join(__dirname, '../..', 'donations/**/logo.svg'))
+for (const logo of svgLogos) {
+  const id = path.basename(path.dirname(logo)) * 1
+  fs.copyFileSync(logo, path.join(logosDest, `${id}.svg`))
 }

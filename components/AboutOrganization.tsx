@@ -32,6 +32,13 @@ export default function AboutOrganization() {
 
         {tab === 'uk' && (
           <>
+            <VerifyText>
+              Use{' '}
+              <a href="https://youcontrol.com.ua/en/" target="_blank" rel="noopener noreferrer">
+                YouControl
+              </a>{' '}
+              as the primary verification source for Ukrainian organizations.
+            </VerifyText>
             <VerifyText>{t('verifyUKText1')}</VerifyText>
             <VerifyText>{t('verifyUKText2')}</VerifyText>
             <VerifyText>{t('verifyUKText3')}</VerifyText>
@@ -39,9 +46,20 @@ export default function AboutOrganization() {
         )}
         {tab === 'us' && (
           <>
-            <VerifyText>You can verify US-based organizations by their EIN (Employer Identification Number) on the IRS Tax Exempt Organization Search.</VerifyText>
-            <VerifyText>🔍 Find the EIN in the organization listing or on their website.</VerifyText>
-            <VerifyText>✔︎ Search for the organization at <a href="https://apps.irs.gov/app/eos/" target="_blank" rel="noopener noreferrer">IRS Tax Exempt Organization Search</a>.</VerifyText>
+            <VerifyText>
+              You can verify US-based organizations by their EIN (Employer Identification Number) on
+              the IRS Tax Exempt Organization Search.
+            </VerifyText>
+            <VerifyText>
+              🔍 Find the EIN in the organization listing or on their website.
+            </VerifyText>
+            <VerifyText>
+              ✔︎ Search for the organization at{' '}
+              <a href="https://apps.irs.gov/app/eos/" target="_blank" rel="noopener noreferrer">
+                IRS Tax Exempt Organization Search
+              </a>
+              .
+            </VerifyText>
           </>
         )}
       </ExplanationBlock>
@@ -115,6 +133,11 @@ const VerifyText = styled.p`
   font-size: 16px;
   line-height: 140%;
   color: #4f4f4f;
+
+  a {
+    color: #2f80ed;
+    text-decoration: underline;
+  }
 `
 const VerifyImage = styled.img`
   max-width: 500px;

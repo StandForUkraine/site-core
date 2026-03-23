@@ -69,7 +69,9 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <>
-      {typeof Component.getLayout === 'function' ? Component.getLayout(<Component {...pageProps} />) : (
+      {typeof Component.getLayout === 'function' ? (
+        Component.getLayout(<Component {...pageProps} />)
+      ) : (
         <>
           <Head>
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -83,8 +85,8 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
                     <TopHeader />
                     <Page>
                       <Component {...pageProps} />
-                      <Footer />
                     </Page>
+                    <Footer />
                   </>
                 )
 
@@ -92,7 +94,9 @@ function App({ Component, pageProps }: AppPropsWithLayout) {
                   <StyleSheetManager stylisPlugins={[stylisRTLPlugin as never]}>
                     {content}
                   </StyleSheetManager>
-                ) : content;
+                ) : (
+                  content
+                )
               }}
             </LangContext.Consumer>
           </LangContextProvider>

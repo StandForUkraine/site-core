@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Doner til ukrainske militære og humanitære organisationer',
-  heroSubtitle: 'Gennemse en liste over verificerede velgørenhedsorganisationer og militære hjælpefonde for at støtte Ukraines væbnede styrker og yde humanitær bistand.',
-  heroTagline: "Støt Ukraine i lyset af Ruslands fuldskala invasion.",
+  heroSubtitle:
+    'Gennemse en liste over verificerede velgørenhedsorganisationer og militære hjælpefonde for at støtte Ukraines væbnede styrker og yde humanitær bistand.',
+  heroTagline: 'Støt Ukraine i lyset af Ruslands fuldskala invasion.',
 
   close: 'Lukke',
   sharePopupTitle: 'Spred budskabet',
@@ -35,28 +36,33 @@ export default {
   'Human Rights': 'Menneskerettigheder',
 
   // footer
-  footerHeader:
-    'Stå for Ukraine fremmer troværdige organisationer der hjælper med at bekæmpe den russiske invasion og overvinde dens konsekvenser.',
+  footerMissionLead:
+    'hjælper dig med at støtte Ukraine — direkte, sikkert og på dine vilkår. Find verificerede indsamlinger og giv, hvor det gør mest gavn.',
   footerGoals: 'Vores Mål',
-  goal1: 'Hjælpe det ukrainske militæret med våben, ammunition og forsyninger',
-  goal2: 'Støtte til veteraner og krigsofre',
-  goal3: 'Tilvejebringelse af husly og mad til flygtningene',
-  goal4: 'Hjælpe børn, ældre og andre sårbare grupper',
-  goal5: 'Støtte uafhængig presse',
+  goal1:
+    'Forsyne Ukraines væbnede styrker med våben, ammunition og udstyr mod Ruslands fuldskala invasion.',
+  goal2: 'Støtte veteraner og krigsofre i restitution.',
+  goal3: 'Give husly og mad til fordrevne flygtninge.',
+  goal4: 'Hjælpe børn, ældre og andre sårbare grupper.',
+  goal5: 'Styrke uafhængig journalistik.',
   footerCreds:
-    'Denne hjemmeside er lavet af computeringeniører, ledere, designere, forfattere, oversættere, journalister og aktivister fra hele Ukraine og udefra.',
+    'Bygget af frivillige — ingeniører, designere, journalister og aktivister fra Ukraine og verden.',
   footerContact: 'Nå os',
   joinUs: 'Join os',
-  disclaimer: 'Transaktionerne går ikke gennem os; vi leverer kun direkte links til websteder for donationer.',
+  disclaimer:
+    'Vi behandler ikke donationer — vi forbinder kun med verificerede, gennemsigtige indsamlinger.',
   aboutProject: 'Om projektet',
   suggestOrgLink: 'Foreslå en organisation',
   sharedFeedbackLink: 'Del feedback',
+  footerVerifyYouControl: 'Verificer via youcontrol.com',
+  footerLastReviewed: 'Sidst gennemgået: marts 2026',
   joinFormLink: 'Bliv medlem af den internationale legion',
 
   // filter
   filterTo: 'Organisation',
   filterPayVia: 'Betalingsmetoder',
   resetFilter: 'Nulstil filtrering',
+  moreFilters: 'Flere filtre',
 
   // payment methods
   IBAN: 'IBAN',

@@ -66,21 +66,25 @@ const Container = styled.div`
   @media (max-width: 768px) {
     padding: 0 16px;
   }
-`;
-
-const SubTitle = styled.h3`
-
 `
+
+const SubTitle = styled.h3``
 
 const Li = styled.li`
   padding: 4px 0;
-`;
+`
 
-const SizedBox = styled.div<{ width?: number; height?: number; }>`
-  ${(props) => typeof props.width == 'number' ? `
+const SizedBox = styled.div<{ width?: number; height?: number }>`
+  ${(props) =>
+    typeof props.width === 'number'
+      ? `
     padding-left: ${props.width}px;
-  ` : ''}
-  ${(props) => typeof props.height === 'number' ? `
+  `
+      : ''}
+  ${(props) =>
+    typeof props.height === 'number'
+      ? `
     padding-top: ${props.height}px;
-  ` : ''}
-`;
+  `
+      : ''}
+`

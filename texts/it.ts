@@ -11,7 +11,8 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Dona alle organizzazioni militari e umanitarie ucraine',
-  heroSubtitle: 'Sfoglia un elenco di enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell\'Ucraina e fornire assistenza umanitaria.',
+  heroSubtitle:
+    "Sfoglia un elenco di enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell'Ucraina e fornire assistenza umanitaria.",
   heroTagline: "Sostieni l'Ucraina di fronte all'invasione su larga scala della Russia.",
 
   close: 'Chiudi',
@@ -35,26 +36,31 @@ export default {
   'Human Rights': 'Diritti umani',
 
   // footer
-  footerHeader: `Stand for Ukraine è un aggregatore di organizzazioni affidabili per aiutarci a combattere l'invasione russa e prevenire le conseguenze degli scontri.`,
+  footerMissionLead: `ti aiuta a sostenere l’Ucraina — in modo diretto, sicuro e alle tue condizioni. Scegli raccolte verificate e dona dove serve di più.`,
   footerGoals: 'I nostri obiettivi',
-  goal1: 'Aiutare i militari ucraini con armi, munizioni e forniture',
-  goal2: 'Proteggere veterani e vittime di guerra',
-  goal3: 'Mettere al riparo e sfamare i rifugiati',
-  goal4: 'Aiutare bambini, anziani e altri gruppi vulnerabili',
-  goal5: 'Aiutare la stampa indipendente',
-  footerCreds: `Questo sito è fatto da ingegneri IT, dirigenti, designers, scrittori, traduttori, giornalisti e attivisti dall'Ucraina e non solo.`,
+  goal1:
+    'Fornire alle forze armate ucraine armi, munizioni e equipaggiamento contro l’invasione russa su larga scala.',
+  goal2: 'Sostenere veterani e vittime di guerra nel recupero.',
+  goal3: 'Offrire riparo e cibo ai rifugiati sfollati.',
+  goal4: 'Aiutare bambini, anziani e altri gruppi vulnerabili.',
+  goal5: 'Rafforzare il giornalismo indipendente.',
+  footerCreds: `Realizzato da volontari — ingegneri, designer, giornalisti e attivisti dall’Ucraina e dal mondo.`,
   footerContact: 'Contattaci',
   joinUs: 'Unisciti a noi',
-  disclaimer: 'Non accettiamo i pagamenti; offriamo solo i link diretti alle pagine delle fondazioni.',
+  disclaimer:
+    'Non elaboriamo donazioni: mettiamo in contatto solo con raccolte verificate e trasparenti.',
   aboutProject: 'Informazioni sul progetto',
   suggestOrgLink: 'Suggerisci una organizzazione',
-  sharedFeedbackLink: 'Condividi l\'opinione',
+  sharedFeedbackLink: "Condividi l'opinione",
+  footerVerifyYouControl: 'Verifica tramite youcontrol.com',
+  footerLastReviewed: 'Ultima revisione: marzo 2026',
   joinFormLink: 'Unisciti alla Lega Internazionale',
 
   // filter
   filterTo: 'Organizzazioni',
   filterPayVia: 'Pagamento',
   resetFilter: 'Ripristina i filtri',
+  moreFilters: 'Altri filtri',
   browseAll3: 'posts',
 
   // payment methods
@@ -113,10 +119,11 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) è un codice unico della struttura legale del Servizio Fiscale Statale dell\'Ucraina.',
+  legalDesc1:
+    "ЄДРПОУ(EDRPOU) è un codice unico della struttura legale del Servizio Fiscale Statale dell'Ucraina.",
   legalDesc2: 'Copia il codice EDRPOU',
   legalDesc3: 'Verifica il codice nel registro delle organizzazioni senza profitto',
-  legalFooterLink: 'Servizio fiscale statale dell\'Ucraina',
+  legalFooterLink: "Servizio fiscale statale dell'Ucraina",
 
   // widget page
   widgetPageTitle: 'Add the widget to your site and let the audience know how to support Ukraine',

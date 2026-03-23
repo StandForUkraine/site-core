@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Wspieraj ukraińskie organizacje wojskowe i humanitarne',
-  heroSubtitle: 'Przeglądaj listę zweryfikowanych organizacji charytatywnych i funduszy pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy i zapewnić pomoc humanitarną.',
-  heroTagline: "Wesprzyj Ukrainę w obliczu pełnoskalowej inwazji Rosji.",
+  heroSubtitle:
+    'Przeglądaj listę zweryfikowanych organizacji charytatywnych i funduszy pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy i zapewnić pomoc humanitarną.',
+  heroTagline: 'Wesprzyj Ukrainę w obliczu pełnoskalowej inwazji Rosji.',
 
   close: 'Zamknij',
   sharePopupTitle: 'Rozpowszechnij',
@@ -35,26 +36,30 @@ export default {
   'Human Rights': 'Prawa człowieka',
 
   // footer
-  footerHeader: `Wspomóż Ukrainę to baza wiarygodnych organizacji, które pomagają walczyć z rosyjską inwazją i przezwyciężać jej konsekwencje.`,
+  footerMissionLead: `pomaga wspierać Ukrainę — bezpośrednio, bezpiecznie i na twoich zasadach. Znajdź sprawdzone zbiórki i wesprzyj tam, gdzie to ma sens.`,
   footerGoals: 'Nasze cele',
-  goal1: 'Pomóż ukraińskiej armii z bronią, amunicją i zaopatrzeniem',
-  goal2: 'Rekonwalescencja weteranów i ofiar wojny',
-  goal3: 'Schronienie i żywność dla uchodźców',
-  goal4: 'Pomóż dzeciom, osobom starszym i innym grupom specjalnej opieki',
-  goal5: 'Wspomóż niezależną prasę',
-  footerCreds: `Ta strona internetowa jest tworzona przez inżynierów IT, menedżerów, projektantów, pisarzy, tłumaczy, dziennikarzy i aktywistów z całej Ukrainy i spoza niej.`,
+  goal1:
+    'Zaopatrzenie Sił Zbrojnych Ukrainy w broń, amunicję i sprzęt w oparciu o pełnoskalową inwazję Rosji.',
+  goal2: 'Wsparcie weteranów i ofiar wojny w powrocie do zdrowia.',
+  goal3: 'Schronienie i wyżywienie dla przesiedlonych uchodźców.',
+  goal4: 'Pomoc dzieciom, osobom starszym i innym grupom wrażliwym.',
+  goal5: 'Wzmocnienie niezależnego dziennikarstwa.',
+  footerCreds: `Stworzone przez wolontariuszy — inżynierów, designerów, dziennikarzy i aktywistów z Ukrainy i świata.`,
   footerContact: 'Dotrzyj do nas',
   joinUs: 'Dołącz do nas',
-  disclaimer: 'Nie przyjmujemy płatności; udostępniamy tylko bezpośrednie łącza do stron darowizn.',
+  disclaimer: 'Nie przetwarzamy darowizn — łączymy tylko ze sprawdzonymi, przejrzystymi zbiórkami.',
   aboutProject: 'O projekcie',
   suggestOrgLink: 'Zaproponuj organizację',
   sharedFeedbackLink: 'Podziel się opinią',
+  footerVerifyYouControl: 'Weryfikacja przez youcontrol.com',
+  footerLastReviewed: 'Ostatnia aktualizacja: marzec 2026',
   joinFormLink: 'Dołącz do Legii Międzynarodowej',
 
   // filter
   filterTo: 'Organizacje',
   filterPayVia: 'Metody Płatności',
   resetFilter: 'Resetuj filtry',
+  moreFilters: 'Więcej filtrów',
 
   // payment methods
   IBAN: 'IBAN',

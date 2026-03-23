@@ -79,7 +79,7 @@ const CodeLabel = styled.span`
   font-weight: 500;
   font-size: 14px;
   width: 100%;
-  color: #4F4F4F;
+  color: #4f4f4f;
   margin-bottom: 4px;
 `
 

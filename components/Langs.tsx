@@ -11,15 +11,17 @@ function LangChip({ langKey, isActive }: { langKey: LangType; isActive: boolean 
   const router = useRouter()
   const rootForDefLang = router.route.replace(/\[lang\]\/?/, '')
 
-  const href = langKey === defaultLang
-    ? rootForDefLang
-    : lang === defaultLang
+  const href =
+    langKey === defaultLang
+      ? rootForDefLang
+      : lang === defaultLang
       ? `/[lang]${router.route}`
       : router.route
 
-  const as = langKey === defaultLang
-    ? rootForDefLang
-    : lang === defaultLang
+  const as =
+    langKey === defaultLang
+      ? rootForDefLang
+      : lang === defaultLang
       ? `/${langKey}${router.route}`
       : router.route.replace(/^\/\[lang\]/, `/${langKey}`)
 
@@ -59,9 +61,7 @@ export const Langs = () => {
         ))}
 
         <MoreWrapper>
-          <MoreButton onClick={() => setDropdownOpen(!dropdownOpen)}>
-            More languages...
-          </MoreButton>
+          <MoreButton onClick={() => setDropdownOpen(!dropdownOpen)}>More languages...</MoreButton>
           {dropdownOpen && (
             <Dropdown>
               {langs.map((langKey) => (
@@ -118,13 +118,19 @@ const LangChipWrapper = styled.div`
   display: inline-flex;
 
   @media (min-width: 600px) and (max-width: 767px) {
-    &:nth-child(n+8) { display: none; }
+    &:nth-child(n + 8) {
+      display: none;
+    }
   }
   @media (min-width: 768px) and (max-width: 1023px) {
-    &:nth-child(n+11) { display: none; }
+    &:nth-child(n + 11) {
+      display: none;
+    }
   }
   @media (min-width: 1024px) and (max-width: 1279px) {
-    &:nth-child(n+15) { display: none; }
+    &:nth-child(n + 15) {
+      display: none;
+    }
   }
 `
 
@@ -156,7 +162,7 @@ const MoreWrapper = styled.div`
 const MoreButton = styled.button`
   background: none;
   border: none;
-  color: #2F80ED;
+  color: #2f80ed;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;

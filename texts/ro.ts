@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Donați organizațiilor militare și umanitare ucrainene',
-  heroSubtitle: 'Răsfoiți o listă de organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei și a oferi asistență umanitară.',
-  heroTagline: "Susține Ucraina în fața invaziei pe scară largă a Rusiei.",
+  heroSubtitle:
+    'Răsfoiți o listă de organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei și a oferi asistență umanitară.',
+  heroTagline: 'Susține Ucraina în fața invaziei pe scară largă a Rusiei.',
 
   close: 'Închide',
   sharePopupTitle: 'Distribuie cauza noastră',
@@ -35,26 +36,31 @@ export default {
   'Human Rights': 'Drepturile Omului',
 
   // footer
-  footerHeader: `Împreună pentru Ucraina este o bază de date pentru organizații de încredere, care ajută la combaterea invaziei ruse și la depășirea consecințelor sale.`,
+  footerMissionLead: `te ajută să sprijini Ucraina — direct, în siguranță și în condițiile tale. Alege organizații verificate și donează unde contează cel mai mult.`,
   footerGoals: 'Obiectivele Noastre',
-  goal1: 'Furnizarea armatai Ucrainei cu armament, muniție, și provizii',
-  goal2: 'Recuperarea veteranilor și victimelor războiului',
-  goal3: 'Adăpostirea și aprovizionarea cu hrană a refugiaților',
-  goal4: 'Ajutorarea copiilor, vârstnicilor, și grupurilor vulnerabile',
-  goal5: 'Susținerea presei independente',
-  footerCreds: `Acest site este realizat de ingineri IT, manageri, designeri, scriitori, translatori, jurnaliști, și activiști din Ucraina și de peste granițe.`,
+  goal1:
+    'Să sprijine forțele armate ale Ucrainei cu arme, muniții și echipamente împotriva invaziei ruse pe scară largă.',
+  goal2: 'Să sprijine veterani și victimele războiului în recuperare.',
+  goal3: 'Să adăpostească și să hrănească refugiații strămutați.',
+  goal4: 'Să ajute copiii, vârstnicii și alte grupuri vulnerabile.',
+  goal5: 'Să sprijine jurnalismul independent.',
+  footerCreds: `Realizat de voluntari — ingineri, designeri, jurnaliști și activiști din Ucraina și din lume.`,
   footerContact: 'Contactează-ne',
   joinUs: 'Alăturați-ne',
-  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer:
+    'Nu procesăm donații — te punem doar în legătură cu strângeri verificate și transparente.',
   aboutProject: 'Despre Proiect',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
+  suggestOrgLink: 'Sugerează o organizație',
+  sharedFeedbackLink: 'Trimite feedback',
+  footerVerifyYouControl: 'Verifică prin youcontrol.com',
+  footerLastReviewed: 'Ultima revizuire: martie 2026',
   joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'La',
   filterPayVia: 'Prin intermediul',
   resetFilter: 'Resetați filtrul',
+  moreFilters: 'Mai multe filtre',
 
   // payment methods
   IBAN: 'IBAN',

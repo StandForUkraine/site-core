@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export interface ButtonProps {
   color?: 'default' | 'dark' | 'success' | 'white'
   fullWidth?: boolean
-  borderRadius?: string | number;
+  borderRadius?: string | number
 }
 
 export const Button = styled.button<ButtonProps>`
@@ -14,7 +14,8 @@ export const Button = styled.button<ButtonProps>`
   color: ${(props) =>
     props.color === 'dark' ? '#fff' : props.color === 'success' ? '#219653' : '#000'};
   font-size: 16px;
-  border-radius: ${(props) => typeof props.borderRadius === 'number' ? `${props.borderRadius}px` : props.borderRadius};
+  border-radius: ${(props) =>
+    typeof props.borderRadius === 'number' ? `${props.borderRadius}px` : props.borderRadius};
   font-weight: 600;
   outline: none;
   height: 36px;
@@ -22,7 +23,9 @@ export const Button = styled.button<ButtonProps>`
 
   ${(props) => (props.fullWidth ? 'width: 100%;' : '')}
 
-  ${(props) => props.color === 'dark' ? `
+  ${(props) =>
+    props.color === 'dark'
+      ? `
     /* dark hover/focus */
     background-color: #000;
     
@@ -32,9 +35,12 @@ export const Button = styled.button<ButtonProps>`
     &:focus {
       border-color: #2F80ED;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.color === 'success' ? `
+  ${(props) =>
+    props.color === 'success'
+      ? `
     /* success hover/focus */
     background-color: #d0f1d5;
     
@@ -44,9 +50,12 @@ export const Button = styled.button<ButtonProps>`
     &:focus {
       border-color: #2F80ED;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.color === 'white' ? `
+  ${(props) =>
+    props.color === 'white'
+      ? `
     /* white hover/focus */
     background-color: #fff;
 
@@ -59,9 +68,12 @@ export const Button = styled.button<ButtonProps>`
     &:focus {
       border-color: #2F80ED;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.color === 'default' ? `
+  ${(props) =>
+    props.color === 'default'
+      ? `
     /* default hover/focus */
     background-color: #f2f2f2;
     
@@ -71,7 +83,8 @@ export const Button = styled.button<ButtonProps>`
     &:focus {
       border-color: #2F80ED;
     }
-  ` : ''}
+  `
+      : ''}
 `
 
 Button.defaultProps = {

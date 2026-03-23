@@ -26,16 +26,16 @@ export const byLang = {
   fr,
   it,
   es,
+  ja,
+  pl,
+  ro,
+  lv,
   el,
   nl,
-  sw,
-  no,
   dk,
+  no,
+  sw,
   tr,
-  lv,
-  pl,
-  ja,
-  ro,
   // ar,
   ru,
 } as const
@@ -65,7 +65,7 @@ export type Lang = keyof typeof byLang
 
 export const langs = Object.keys(byLang) as Lang[]
 
-export const rtlLangs = ['ar'];
+export const rtlLangs = ['ar']
 
 const defaultLangTexts = byLang[defaultLang]
 

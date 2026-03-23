@@ -77,7 +77,11 @@ export default class MyDocument extends Document<MyDocumentProps> {
           <link rel="canonical" href={this.props.origin.replace(/\/$/, '')} />
 
           {/* See: https://developers.google.com/search/docs/advanced/crawling/localized-versions#html */}
-          <link rel="alternate" hrefLang="x-default" href={`${this.props.origin.replace(/\/$/, '')}/`} />
+          <link
+            rel="alternate"
+            hrefLang="x-default"
+            href={`${this.props.origin.replace(/\/$/, '')}/`}
+          />
           {langs.map((lang) => (
             <link
               key={lang}

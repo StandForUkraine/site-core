@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'ウクライナの軍事・人道支援団体に寄付する',
-  heroSubtitle: 'ウクライナ軍を支援し、人道的支援を提供するための検証済み慈善団体と軍事支援基金のリストをご覧ください。',
-  heroTagline: "ロシアの全面侵攻に立ち向かうウクライナを支援しよう。",
+  heroSubtitle:
+    'ウクライナ軍を支援し、人道的支援を提供するための検証済み慈善団体と軍事支援基金のリストをご覧ください。',
+  heroTagline: 'ロシアの全面侵攻に立ち向かうウクライナを支援しよう。',
 
   close: '閉じる',
   sharePopupTitle: '運動を広げよう',
@@ -35,28 +36,31 @@ export default {
   'Human Rights': '人権',
 
   // footer
-  footerHeader:
-    'Stand for Ukraine—は、ロシアの侵略と闘い、状況を克服するのを支援する検証済み団体の紹介ポータルです。',
+  footerMissionLead:
+    'は、ウクライナ支援の信頼できる窓口です。直接・安全に、あなたのペースで。検証済みの募金先から選べます。',
   footerGoals: '目標',
-  goal1: 'ウクライナ軍の武器、弾薬、兵站を支援すること',
-  goal2: '負傷兵と戦争被害者を救護すること',
-  goal3: '避難民を保護すること',
-  goal4: '子ども、老人や弱い立場の人々を助けること',
-  goal5: '独立系報道機関を支援すること',
+  goal1: 'ロシアの全面侵攻に対し、ウクライナ軍に武器・弾薬・装備を届けること。',
+  goal2: '退役軍人と戦争被害者の回復を支援すること。',
+  goal3: '避難した難民に住居と食料を提供すること。',
+  goal4: '子ども、高齢者、その他脆弱な人々を助けること。',
+  goal5: '独立系ジャーナリズムを強化すること。',
   footerCreds:
-    'このWebサイトは、ウクライナと全世界のITエンジニア、ITマネジャ、デザイナ、ライター、翻訳者、ジャーナリスト、活動家によって立ちあげられました。',
+    'ウクライナと世界各地のボランティア（エンジニア、デザイナー、ジャーナリスト、活動家）が制作しました。',
   footerContact: '連絡先',
   joinUs: 'ご参加ください',
-  disclaimer: '支払いは受け付けていません。 寄付ページへの直接リンクのみを提供します。',
+  disclaimer: '当サイトは寄付の処理をしません。検証済みで透明な募金につなぐだけです。',
   aboutProject: 'プロジェクトについて',
   suggestOrgLink: '組織を提案します',
   sharedFeedbackLink: 'フィードバックを共有する',
+  footerVerifyYouControl: 'youcontrol.com で確認',
+  footerLastReviewed: '最終確認: 2026年3月',
   joinFormLink: 'インターナショナルリージョンに参加する',
 
   // filter
   filterTo: '団体',
   filterPayVia: '支払方法',
   resetFilter: 'フィルターのリセット',
+  moreFilters: 'さらにフィルター',
 
   // payment methods
   IBAN: 'IBAN',

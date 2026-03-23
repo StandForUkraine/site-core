@@ -6,7 +6,8 @@ export const Hero = () => {
 
   return (
     <HeroWrapper>
-      <HeroTagline>{t('heroTagline')}</HeroTagline>
+      {/* Temporary hide/comment per request: tagline under the header */}
+      {/* <HeroTagline>{t('heroTagline')}</HeroTagline> */}
       <HeroTitle>{t('heroTitle')}</HeroTitle>
       <HeroSubtitle>{t('heroSubtitle')}</HeroSubtitle>
     </HeroWrapper>
@@ -24,7 +25,7 @@ const HeroTagline = styled.p`
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  color: #2F80ED;
+  color: #2f80ed;
   font-weight: 600;
   margin: 0 auto 12px;
 

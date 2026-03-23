@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Ziedojiet Ukrainas militārajām un humanitārajām organizācijām',
-  heroSubtitle: 'Pārlūkojiet pārbaudītu labdarības organizāciju un militārās palīdzības fondu sarakstu, lai atbalstītu Ukrainas bruņotos spēkus un sniegtu humanitāro palīdzību.',
-  heroTagline: "Atbalsti Ukrainu Krievijas pilna mēroga iebrukuma priekšā.",
+  heroSubtitle:
+    'Pārlūkojiet pārbaudītu labdarības organizāciju un militārās palīdzības fondu sarakstu, lai atbalstītu Ukrainas bruņotos spēkus un sniegtu humanitāro palīdzību.',
+  heroTagline: 'Atbalsti Ukrainu Krievijas pilna mēroga iebrukuma priekšā.',
 
   close: 'Aizvērt',
   sharePopupTitle: 'Nodod tālāk šo ziņu',
@@ -35,28 +36,33 @@ export default {
   'Human Rights': 'Cilvēktiesības',
 
   // footer
-  footerHeader:
-    'Būt ar Ukrainu- ir uzticamo organizāciju agrigators, kas palīdz cīnīties pret Krievijas iebrukumu un tikt pāri tā sekām.',
+  footerMissionLead:
+    'palīdz atbalstīt Ukrainu — tieši, droši un uz jūsu noteikumiem. Atrodiet pārbaudītus ziedojumus un atbalstiet tur, kur tas visvairāk nepieciešams.',
   footerGoals: 'Mūsu mērķi',
-  goal1: 'Palīdzi Ukrainas karavīriem ar ieročiem, munīciju un piegādi',
-  goal2: 'Atgūt veterānus un karā cietušos',
-  goal3: 'Patvert un pabarot bēgļus',
-  goal4: 'Palīdzēt bērniem, vecākiem cilvēkiem un citiem neaizsargātajiem',
-  goal5: 'Atbalstīt neatkarīgo presi',
+  goal1:
+    'Nodrošināt Ukrainas bruņotos spēkus ar ieročiem, munīciju un ekipējumu pret Krievijas pilna mēroga iebrukumu.',
+  goal2: 'Atbalstīt veterānus un kara upurus atveseļošanā.',
+  goal3: 'Dot pajumti un ēdienu pārvietotajiem bēgļiem.',
+  goal4: 'Palīdzēt bērniem, vecāka gadagājuma cilvēkiem un neaizsargātajiem.',
+  goal5: 'Stiprināt neatkarīgo žurnālistiku.',
   footerCreds:
-    'Šo mājas lapu ir veidojuši IT inženieri, menedžeri, dizaineri, rakstnieki, tulkotāji, žurnālisti un aktīvisti no vsas Ukrainas un tālāk.',
+    'Izveidojuši brīvprātīgie — inženieri, dizaineri, žurnālisti un aktīvisti no Ukrainas un pasaules.',
   footerContact: 'Sasniedz mūs',
   joinUs: 'Join us',
-  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer:
+    'Mēs neapstrādājam ziedojumus — mēs tikai savienojam ar pārbaudītiem, caurspīdīgiem ziedojumiem.',
   aboutProject: 'About The Project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',
+  footerVerifyYouControl: 'Pārbaudīt ar youcontrol.com',
+  footerLastReviewed: 'Pēdējā pārskatīšana: 2026. gada marts',
   joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'To',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
+  moreFilters: 'Vairāk filtru',
 
   // payment methods
   IBAN: 'IBAN',

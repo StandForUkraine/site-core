@@ -12,21 +12,24 @@ export const Chip = styled.button<{ isActive?: boolean }>`
   margin-right: 5px;
 
   &:hover {
-    background-color: #FFE600;
+    background-color: #ffe600;
   }
 
   &:focus {
-    border-color: #2F80ED;
+    border-color: #2f80ed;
   }
 
-  ${({ isActive }) => isActive ? `
+  ${({ isActive }) =>
+    isActive
+      ? `
     background-color: #000;
     color: #fff;
     &:hover {
       background-color: #000;
       color: #FFE600;
     }
-  ` : `
+  `
+      : `
     color: #333333;
   `}
 `

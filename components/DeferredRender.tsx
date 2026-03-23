@@ -1,20 +1,17 @@
-import { ReactElement, useEffect, useState } from 'react';
+import { ReactElement, useEffect, useState } from 'react'
 
 export const DeferredRender = ({ children }: { children: ReactElement }): ReactElement | null => {
-  const [rendered, setRendered] = useState(false);
+  const [rendered, setRendered] = useState(false)
 
-  useEffect(
-    () => {
-      setRendered(true);
-    },
-    [],
-  );
+  useEffect(() => {
+    setRendered(true)
+  }, [])
 
   if (!rendered) {
-    return null;
+    return null
   }
 
-  return children;
-};
+  return children
+}
 
-export default DeferredRender;
+export default DeferredRender

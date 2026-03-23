@@ -10,8 +10,9 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Ukrayna\'nın askeri ve insani yardım kuruluşlarına bağış yapın',
-  heroSubtitle: 'Ukrayna Silahlı Kuvvetlerine yardım etmek ve insani yardım sağlamak için doğrulanmış hayır kurumları ve askeri yardım fonlarının listesine göz atın.',
+  heroTitle: "Ukrayna'nın askeri ve insani yardım kuruluşlarına bağış yapın",
+  heroSubtitle:
+    'Ukrayna Silahlı Kuvvetlerine yardım etmek ve insani yardım sağlamak için doğrulanmış hayır kurumları ve askeri yardım fonlarının listesine göz atın.',
   heroTagline: "Rusya'nın tam ölçekli işgali karşısında Ukrayna'nın yanında dur.",
 
   close: 'Kapat',
@@ -35,28 +36,33 @@ export default {
   'Human Rights': 'Human Rights',
 
   // footer
-  footerHeader:
-    'Ukrayna için Omuz Omuza—Rus işgaline karşı savaşmaya ve sonuçlarının üstesinden gelmeye yardımcı olan güvenilir kuruluşların bir toplayıcısıdır.',
+  footerMissionLead:
+    'Ukrayna’yı desteklemenize yardımcı olur — doğrudan, güvenli ve kendi koşullarınızda. Doğrulanmış bağış seçeneklerini bulun ve en çok ihtiyaç duyulan yere katkı verin.',
   footerGoals: 'Hedeflerimiz',
-  goal1: 'Ukrayna ordusuna silah, mühimmat ve malzeme konusunda yardım etmek',
-  goal2: 'Gazileri ve savaş kurbanlarını geri kazanmak',
-  goal3: 'Mültecileri barındırmak ve doyurmak',
-  goal4: 'Çocuklara, yaşlılara ve diğer savunmasız gruplara yardımcı ve destek olmak',
-  goal5: 'Özgür basını desteklemek',
+  goal1:
+    'Ukrayna Silahlı Kuvvetleri’ni Rusya’nın geniş çaplı işgaline karşı silah, mühimmat ve malzeme ile desteklemek.',
+  goal2: 'Gazileri ve savaş mağdurlarını iyileşmede desteklemek.',
+  goal3: 'Yerinden edilmiş mültecilere barınak ve yemek sağlamak.',
+  goal4: 'Çocuklara, yaşlılara ve savunmasız gruplara yardım etmek.',
+  goal5: 'Bağımsız gazeteciliği güçlendirmek.',
   footerCreds:
-    "Bu web sitesi, Ukrayna'nın her yerinden ve ötesinden IT mühendisleri, yöneticiler, tasarımcılar, yazarlar, çevirmenler, gazeteciler ve aktivistler tarafından yapılmıştır.",
+    'Gönüllüler tarafından mühendisler, tasarımcılar, gazeteciler ve aktivistlerle Ukrayna ve dünyadan oluşturuldu.',
   footerContact: 'Bize Ulaşın',
   joinUs: 'Bize katılın',
-  disclaimer: 'Ödeme kabul etmiyoruz; sadece bağış sayfalarına doğrudan bağlantılar sağlıyoruz.',
+  disclaimer:
+    'Bağışları işlemiyoruz — yalnızca doğrulanmış, şeffaf bağış kampanyalarına bağlantı veriyoruz.',
   aboutProject: 'Proje Hakkında',
   suggestOrgLink: 'Bir Kuruluş Öner',
   sharedFeedbackLink: 'Geri Bildirimi Paylaşın',
+  footerVerifyYouControl: 'youcontrol.com ile doğrula',
+  footerLastReviewed: 'Son güncelleme: Mart 2026',
   joinFormLink: 'Uluslararası Lejyona Katılın',
 
   // filter
   filterTo: 'Kuruluşlar',
   filterPayVia: 'Ödeme Seçenekleri',
   resetFilter: 'Filtreleri sıfırla',
+  moreFilters: 'Daha fazla filtre',
 
   // payment methods
   IBAN: 'IBAN',
@@ -115,7 +121,7 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU), Ukrayna Devlet Vergi Dairesi\'nden tüzel kişiliğin bir kodudur.',
+  legalDesc1: "ЄДРПОУ(EDRPOU), Ukrayna Devlet Vergi Dairesi'nden tüzel kişiliğin bir kodudur.",
   legalDesc2: 'EDRPOU kodunu kopyalayın',
   legalDesc3: 'Kayıttaki kodla organizasyonu doğrulayın',
   legalFooterLink: 'Ukrayna Devlet Vergi Dairesi',

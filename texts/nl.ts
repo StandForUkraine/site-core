@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Doneer aan Oekraïense militaire en humanitaire organisaties',
-  heroSubtitle: 'Bekijk een lijst van geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen en humanitaire hulp te bieden.',
-  heroTagline: "Steun Oekraïne in het aangezicht van de grootschalige Russische invasie.",
+  heroSubtitle:
+    'Bekijk een lijst van geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen en humanitaire hulp te bieden.',
+  heroTagline: 'Steun Oekraïne in het aangezicht van de grootschalige Russische invasie.',
 
   close: 'Afsluiten',
   sharePopupTitle: 'Deel deze boodschap',
@@ -35,26 +36,31 @@ export default {
   'Human Rights': 'Mensenrechten',
 
   // footer
-  footerHeader: `Stand For Ukraine - is een aggregator van betrouwbare organisaties die helpen de Russische invasie te bestrijden en de gevolgen ervan te overwinnen.`,
+  footerMissionLead: `helpt je Oekraïne te steunen — direct, veilig en op jouw voorwaarden. Kies gecontroleerde acties en geef waar het het meest telt.`,
   footerGoals: 'Onze doelen',
-  goal1: 'Help het Oekraïense leger met wapens, munitie en militaire benodigdheden',
-  goal2: 'Rehabiliteer veteranen en oorlogsslachtoffers',
-  goal3: 'Geef onderdak en voeding aan vluchtelingen',
-  goal4: 'Help kinderen, ouderen en andere kwetsbare groepen',
-  goal5: 'Ondersteun onafhankelijke pers',
-  footerCreds: `Deze website is gemaakt door IT-ingenieurs, managers, ontwerpers, schrijvers, vertalers, journalisten en activisten uit heel Oekraïne en daarbuiten.`,
+  goal1:
+    'De Oekraïense strijdkrachten bevoorraden met wapens, munitie en uitrusting tegen de grootschalige Russische invasie.',
+  goal2: 'Veteranen en oorlogsslachtoffers bij hun herstel steunen.',
+  goal3: 'Ontheemde vluchtelingen onderdak en voedsel geven.',
+  goal4: 'Kinderen, ouderen en andere kwetsbare groepen helpen.',
+  goal5: 'Onafhankelijke journalistiek versterken.',
+  footerCreds: `Gemaakt door vrijwilligers — engineers, ontwerpers, journalisten en activisten uit Oekraïne en daarbuiten.`,
   footerContact: 'Bereik ons',
   joinUs: 'Doe met ons mee',
-  disclaimer: 'We aanvaarden geen betalingen; we bieden alleen directe links naar donatiepagina\'s.',
+  disclaimer:
+    'We verwerken geen donaties — we verbinden je alleen met gecontroleerde, transparante inzamelingen.',
   aboutProject: 'Over het project',
   suggestOrgLink: 'Een organisatie voorstellen',
   sharedFeedbackLink: 'Feedback delen',
+  footerVerifyYouControl: 'Controleren via youcontrol.com',
+  footerLastReviewed: 'Laatst beoordeeld: maart 2026',
   joinFormLink: 'Lid worden van International Legion',
 
   // filter
   filterTo: 'Organisaties',
   filterPayVia: 'Betaalmethoden',
   resetFilter: 'Filters opnieuw instellen',
+  moreFilters: 'Meer filters',
 
   // payment methods
   IBAN: 'IBAN',
@@ -113,7 +119,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'EDRPOU is een code van de juridische entiteit van de Staatsbelastingdienst van Oekraïne.',
+  legalDesc1:
+    'EDRPOU is een code van de juridische entiteit van de Staatsbelastingdienst van Oekraïne.',
   legalDesc2: 'EDRPOU-code kopiëren',
   legalDesc3: 'Controleer organisaties per code in het register van non-profitorganisaties',
   legalFooterLink: 'Staatsbelastingdienst van Oekraïne',

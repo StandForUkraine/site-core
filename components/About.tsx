@@ -19,29 +19,17 @@ export default function About() {
       <AboutContent>
         <AboutContentHeader>Our Mission</AboutContentHeader>
         <AboutHeaderText>
-          Stand For Ukraine is an open-source, volunteer-run directory of vetted Ukrainian military and humanitarian organizations. We help international donors find trusted ways to support Ukraine through its ongoing resistance against Russia's full-scale invasion.
+          Stand For Ukraine is a volunteer-run, open-source directory of vetted Ukrainian military
+          and humanitarian organizations. We help people worldwide find trusted, direct ways to
+          support Ukraine.
         </AboutHeaderText>
         <AboutHeaderText>
-          We do not accept donations ourselves. Every link on this site goes directly to the organization's own donation page. Our role is curation, verification, and trust.
+          We do not process donations. Every link points to an organization's official donation
+          page. Our job is to curate, verify, and keep this list dependable.
         </AboutHeaderText>
       </AboutContent>
 
       <AboutOrganization />
-
-      <AboutContent>
-        <AboutContentHeader>Transparency</AboutContentHeader>
-        <AboutHeaderText>
-          This project is fully open source. You can review our code, data, and editorial decisions on{' '}
-          <AboutHeaderLink href="https://github.com/StandForUkraine" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </AboutHeaderLink>.
-          All organization data is stored as plain YAML files, and every change is tracked in version control.
-        </AboutHeaderText>
-        <AboutHeaderText>
-          Have a question, correction, or suggestion? Reach us at{' '}
-          <a href={`mailto:${email}`}>{email}</a>.
-        </AboutHeaderText>
-      </AboutContent>
 
       <AboutHeader>
         <AboutHeaderContent>
@@ -75,7 +63,10 @@ export default function About() {
           </AboutTeamMore>
           <JoinWrapper>
             <JoinWrapperHeader>Want to contribute?</JoinWrapperHeader>
-            <JoinWrapperText>We welcome volunteers: translators, researchers, developers, and anyone who wants to help keep this directory accurate and useful.</JoinWrapperText>
+            <JoinWrapperText>
+              We welcome volunteers: translators, researchers, developers, and anyone who wants to
+              help keep this directory accurate and useful.
+            </JoinWrapperText>
             <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
               {t('aboutTeamJoinLink')}
             </JoinWrapperLink>
@@ -268,6 +259,9 @@ const AboutTeamMore = styled.div`
 `
 const AboutTeamMoreText = styled.p`
   margin-bottom: 16px;
+`
+const TeamFootnote = styled(AboutContentText)`
+  margin-top: 24px;
 `
 
 const JoinWrapper = styled.div`

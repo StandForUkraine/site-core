@@ -11,8 +11,9 @@ export default {
 
   // AI-translated, pending native review
   heroTitle: 'Donate to Ukrainian Military & Humanitarian Organizations',
-  heroSubtitle: 'Browse a list of vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.',
-  heroTagline: "Stand for Ukraine in the face of Russia\u2019s full-scale invasion.",
+  heroSubtitle:
+    'Browse a list of vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.',
+  heroTagline: 'Stand for Ukraine in the face of Russia\u2019s full-scale invasion.',
 
   close: 'Close',
   sharePopupTitle: 'Spread The Cause',
@@ -35,22 +36,26 @@ export default {
   'Human Rights': 'Human Rights',
 
   // footer
-  footerHeader:
-    'Stand for Ukraine is an aggregator of reliable organizations that helps to fight the Russian invasion and overcome its consequences.',
+  footerMissionLead:
+    'helps you find trustworthy ways to support Ukraine—directly, safely, and on your terms. Give where it counts.',
   footerGoals: 'Our Goals',
-  goal1: 'Help the Ukrainian military with weapons, ammunition, and supplies',
-  goal2: 'Recover the veterans & victims of war',
-  goal3: 'Shelter and feed the refugees',
-  goal4: 'Aid children, elderly, and other vulnerable groups',
-  goal5: 'Support independent press',
+  goal1:
+    "Supply Ukraine's military with weapons, ammunition, and gear to resist Russia's full-scale invasion.",
+  goal2: 'Support veterans and war victims in recovery.',
+  goal3: 'Shelter and feed displaced refugees.',
+  goal4: 'Aid children, the elderly, and other vulnerable groups.',
+  goal5: 'Strengthen independent journalism.',
   footerCreds:
-    'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
+    'Built by volunteers—engineers, designers, journalists, and activists from Ukraine and beyond.',
   footerContact: 'Reach us',
   joinUs: 'Join us',
-  disclaimer: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
+  disclaimer:
+    "We don't process donations—we only connect you to verified, transparent fundraisers.",
+  aboutProject: 'About the project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',
+  footerVerifyYouControl: 'Verify via youcontrol.com',
+  footerLastReviewed: 'Last reviewed: March 2026',
   joinFormLink: 'Join Internation Legion',
 
   // filter
