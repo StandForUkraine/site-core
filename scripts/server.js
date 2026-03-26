@@ -21,14 +21,18 @@ app.prepare().then(() => {
 
       //   console.log(pathname, parsedUrl)
       if (pathname.indexOf('/logos') === 0) {
+        const isSvg = pathname.endsWith('.svg')
         const file = path.join(
           __dirname,
           '../..',
-          req.url.replace('/logos', 'donations').replace('.png', '/logo.png')
+          req.url
+            .replace('/logos', 'donations')
+            .replace('.svg', '/logo.svg')
+            .replace('.png', '/logo.png')
         )
         const stream = fs.createReadStream(file)
         stream.on('open', () => {
-          res.setHeader('Content-Type', 'image/png')
+          res.setHeader('Content-Type', isSvg ? 'image/svg+xml' : 'image/png')
           stream.pipe(res)
         })
         stream.on('error', () => {
