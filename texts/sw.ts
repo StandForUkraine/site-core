@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Stöd Ukraina i kampen mot den Ryska militärens aggression. Donera till verifierade projekt för att hjälpa Ukrainas försvarsmakt eller humanitära välgörenhetsorganisationer. Informera allmänheten genom att dela vårt nyhetsbrev.`,
+  siteDescription: `Donera till ukrainska militära och humanitära organisationer. Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Dela',
@@ -9,20 +9,17 @@ export default {
   donateButton: 'Donera',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Hjälp Ukrainsk militär & Humanitära organisationer`,
-  heroText1: `Stöd Ukraina mot den Ryska militära aggressionen.`,
-  heroText2: `Donera till verifierade projekt för att hjälpa Ukrainas försvarsmakt eller humanitära välgörenhetsorganisationer.`,
-  heroText3: `Informera allmänheten genom att dela vårt nyhetsbrev.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Donera till ukrainska militära och humanitära organisationer',
+  heroSubtitle:
+    'Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt och ge humanitärt bistånd.',
+  heroTagline: 'Stöd Ukraina i mötet med Rysslands fullskaliga invasion.',
 
   close: 'Stäng',
   sharePopupTitle: 'Sprid uppropet',
   sharePopupText1: 'Dela denna resurs med dina vänner och kollegor.',
-  sharePopupText2: "Låt andra veta hur de kan stödja Ukraina.",
-  sharingText:
-    "Hjälp Ukrainsk försvarsmakt & Humanitära organisationer #StandForUkraine",
+  sharePopupText2: 'Låt andra veta hur de kan stödja Ukraina.',
+  sharingText: 'Hjälp Ukrainsk försvarsmakt & Humanitära organisationer #StandForUkraine',
   copyLink: 'Kopiera länk',
   copyLinkDone: 'Kopierad!',
 
@@ -34,40 +31,43 @@ export default {
   Refugees: 'Flyktingar',
   Press: 'Press',
   Veterancy: 'Veteraner',
-  'Non-lethal': 'Icke-dödligt',
-  'Non-government': 'Icke-statlig',
+  'Non-combat': 'Icke-strid',
+  NGO: 'NGO',
   'Human Rights': 'Mänskliga rättigheter',
 
   // footer
-  footerHeader: `Stand for Ukraine är en aggregator av pålitliga organisationer som stödjer kampen mot den Ryska invasionen och övervinner dess konsekvenser.`,
+  footerMissionLead: `hjälper dig att stödja Ukraina — direkt, säkert och på dina villkor. Hitta verifierade insamlingar och ge där det behövs mest.`,
   footerGoals: 'Vår målsättning',
-  goal1: 'Att hjälpa den Ukrainska försvarsmakten med vapen, ammunition, och förnödenheter.',
-  goal2: 'Att hjälpa veteraner och krigsoffer.',
-  goal3: 'Skydda och hjälpa flyktingar.',
-  goal4: 'Att hjälpa barn, äldre, och andra utsatta grupper.',
-  goal5: 'Att stödja den oberoende journalistiken.',
-  footerCreds: `Denna hemsida är gjord av IT ingenjörer, managers, designers, författare, översättare, journalister, och aktivister från Ukraina och annorstädes.`,
+  goal1:
+    'Försörja Ukrainas armé med vapen, ammunition och utrustning mot Rysslands fullskaliga invasion.',
+  goal2: 'Stödja veteraner och krigsoffer i återhämtning.',
+  goal3: 'Ge tak och mat till fördrivna flyktingar.',
+  goal4: 'Hjälpa barn, äldre och utsatta grupper.',
+  goal5: 'Stärka oberoende journalistik.',
+  footerCreds: `Byggt av volontärer — ingenjörer, designers, journalister och aktivister från Ukraina och världen.`,
   footerContact: 'Kontakta oss',
   joinUs: 'Följ oss',
-  disclaimler: 'Vi hanterar inga betalningar; vi förmedlar enbart länkar till sidor för att donera.',
+  disclaimer:
+    'Vi hanterar inte donationer — vi kopplar bara ihop med verifierade, transparenta insamlingar.',
   aboutProject: 'Om projektet',
   suggestOrgLink: 'Föreslå en organisation',
   sharedFeedbackLink: 'Ge feedback',
+  footerVerifyYouControl: 'Verifiera via youcontrol.com',
+  footerLastReviewed: 'Senast granskad: mars 2026',
   joinFormLink: 'Gå med i den Internationella Legionen',
 
   // filter
   filterTo: 'Organisationer',
   filterPayVia: 'Betalningsmetod',
   resetFilter: 'Återställ filter',
+  moreFilters: 'Fler filter',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Krypto',
   'Credit Card': 'Carte de crédit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Kopiera kod',
   browseAll1: 'Se alla',
@@ -119,7 +119,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) är en kod som identifierar den juridiska entiteten vid det Ukrainska skatteverket.',
+  legalDesc1:
+    'ЄДРПОУ(EDRPOU) är en kod som identifierar den juridiska entiteten vid det Ukrainska skatteverket.',
   legalDesc2: 'Kopiera EDRPOU koden',
   legalDesc3: 'Verifiera koden i registret för välgörenhetsorganisationer',
   legalFooterLink: 'Ukrainas skatteverk',

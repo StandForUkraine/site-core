@@ -1,6 +1,6 @@
 export default {
   siteName: `Stå For Ukraina`,
-  siteDescription: `Støtt Ukraina. Doner til den ukrainske hæren, veldedigheter, innsamlingsfond og andre verifiserte militære og humanitære prosjekter.`,
+  siteDescription: `Doner til ukrainske militære og humanitære organisasjoner. Se gjennom verifiserte veldedighetsorganisasjoner og militære hjelpefond for å støtte Ukrainas væpnede styrker.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Del',
@@ -9,13 +9,11 @@ export default {
   donateButton: 'Doner',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Doner eller spre ordet`,
-  heroText1: `Støtt den ukrainske hæren og andre tillitsverdige humanitære innsamlingsfond`,
-  heroText2: `Doner til den ukrainske hæren eller til verifiserte humanitære organisasjoner.`,
-  heroText3: `Del innleggene våre i sosiale medier.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Doner til ukrainske militære og humanitære organisasjoner',
+  heroSubtitle:
+    'Se gjennom en liste over verifiserte veldedighetsorganisasjoner og militære hjelpefond for å støtte Ukrainas væpnede styrker og gi humanitær hjelp.',
+  heroTagline: 'Støtt Ukraina i møte med Russlands fullskala invasjon.',
 
   close: 'Lukk',
   sharePopupTitle: 'Spre budskapet',
@@ -33,42 +31,45 @@ export default {
   Refugees: 'Flyktninger',
   Press: 'Presse',
   Veterancy: 'Veteraner',
-  'Non-lethal': 'Ikke-dødelig',
-  'Non-government': 'Ikke-statlig',
+  'Non-combat': 'Ikke-kamp',
+  NGO: 'NGO',
   'Human Rights': 'Menneskerettigheter',
 
   // footer
-  footerHeader:
-    'Stå For Ukraina promoterer tillitsverdige organisasjoner som hjelper til med å bekjempe den russiske invasjonen og overkomme konsekvensene av den.',
+  footerMissionLead:
+    'hjelper deg å støtte Ukraina — direkte, trygt og på dine premisser. Finn verifiserte innsamlinger og gi der det trengs mest.',
   footerGoals: 'Våre Mål',
-  goal1: 'Hjelpe det ukrainske militæret med våpen, ammunisjon og forsyninger',
-  goal2: 'Støtte veteranene og krigsofferne',
-  goal3: 'Ordne husly og mat til flyktningene',
-  goal4: 'Bistå barn, eldre og andre sårbare grupper',
-  goal5: 'Støtte uavhengig presse',
+  goal1:
+    'Forsyne Ukrainas væpnede styrker med våpen, ammunisjon og utstyr mot Russlands fullskala invasjon.',
+  goal2: 'Støtte veteraner og krigsofre i restitusjon.',
+  goal3: 'Gi husly og mat til fordrevne flyktninger.',
+  goal4: 'Hjelpe barn, eldre og andre sårbare grupper.',
+  goal5: 'Styrke uavhengig journalistikk.',
   footerCreds:
-    'Dette nettstedet er lagd av dataingeniører, ledere, designere, skribenter, oversettere, journalister og aktivister fra hele Ukraina og utenfra.',
+    'Bygget av frivillige — ingeniører, designere, journalister og aktivister fra Ukraina og verden.',
   footerContact: 'Nå oss',
   joinUs: 'Bli med oss',
-  disclaimler: 'Transaksjonene går ikke via oss; vi står kun for direkte linker til nettsteder for donasjoner.',
+  disclaimer:
+    'Vi behandler ikke donasjoner — vi kobler deg bare til verifiserte, transparente innsamlinger.',
   aboutProject: 'Om prosjektet',
   suggestOrgLink: 'Foreslå en organisasjon',
   sharedFeedbackLink: 'Del tilbakemelding',
+  footerVerifyYouControl: 'Verifiser via youcontrol.com',
+  footerLastReviewed: 'Sist gjennomgått: mars 2026',
   joinFormLink: 'Bli med i den internasjonale legionen',
 
   // filter
   filterTo: 'Organisasjoner',
   filterPayVia: 'Betalingsmåter',
   resetFilter: 'Tilbakestill filtrering',
+  moreFilters: 'Flere filtre',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Krypto',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Kopier organisasjonsnummer',
   browseAll1: 'Se alt',
@@ -122,7 +123,8 @@ export default {
   legalCodeLabel: 'ЄДРПОУ',
   legalDesc1: 'ЄДРПОУ (EDRPOU) er en type organisasjonsnummer fra den ukrainske skatteetaten.',
   legalDesc2: 'Kopier EDRPOU kode',
-  legalDesc3: 'Verifiser med organisasjonsnummeret i registeret for ikke-kommersielle organisasjoner',
+  legalDesc3:
+    'Verifiser med organisasjonsnummeret i registeret for ikke-kommersielle organisasjoner',
   legalFooterLink: 'Den ukrainske skatteetaten',
 
   // widget page

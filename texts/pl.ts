@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Wspieraj Ukrainę w obliczu rosyjskiej agresji militarnej. Przekaż darowizny na zweryfikowane projekty pomocy Siłom Zbrojnym Ukrainy lub organizacje charytatywne. Poinformuj opinię publiczną, udostępniając nasze biuletyny.`,
+  siteDescription: `Wspieraj ukraińskie organizacje wojskowe i humanitarne. Przeglądaj zweryfikowane organizacje charytatywne i fundusze pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Podziel się',
@@ -9,13 +9,11 @@ export default {
   donateButton: 'Wpłać',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Pomóż ukraińskiej armii i organizacjom humanitarnym`,
-  heroText1: `Wspieraj Ukrainę w obliczu rosyjskiej agresji militarnej.`,
-  heroText2: `Przekaż darowizny na zwerfikowane projekty pomocy Siłom Zbrojnym Ukrainy lub organizacje charytatywne.`,
-  heroText3: `Poinformuj opinię publiczną udostępniając nasze biuletyny.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Wspieraj ukraińskie organizacje wojskowe i humanitarne',
+  heroSubtitle:
+    'Przeglądaj listę zweryfikowanych organizacji charytatywnych i funduszy pomocy wojskowej, aby wesprzeć Siły Zbrojne Ukrainy i zapewnić pomoc humanitarną.',
+  heroTagline: 'Wesprzyj Ukrainę w obliczu pełnoskalowej inwazji Rosji.',
 
   close: 'Zamknij',
   sharePopupTitle: 'Rozpowszechnij',
@@ -33,40 +31,42 @@ export default {
   Refugees: 'Uchodźcy',
   Press: 'Prasa',
   Veterancy: 'Weterani',
-  'Non-lethal': 'Niezabójcze',
-  'Non-government': 'Pozarządowe',
+  'Non-combat': 'Niebojowe',
+  NGO: 'NGO',
   'Human Rights': 'Prawa człowieka',
 
   // footer
-  footerHeader: `Wspomóż Ukrainę to baza wiarygodnych organizacji, które pomagają walczyć z rosyjską inwazją i przezwyciężać jej konsekwencje.`,
+  footerMissionLead: `pomaga wspierać Ukrainę — bezpośrednio, bezpiecznie i na twoich zasadach. Znajdź sprawdzone zbiórki i wesprzyj tam, gdzie to ma sens.`,
   footerGoals: 'Nasze cele',
-  goal1: 'Pomóż ukraińskiej armii z bronią, amunicją i zaopatrzeniem',
-  goal2: 'Rekonwalescencja weteranów i ofiar wojny',
-  goal3: 'Schronienie i żywność dla uchodźców',
-  goal4: 'Pomóż dzeciom, osobom starszym i innym grupom specjalnej opieki',
-  goal5: 'Wspomóż niezależną prasę',
-  footerCreds: `Ta strona internetowa jest tworzona przez inżynierów IT, menedżerów, projektantów, pisarzy, tłumaczy, dziennikarzy i aktywistów z całej Ukrainy i spoza niej.`,
+  goal1:
+    'Zaopatrzenie Sił Zbrojnych Ukrainy w broń, amunicję i sprzęt w oparciu o pełnoskalową inwazję Rosji.',
+  goal2: 'Wsparcie weteranów i ofiar wojny w powrocie do zdrowia.',
+  goal3: 'Schronienie i wyżywienie dla przesiedlonych uchodźców.',
+  goal4: 'Pomoc dzieciom, osobom starszym i innym grupom wrażliwym.',
+  goal5: 'Wzmocnienie niezależnego dziennikarstwa.',
+  footerCreds: `Stworzone przez wolontariuszy — inżynierów, designerów, dziennikarzy i aktywistów z Ukrainy i świata.`,
   footerContact: 'Dotrzyj do nas',
   joinUs: 'Dołącz do nas',
-  disclaimler: 'Nie przyjmujemy płatności; udostępniamy tylko bezpośrednie łącza do stron darowizn.',
+  disclaimer: 'Nie przetwarzamy darowizn — łączymy tylko ze sprawdzonymi, przejrzystymi zbiórkami.',
   aboutProject: 'O projekcie',
   suggestOrgLink: 'Zaproponuj organizację',
   sharedFeedbackLink: 'Podziel się opinią',
+  footerVerifyYouControl: 'Weryfikacja przez youcontrol.com',
+  footerLastReviewed: 'Ostatnia aktualizacja: marzec 2026',
   joinFormLink: 'Dołącz do Legii Międzynarodowej',
 
   // filter
   filterTo: 'Organizacje',
   filterPayVia: 'Metody Płatności',
   resetFilter: 'Resetuj filtry',
+  moreFilters: 'Więcej filtrów',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Krypto',
   'Credit Card': 'Karta kredytowa',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Skopiuj kod',
   browseAll1: 'Przeglądać wszystkie',

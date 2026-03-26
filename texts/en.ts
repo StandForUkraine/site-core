@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Support Ukraine in the face of Russian military aggression. Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities. Inform the public by sharing our newslets.`,
+  siteDescription: `Donate to Ukrainian military and humanitarian organizations. Browse vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Share',
@@ -9,13 +9,10 @@ export default {
   donateButton: 'Donate',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Help Ukrainian Military & Humanitarian Organizations`,
-  heroText1: `Support Ukraine in the face of Russian military aggression.`,
-  heroText2: `Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities.`,
-  heroText3: `Inform the public by sharing our newslets.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  heroTitle: 'Donate to Ukrainian Military & Humanitarian Organizations',
+  heroSubtitle:
+    'Browse a list of vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.',
+  heroTagline: 'Stand for Ukraine in the face of Russia\u2019s full-scale invasion.',
 
   close: 'Close',
   sharePopupTitle: 'Spread The Cause',
@@ -33,42 +30,45 @@ export default {
   Refugees: 'Refugees',
   Press: 'Press',
   Veterancy: 'Veterancy',
-  'Non-lethal': 'Non-lethal',
-  'Non-government': 'Non-government',
+  'Non-combat': 'Non-combat',
+  NGO: 'NGO',
   'Human Rights': 'Human Rights',
 
   // footer
-  footerHeader:
-    'Stand for Ukraine is an aggregator of reliable organizations that helps to fight the Russian invasion and overcome its consequences.',
+  footerMissionLead:
+    'helps you find trustworthy ways to support Ukraine—directly, safely, and on your terms. Give where it counts.',
   footerGoals: 'Our Goals',
-  goal1: 'Help the Ukrainian military with weapons, ammunition, and supplies',
-  goal2: 'Recover the veterans & victims of war',
-  goal3: 'Shelter and feed the refugees',
-  goal4: 'Aid children, elderly, and other vulnerable groups',
-  goal5: 'Support independent press',
+  goal1:
+    "Supply Ukraine's military with weapons, ammunition, and gear to resist Russia's full-scale invasion.",
+  goal2: 'Support veterans and war victims in recovery.',
+  goal3: 'Shelter and feed displaced refugees.',
+  goal4: 'Aid children, the elderly, and other vulnerable groups.',
+  goal5: 'Strengthen independent journalism.',
   footerCreds:
-    'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
+    'Built by volunteers—engineers, designers, journalists, and activists from Ukraine and beyond.',
   footerContact: 'Reach us',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
+  disclaimer:
+    "We don't process donations—we only connect you to verified, transparent fundraisers.",
+  aboutProject: 'About the project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',
-  joinFormLink: 'Join Internation Legion',
+  footerVerifyYouControl: 'Verify via youcontrol.com',
+  footerLastReviewed: 'Last reviewed: March 2026',
+  joinFormLink: 'Join International Legion',
 
   // filter
   filterTo: 'To',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
+  moreFilters: 'More filters',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Crypto',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copy Code',
   browseAll1: 'Browse all',
@@ -77,7 +77,7 @@ export default {
 
   // about page
   aboutHeader: `About the Project`,
-  aboutHeaderText1: `Who we are and what’s our paramount.`,
+  aboutHeaderText1: `Who we are and what we stand for.`,
 
   aboutManifestoHeader: 'Our Manifesto',
   aboutManifestoText1:
@@ -113,10 +113,11 @@ export default {
   verifyHeader: 'Verify by yourself',
   verifyUK: 'Ukrainian',
   verifyUS: 'US-based',
-  verifyUKText1: 'You can verify the Ukraninan organizations by legal entity code: ЄДРПОУ(EDRPOU)',
-  verifyUKText2: '🔍 Find EDRPOU code in the organization listing or on the respective website.',
+  verifyUKText1:
+    'Use YouControl first to verify a Ukrainian organization by its legal code: ЄДРПОУ (EDRPOU).',
+  verifyUKText2: '🔍 Find the EDRPOU code in our listing or on the organization website.',
   verifyUKText3:
-    '✔︎ Verify the organization by the code in the register of the State Tax Service of Ukraine.',
+    '✔︎ As a second check, confirm details in official state registries (for example, State Tax Service records).',
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
@@ -135,7 +136,7 @@ export default {
   widgetVariant1: 'Tiny button at the bottom left',
   widgetVariant2: 'Blue and yellow stripe stuck to top',
   widgetVariant3: 'Black stripe with a tiny flag stuck to top',
-  widgetGTagManager: 'Alterative way: via Google Tag manager',
+  widgetGTagManager: 'Alternative way: via Google Tag Manager',
   widgetGTagStep1: 'Open your workspace. Go to Tags',
   widgetGTagStep2: 'Create a new one',
   widgetGTagStep3: 'Set any name you want',
@@ -143,6 +144,6 @@ export default {
   widgetGTagStep5: 'Paste widget code (any among above)',
   widgetGTagStep6: 'Set All pages at Triggering. Save',
   widgetGTagStep7: 'Refresh your site. The widget should already be there',
-  widgetWordPress: 'Alterative way: via Wordpress plugin',
+  widgetWordPress: 'Alternative way: via WordPress plugin',
   widgetWordPressSoon: 'coming soon...',
 }

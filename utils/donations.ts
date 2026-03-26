@@ -7,6 +7,7 @@ import getConfig from 'next/config'
 import { PayMethod } from './payMethods'
 import { defaultLang } from 'core/texts'
 const { serverRuntimeConfig } = getConfig()
+const PRIORITY_DONATION_IDS = [1, 2, 8, 53, 52, 25, 33, 24, 16, 54, 7, 10]
 
 export interface DonationItemBase {
   id: number
@@ -37,6 +38,13 @@ export const loadDonations = (lang = defaultLang) => {
   const data = files
     .map((file) => {
       const id = parseInt(path.basename(path.dirname(file)), 10)
+      const logoSvgPath = path.join(serverRuntimeConfig.PROJECT_ROOT, `donations/${id}/logo.svg`)
+      const logoPngPath = path.join(serverRuntimeConfig.PROJECT_ROOT, `donations/${id}/logo.png`)
+      const logo = fs.existsSync(logoSvgPath)
+        ? `/logos/${id}.svg`
+        : fs.existsSync(logoPngPath)
+        ? `/logos/${id}.png`
+        : `/logos/${id}.png`
       const byLang: any = [lang, defaultLang]
         .filter((v, i, a) => a.indexOf(v) === i) // unique langs
         .reduce((obj, lng) => {
@@ -56,12 +64,21 @@ export const loadDonations = (lang = defaultLang) => {
       return {
         ...byLang[defaultLang],
         ...byLang[lang],
-        logo: `/logos/${id}.png`,
+        logo,
         id,
         byLang,
       }
     })
     .filter((d) => !d.hidden)
-    .sort((a, b) => a.id - b.id)
+    .sort((a, b) => {
+      const aPriority = PRIORITY_DONATION_IDS.indexOf(a.id)
+      const bPriority = PRIORITY_DONATION_IDS.indexOf(b.id)
+      if (aPriority !== -1 || bPriority !== -1) {
+        if (aPriority === -1) return 1
+        if (bPriority === -1) return -1
+        return aPriority - bPriority
+      }
+      return a.id - b.id
+    })
   return data as DonationItem[]
 }

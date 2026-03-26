@@ -5,25 +5,17 @@ import useLangLinkPrefix from 'core/utils/useLangLinkPrefix'
 
 export type Tab = 'donate' | 'inform'
 
-export const PageTabs = ({
-  currentTab,
-}: {
-  currentTab: Tab
-}) => {
+export const PageTabs = ({ currentTab }: { currentTab: Tab }) => {
   const t = useText()
-  const linkPrefix = useLangLinkPrefix();
+  const linkPrefix = useLangLinkPrefix()
 
   return (
     <TabsWrapper>
       <Link href={linkPrefix}>
-        <Tab isActive={currentTab === 'donate'}>
-          {t('donate')}
-        </Tab>
+        <Tab isActive={currentTab === 'donate'}>{t('donate')}</Tab>
       </Link>
       <Link href={`${linkPrefix}spread-the-word`}>
-        <Tab isActive={currentTab === 'inform'}>
-          {t('spreadTheWorld')}
-        </Tab>
+        <Tab isActive={currentTab === 'inform'}>{t('spreadTheWorld')}</Tab>
       </Link>
     </TabsWrapper>
   )

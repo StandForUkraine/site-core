@@ -9,13 +9,11 @@ export default {
   donateButton: 'Donate',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Help Ukrainian Military & Humanitarian Organizations`,
-  heroText1: `Support Ukraine in the face of Russian military aggression.`,
-  heroText2: `Donate to verified projects to help Armed Forces of Ukraine or humanitarian charities.`,
-  heroText3: `Inform the public by sharing our newslets.`,
-  heroHeader1: 'دعم أوكرانيا في مواجهة العدوان الروسي',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Donate to Ukrainian Military & Humanitarian Organizations',
+  heroSubtitle:
+    'Browse a list of vetted charities and military aid funds to help the Armed Forces of Ukraine and provide humanitarian relief.',
+  heroTagline: 'Stand for Ukraine in the face of Russia\u2019s full-scale invasion.',
 
   close: 'Close',
   sharePopupTitle: 'Spread The Cause',
@@ -33,27 +31,31 @@ export default {
   Refugees: 'Refugees',
   Press: 'Press',
   Veterancy: 'Veterancy',
-  'Non-lethal': 'Non-lethal',
-  'Non-government': 'Non-government',
+  'Non-combat': 'Non-combat',
+  NGO: 'NGO',
   'Human Rights': 'Human Rights',
 
   // footer
-  footerHeader:
-    'Stand for Ukraine is an aggregator of reliable organizations that helps to fight the Russian invasion and overcome its consequences.',
+  footerMissionLead:
+    'helps you find trustworthy ways to support Ukraine—directly, safely, and on your terms. Give where it counts.',
   footerGoals: 'Our Goals',
-  goal1: 'Help the Ukrainian military with weapons, ammunition, and supplies',
-  goal2: 'Recover the veterans & victims of war',
-  goal3: 'Shelter and feed the refugees',
-  goal4: 'Aid children, elderly, and other vulnerable groups',
-  goal5: 'Support independent press',
+  goal1:
+    "Supply Ukraine's military with weapons, ammunition, and gear to resist Russia's full-scale invasion.",
+  goal2: 'Support veterans and war victims in recovery.',
+  goal3: 'Shelter and feed displaced refugees.',
+  goal4: 'Aid children, the elderly, and other vulnerable groups.',
+  goal5: 'Strengthen independent journalism.',
   footerCreds:
-    'This website is made by IT engineers, managers, designers, writers, translators, journalists, and activists from all over Ukraine & beyond.',
+    'Built by volunteers—engineers, designers, journalists, and activists from Ukraine and beyond.',
   footerContact: 'Reach us',
   joinUs: 'Join us',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
-  aboutProject: 'About The Project',
+  disclaimer:
+    "We don't process donations—we only connect you to verified, transparent fundraisers.",
+  aboutProject: 'About the project',
   suggestOrgLink: 'Suggest an organization',
   sharedFeedbackLink: 'Share feedback',
+  footerVerifyYouControl: 'Verify via youcontrol.com',
+  footerLastReviewed: 'Last reviewed: March 2026',
   joinFormLink: 'Join Internation Legion',
 
   // filter
@@ -63,12 +65,10 @@ export default {
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Crypto',
   'Credit Card': 'Credit Card',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copy Code',
   browseAll1: 'Browse all',

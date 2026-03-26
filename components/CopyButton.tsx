@@ -6,8 +6,8 @@ import { useText } from 'core/utils/lang'
 import Button from './Button'
 
 export interface CopyButtonProps {
-  content: string;
-  buttonChildren?: ReactNode;
+  content: string
+  buttonChildren?: ReactNode
 }
 
 export const CopyButton = ({ content, buttonChildren }: CopyButtonProps) => {
@@ -29,9 +29,7 @@ export const CopyButton = ({ content, buttonChildren }: CopyButtonProps) => {
         }, 2000)
       }}
     >
-      <CopyBtn color="default">
-        {buttonChildren ?? t('copyLink')}
-      </CopyBtn>
+      <CopyBtn color="default">{buttonChildren ?? t('copyLink')}</CopyBtn>
     </CopyToClipboard>
   ) : (
     <CopyBtn color="success">{t('copyLinkDone')}</CopyBtn>

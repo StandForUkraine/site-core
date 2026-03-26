@@ -8,18 +8,17 @@ import { useGtag } from 'core/utils/useGtag'
 import ContentList from './ContentList'
 
 export const Donations = ({ donations }: { donations: DonationItem[] }) => {
-  const t = useText();
+  const t = useText()
   const gtag = useGtag()
 
   return (
     <ContentList
       list={donations}
+      sliceAmount={12}
       filter1={[...allTags]}
-      filter2={payMethods.filter((m) => m !== 'Western Union')}
+      filter2={[...payMethods]}
       filter2Field="payMethods"
-      itemBuilder={(donation) => (
-        <DonationWidget key={donation.id} donation={donation} />
-      )}
+      itemBuilder={(donation) => <DonationWidget key={donation.id} donation={donation} />}
       filter1Title={t('filterTo')}
       filter2Title={t('filterPayVia')}
       onResetFilterClick={() => {
@@ -28,11 +27,13 @@ export const Donations = ({ donations }: { donations: DonationItem[] }) => {
       onShowAllClick={() => {
         gtag('event', 'show_all_orgs_click', { event_category: 'home_page' })
       }}
-      showAllButtonChildren={(
-        <>{t('browseAll1')} {donations.length} {t('browseAll2')}</>
-      )}
+      showAllButtonChildren={
+        <>
+          {t('browseAll1')} {donations.length} {t('browseAll2')}
+        </>
+      }
     />
-  );
+  )
 }
 
 export default Donations

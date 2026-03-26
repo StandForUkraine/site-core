@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Susține Ucraina în fața agresiunilor armatei rusești. Donează către proiecte verificate pentru a ajuta Forțele Armate ale Ucrainei și organizații caritabile. Informează publicul despre inițiativa noastră, distribuind publicațiile noastre.`,
+  siteDescription: `Donați organizațiilor militare și umanitare ucrainene. Răsfoiți organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Distribuie',
@@ -9,13 +9,11 @@ export default {
   donateButton: 'Donează',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Ajută armata ucraineană și Organizațiile Umanitare`,
-  heroText1: `Susține Ucraina în fața agresiunilor armatei rusești.`,
-  heroText2: `Donează către proiecte verificate pentru a ajuta forțele armate sau organizații caritabile ucrainiene.`,
-  heroText3: `Informează publicul, distribuind publicațiile noastre.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Donați organizațiilor militare și umanitare ucrainene',
+  heroSubtitle:
+    'Răsfoiți o listă de organizații caritabile verificate și fonduri de ajutor militar pentru a sprijini Forțele Armate ale Ucrainei și a oferi asistență umanitară.',
+  heroTagline: 'Susține Ucraina în fața invaziei pe scară largă a Rusiei.',
 
   close: 'Închide',
   sharePopupTitle: 'Distribuie cauza noastră',
@@ -33,40 +31,43 @@ export default {
   Refugees: 'Refugiați',
   Press: 'Presă',
   Veterancy: 'Veterani',
-  'Non-lethal': 'Ne-letal',
-  'Non-government': 'Non-guvernamental',
+  'Non-combat': 'Non-combat',
+  NGO: 'ONG',
   'Human Rights': 'Drepturile Omului',
 
   // footer
-  footerHeader: `Împreună pentru Ucraina este o bază de date pentru organizații de încredere, care ajută la combaterea invaziei ruse și la depășirea consecințelor sale.`,
+  footerMissionLead: `te ajută să sprijini Ucraina — direct, în siguranță și în condițiile tale. Alege organizații verificate și donează unde contează cel mai mult.`,
   footerGoals: 'Obiectivele Noastre',
-  goal1: 'Furnizarea armatai Ucrainei cu armament, muniție, și provizii',
-  goal2: 'Recuperarea veteranilor și victimelor războiului',
-  goal3: 'Adăpostirea și aprovizionarea cu hrană a refugiaților',
-  goal4: 'Ajutorarea copiilor, vârstnicilor, și grupurilor vulnerabile',
-  goal5: 'Susținerea presei independente',
-  footerCreds: `Acest site este realizat de ingineri IT, manageri, designeri, scriitori, translatori, jurnaliști, și activiști din Ucraina și de peste granițe.`,
+  goal1:
+    'Să sprijine forțele armate ale Ucrainei cu arme, muniții și echipamente împotriva invaziei ruse pe scară largă.',
+  goal2: 'Să sprijine veterani și victimele războiului în recuperare.',
+  goal3: 'Să adăpostească și să hrănească refugiații strămutați.',
+  goal4: 'Să ajute copiii, vârstnicii și alte grupuri vulnerabile.',
+  goal5: 'Să sprijine jurnalismul independent.',
+  footerCreds: `Realizat de voluntari — ingineri, designeri, jurnaliști și activiști din Ucraina și din lume.`,
   footerContact: 'Contactează-ne',
   joinUs: 'Alăturați-ne',
-  disclaimler: 'We do not accept payments; we only provide direct links to donation pages.',
+  disclaimer:
+    'Nu procesăm donații — te punem doar în legătură cu strângeri verificate și transparente.',
   aboutProject: 'Despre Proiect',
-  suggestOrgLink: 'Suggest an organization',
-  sharedFeedbackLink: 'Share feedback',
+  suggestOrgLink: 'Sugerează o organizație',
+  sharedFeedbackLink: 'Trimite feedback',
+  footerVerifyYouControl: 'Verifică prin youcontrol.com',
+  footerLastReviewed: 'Ultima revizuire: martie 2026',
   joinFormLink: 'Join Internation Legion',
 
   // filter
   filterTo: 'La',
   filterPayVia: 'Prin intermediul',
   resetFilter: 'Resetați filtrul',
+  moreFilters: 'Mai multe filtre',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Cripto',
   'Credit Card': 'Card de credit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Copiați codul',
   browseAll1: 'Browse all',

@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Soutenir l'Ukraine face à l'agression militaire russe. Faire un don à des projets vérifiés afin d'aider les Forces Armées Ukrainiennes ou l'aide humanitaire. Informer le public en partageant nos bulletins d'informations. `,
+  siteDescription: `Faites un don aux organisations militaires et humanitaires ukrainiennes. Parcourez des organisations caritatives vérifiées et des fonds d'aide militaire pour soutenir les Forces armées de l'Ukraine.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Partager',
@@ -9,20 +9,18 @@ export default {
   donateButton: 'Donner',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Aider les militaires ukrainiens et les organisations humanitaires`,
-  heroText1: `Soutenir l'Ukraine face à l'agression militaire russe.`,
-  heroText2: `Donner à des projets vérifiés afin d'aider les Forces armées ukrainiennes ou l'aide humanitaire.`,
-  heroText3: `Informer le public en partageant nos bulletins d'informations.`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Faites un don aux organisations militaires et humanitaires ukrainiennes',
+  heroSubtitle:
+    "Parcourez une liste d'organisations caritatives vérifiées et de fonds d'aide militaire pour soutenir les Forces armées de l'Ukraine et fournir une aide humanitaire.",
+  heroTagline: "Soutenir l'Ukraine face à l'invasion russe à grande échelle.",
 
   close: 'Fermer',
   sharePopupTitle: 'Faire circuler la cause',
   sharePopupText1: 'Partager cette ressource avec vos amis et collègues.',
   sharePopupText2: "Faire savoir aux gens comment soutenir l'Ukraine.",
   sharingText:
-    "Aider les militaires ukrainiens et les organisations humanitaires #StandForUkraine. ",
+    'Aider les militaires ukrainiens et les organisations humanitaires #StandForUkraine. ',
   copyLink: 'Copier le lien',
   copyLinkDone: 'Copié!',
 
@@ -34,42 +32,45 @@ export default {
   Refugees: 'Réfugiés',
   Press: 'Presse',
   Veterancy: 'Vétérans',
-  'Non-lethal': 'Non létal',
-  'Non-government': 'Non gouvernemental',
+  'Non-combat': 'Non-combattant',
+  NGO: 'ONG',
   'Human Rights': 'Droits de l’homme',
 
   // footer
-  footerHeader: `Stand For Ukraine, c'est le rassemblement d'organisations fiables qui aident à combattre l'invasion russe et à faire face à ses conséquences.`,
+  footerMissionLead: `vous aide à soutenir l'Ukraine — directement, en toute sécurité et selon vos conditions. Trouvez des collectes fiables et donnez là où c'est le plus utile.`,
   footerGoals: 'Nos objectifs',
-  goal1: 'Aider les militaires ukrainiens avec des armes, des munitions et des fournitures',
-  goal2: 'Aider les vétérans et les victimes de guerre à se rétablir',
-  goal3: 'Abriter et nourrir les réfugiés',
-  goal4: 'Aider les enfants, les aînés et les personnes vulnérables',
-  goal5: 'Soutenir la presse indépendante',
-  footerCreds: `Ce site Web a été créé par des ingénieurs, managers, désigners, écrivains, traducteurs, journalistes et activistes de toute l'Ukraine et d'ailleurs.`,
+  goal1:
+    'Approvisionner les forces armées ukrainiennes en armes, munitions et équipement face à l’invasion russe à grande échelle.',
+  goal2: 'Soutenir les vétérans et les victimes de guerre dans leur rétablissement.',
+  goal3: 'Héberger et nourrir les réfugiés déplacés.',
+  goal4: 'Aider les enfants, les personnes âgées et les groupes vulnérables.',
+  goal5: 'Renforcer le journalisme indépendant.',
+  footerCreds: `Créé par des bénévoles — ingénieurs, designers, journalistes et activistes d'Ukraine et d'ailleurs.`,
   footerContact: 'Contactez-nous',
   joinUs: 'Rejoignez-nous',
-  disclaimler: 'Nous n’acceptons pas de paiement; nous ne fournissons que des liens directs vers des pages de dons.',
+  disclaimer:
+    'Nous ne traitons pas les dons — nous vous mettons seulement en relation avec des collectes vérifiées et transparentes.',
   aboutProject: 'À propos du projet',
   suggestOrgLink: 'Suggérer une association',
   sharedFeedbackLink: 'Partager des commentaires',
+  footerVerifyYouControl: 'Vérifier via youcontrol.com',
+  footerLastReviewed: 'Dernière révision : mars 2026',
   joinFormLink: 'Rejoindre la légion internationale',
 
   // filter
   filterTo: 'Organismes',
   filterPayVia: 'Méthodes de paiement',
   resetFilter: 'Réinitialiser le filtre',
+  moreFilters: 'Plus de filtres',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Crypto',
   'Credit Card': 'Carte de crédit',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
-  copyCode: 'Copier le code', /*used in EDRPOU popup*/
+  copyCode: 'Copier le code' /*used in EDRPOU popup*/,
   browseAll1: 'Parcourir les',
   browseAll2: 'associations',
   browseAll3: 'posts',
@@ -119,7 +120,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: '\"ЄДРПОУ" (EDRPOU) est le code de l’entité juridique du Service national des impôts ukrainien.',
+  legalDesc1:
+    '"ЄДРПОУ" (EDRPOU) est le code de l’entité juridique du Service national des impôts ukrainien.',
   legalDesc2: 'Copier le code EDRPOU',
   legalDesc3: 'Vérifier l’association grâce au code dans le registre',
   legalFooterLink: 'Service national des impôts ukrainien',

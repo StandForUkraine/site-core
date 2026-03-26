@@ -10,19 +10,13 @@ import SocialEmbedPostWidget from './SocialEmbedPostWidget'
 import DeferredRender from './DeferredRender'
 
 export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
-  const t = useText();
-  const gtag = useGtag();
+  const t = useText()
+  const gtag = useGtag()
 
-  const filter1 = React.useMemo(
-    () => [...new Set(feed.map((post) => post.tags).flat())],
-    [],
-  )
+  const filter1 = React.useMemo(() => [...new Set(feed.map((post) => post.tags).flat())], [])
 
-  const filter2 = React.useMemo(
-    () => [...new Set(feed.map((post) => post.network))],
-    [],
-  )
-  
+  const filter2 = React.useMemo(() => [...new Set(feed.map((post) => post.network))], [])
+
   return (
     <>
       <Langs />
@@ -46,9 +40,11 @@ export default function SpreadTheWord({ feed }: { feed: SocialFeedPost[] }) {
         onShowAllClick={() => {
           gtag('event', 'show_all_orgs_click', { event_category: 'home_page' })
         }}
-        showAllButtonChildren={(
-          <>{t('browseAll1')} {feed.length} {t('browseAll3')}</>
-        )}
+        showAllButtonChildren={
+          <>
+            {t('browseAll1')} {feed.length} {t('browseAll3')}
+          </>
+        }
         filter1ToLabel={(value) => `#${value}`}
         filter2ToLabel={(value) => value.slice(0, 1).toUpperCase() + value.slice(1)}
       />

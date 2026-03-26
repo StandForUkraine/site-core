@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Page = styled.div`
   padding-top: 60px;
@@ -7,4 +7,4 @@ export const Page = styled.div`
   margin: auto;
 `
 
-export default Page;
+export default Page

@@ -1,6 +1,6 @@
+import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
 import Chip from './Chip'
-import ChipsWrapper from './ChipsWrapper'
 import FilterLabel from './FilterLabel'
 
 export interface MultipleSelectionProps<T extends string> {
@@ -18,24 +18,43 @@ export default function MultipleSelection<T extends string>({
   onOptionClick,
   toLabel,
 }: MultipleSelectionProps<T>) {
-  const t: any = toLabel || useText() // it's dirty, but I'm too lazy
+  const t: any = toLabel || useText()
 
   return (
-    <ChipsWrapper>
-      {
-        title !== false && (
-          <FilterLabel>{title}</FilterLabel>
-        )
-      }
+    <FilterGroup>
+      {title !== false && <FilterLabel>{title}</FilterLabel>}
       {allOptions.map((option) => (
-        <Chip
+        <FilterChip
           key={option}
           isActive={selectedOptions.indexOf(option) >= 0}
           onClick={() => onOptionClick(option)}
         >
           {t(option)}
-        </Chip>
+        </FilterChip>
       ))}
-    </ChipsWrapper>
+    </FilterGroup>
   )
 }
+
+export const FilterGroup = styled.div`
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding: 0 16px;
+  margin-top: 15px;
+
+  @media (min-width: 768px) {
+    overflow: visible;
+    margin-top: 8px;
+    padding: 0;
+  }
+`
+
+export const FilterChip = styled(Chip)`
+  @media (min-width: 768px) {
+    height: 40px;
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+`

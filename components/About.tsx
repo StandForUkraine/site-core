@@ -2,6 +2,7 @@ import * as React from 'react'
 import styled from 'styled-components'
 import { useText } from 'core/utils/lang'
 import AboutTeamItem from './AboutTeamItem'
+import AboutOrganization from './AboutOrganization'
 
 const email = process.env.NEXT_PUBLIC_EMAIL
 
@@ -10,13 +11,29 @@ export default function About() {
 
   return (
     <>
-      {/* <Langs /> */}
       <HeroWrapper>
         <HeroHeader>{t('aboutHeader')}</HeroHeader>
         <HeroText>{t('aboutHeaderText1')}</HeroText>
       </HeroWrapper>
+
+      <AboutContent>
+        <AboutContentHeader>Our Mission</AboutContentHeader>
+        <AboutHeaderText>
+          Stand For Ukraine is a volunteer-run, open-source directory of vetted Ukrainian military
+          and humanitarian organizations. We help people worldwide find trusted, direct ways to
+          support Ukraine.
+        </AboutHeaderText>
+        <AboutHeaderText>
+          We do not process donations. Every link points to an organization's official donation
+          page. Our job is to curate, verify, and keep this list dependable.
+        </AboutHeaderText>
+      </AboutContent>
+
+      <AboutOrganization />
+
       <AboutHeader>
         <AboutHeaderContent>
+          <ManifestoLabel>Written on February 24, 2022</ManifestoLabel>
           <AboutContentHeader>{t('aboutManifestoHeader')}</AboutContentHeader>
           <AboutHeaderText>
             <i>{t('aboutManifestoText1')}</i>
@@ -26,15 +43,11 @@ export default function About() {
           <AboutHeaderText>{t('aboutManifestoText4')}</AboutHeaderText>
           <AboutHeaderText>
             {t('aboutDonateLink')}
-            {/* <AboutHeaderLink href="">{t('aboutDonateLink')}</AboutHeaderLink> */}
             {t('aboutManifestoText5')}
-
-            {/* <AboutHeaderLink href="">{t('aboutShareLink')}</AboutHeaderLink> */}
             {t('aboutShareLink')}
             {t('aboutManifestoText6')}
           </AboutHeaderText>
         </AboutHeaderContent>
-
         <AboutHeaderImage src="/about/ukraine.png" />
       </AboutHeader>
 
@@ -49,16 +62,17 @@ export default function About() {
             🇺🇦 🇬🇧 🇪🇸 🇫🇷 🇩🇪 🇦🇹 🇵🇱 🇷🇴 🇭🇺 🇬🇷 🇹🇷 🇮🇱
           </AboutTeamMore>
           <JoinWrapper>
-            <JoinWrapperHeader>{t('aboutTeamJoinHeader')}</JoinWrapperHeader>
-            <JoinWrapperText>{t('aboutTeamJoinText')}</JoinWrapperText>
+            <JoinWrapperHeader>Want to contribute?</JoinWrapperHeader>
+            <JoinWrapperText>
+              We welcome volunteers: translators, researchers, developers, and anyone who wants to
+              help keep this directory accurate and useful.
+            </JoinWrapperText>
             <JoinWrapperLink href="https://forms.gle/EtBp1wrt4vU3zXE7A">
               {t('aboutTeamJoinLink')}
             </JoinWrapperLink>
           </JoinWrapper>
         </AboutFlexBlock>
       </AboutContent>
-
-      {/* <AboutOrganization /> */}
     </>
   )
 }
@@ -97,7 +111,7 @@ const teamMembers = [
       telegram: 'tg.com',
     },
     description:
-      'Product manager & consultant from Kyiv. He’s into startups, long distance swimming, and road trips on motobike.',
+      'Product manager & consultant from Kyiv. He’s into startups, long distance swimming, and road trips on motorbike.',
   },
   {
     name: 'Anastasiia Pogorielova',
@@ -180,6 +194,15 @@ export const AboutContent = styled.div`
   }
 `
 
+const ManifestoLabel = styled.div`
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #828282;
+  margin-bottom: 8px;
+`
+
 export const AboutContentHeader = styled.h3`
   font-weight: 900;
   font-size: 24px;
@@ -236,6 +259,9 @@ const AboutTeamMore = styled.div`
 `
 const AboutTeamMoreText = styled.p`
   margin-bottom: 16px;
+`
+const TeamFootnote = styled(AboutContentText)`
+  margin-top: 24px;
 `
 
 const JoinWrapper = styled.div`

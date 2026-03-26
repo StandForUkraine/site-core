@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export interface TextButtonProps {
-  size?: 'small' | 'regular' | 'large';
-  variant?: 'default' | 'external-link';
+  size?: 'small' | 'regular' | 'large'
+  variant?: 'default' | 'external-link'
 }
 
 export const TextButton = styled.button<TextButtonProps>`
@@ -14,8 +14,10 @@ export const TextButton = styled.button<TextButtonProps>`
   display: inline-flex;
   align-items: center;
   padding: 0 4px;
-  
-  ${(props) => props.variant === 'default' ? `
+
+  ${(props) =>
+    props.variant === 'default'
+      ? `
     color: #2F80ED;
 
     &:hover {
@@ -30,9 +32,12 @@ export const TextButton = styled.button<TextButtonProps>`
     &:visited {
       color: #9B51E0;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.variant === 'external-link' ? `
+  ${(props) =>
+    props.variant === 'external-link'
+      ? `
     color: #828282;
 
     &:hover {
@@ -48,30 +53,40 @@ export const TextButton = styled.button<TextButtonProps>`
     &:visited {
       color: #BB6BD9;
     }
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.size === 'small' ? `
+  ${(props) =>
+    props.size === 'small'
+      ? `
     font-size: 14px;
     line-height: 20px;
     height: 22px;
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.size === 'regular' ? `
+  ${(props) =>
+    props.size === 'regular'
+      ? `
     font-size: 16px;
     line-height: 22px;
     height: 24px;
-  ` : ''}
+  `
+      : ''}
 
-  ${(props) => props.size === 'large' ? `
+  ${(props) =>
+    props.size === 'large'
+      ? `
     font-size: 18px;
     line-height: 22px;
     height: 24px;
-  ` : ''}
-`;
+  `
+      : ''}
+`
 
 TextButton.defaultProps = {
   size: 'regular',
   variant: 'default',
-};
+}
 
-export default TextButton;
+export default TextButton

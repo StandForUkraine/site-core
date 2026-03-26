@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Gemeinsam unterstützen wir die Ukraine im Kampf gegen die Offensive Russland's. Deine Spende dient den Ukrainischen Streitkräften und akkreditierten humanitären Organisationen. Informiert euch und teilt diese Seite!`,
+  siteDescription: `Spenden Sie an ukrainische Militär- und Hilfsorganisationen. Durchsuchen Sie geprüfte Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Teilen',
@@ -9,13 +9,11 @@ export default {
   donateButton: 'Spenden',
   spreadTheWorld: 'Spread the word',
 
-  heroHeader: `Unterstütze Ukrainische Streitkräfte und humanitäre Organisationen.`,
-  heroText1: `Wir helfen der Ukraine im Kampf gegen Russland's Invasion.`,
-  heroText2: `Deine Spende dient den Ukrainischen Streitkräften und akkreditierten humanitären Organisationen.`,
-  heroText3: `Informiert euch und teilt diese Seite!`,
-  heroHeader1: 'Support Ukraine in the face of Russian aggression',
-  heroText4: 'Donate to Ukrainian Army or verified humanitarian charities',
-  heroText5: 'Spread the word by sharing our posts',
+  // AI-translated, pending native review
+  heroTitle: 'Spenden Sie an ukrainische Militär- und Hilfsorganisationen',
+  heroSubtitle:
+    'Durchsuchen Sie eine Liste geprüfter Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine und humanitärer Hilfe.',
+  heroTagline: 'Für die Ukraine — angesichts der russischen Vollinvasion.',
 
   close: 'Schliessen',
   sharePopupTitle: 'Erzähle davon',
@@ -34,42 +32,45 @@ export default {
   Refugees: 'Flüchtlinge',
   Press: 'Presse',
   Veterancy: 'Veteranen',
-  'Non-lethal': 'Gewaltfrei',
-  'Non-government': 'Politikfrei',
+  'Non-combat': 'Nicht-Kampf',
+  NGO: 'NGO',
   'Human Rights': 'Menschrechte',
 
   // footer
-  footerHeader:
-    'Stand for Ukraine ist eine zentrale Stelle akkreditierter und verifizierter Organisationen. Sie hilft Ukraine sich gegen den Russischen Angriff zu verteidigen, und einen Wiederaufbau zu ermöglichen.',
+  footerMissionLead:
+    'hilft dir, die Ukraine zu unterstützen — direkt, sicher und nach deinen Vorstellungen. Finde Organisationen und spende dort, wo es am meisten zählt.',
   footerGoals: 'Unsere Ziele',
-  goal1: 'Unterstützung der Ukrainischen Streitkräfte mit Waffen, Munition und Vorräten',
-  goal2: 'Rettung von Veteranen und Kriegsopfern',
-  goal3: 'Zuflucht und Versorgung von Flüchtlingen',
-  goal4: 'Hilfe für Kinder, Ältere und alle Schutzbedürftigen',
-  goal5: 'Förderung unabhängiger Journalisten',
+  goal1:
+    'Die ukrainischen Streitkräfte mit Waffen, Munition und Ausrüstung für den Widerstand gegen Russlands vollständige Invasion unterstützen.',
+  goal2: 'Veteranen und Kriegsopfer bei der Erholung unterstützen.',
+  goal3: 'Geflüchtete unterbringen und versorgen.',
+  goal4: 'Kindern, älteren Menschen und anderen schutzbedürftigen Gruppen helfen.',
+  goal5: 'Unabhängigen Journalismus stärken.',
   footerCreds:
-    'Diese Webseite wurde erstellt von IT technikern, Managern, Designern, Textern, Übersetzern, Journalisten, und Aktivisten aus der Ukraine und der ganzen Welt.',
+    'Erstellt von Freiwilligen — Ingenieuren, Designerinnen, Journalistinnen und Aktivisten aus der Ukraine und der Welt.',
   footerContact: 'Hier erreichst du uns',
   joinUs: 'Begleiten Sie uns',
-  disclaimler: 'Wir akzeptieren keine Bezahlungen; wir teilen nur direkte Links zu Spendeseiten mit.',
+  disclaimer:
+    'Wir bearbeiten keine Spenden — wir verbinden nur mit geprüften, transparenten Spendern.',
   aboutProject: 'Über das Projekt',
   suggestOrgLink: 'Schlage eine Organisation vor!',
   sharedFeedbackLink: 'Bewerte die Seite!',
+  footerVerifyYouControl: 'Über youcontrol.com prüfen',
+  footerLastReviewed: 'Zuletzt geprüft: März 2026',
   joinFormLink: 'Schließe dich der Internationalen Legion!',
 
   // filter
   filterTo: 'Organisationen',
   filterPayVia: 'Bezahlungsmöglichkeiten',
   resetFilter: 'Löschen',
+  moreFilters: 'Weitere Filter',
 
   // payment methods
   IBAN: 'IBAN',
-  Bitcoin: 'Bitcoin',
+  Crypto: 'Krypto',
   'Credit Card': 'Kreditkarte',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
-  'Western Union': 'Western Union',
-  Kuna: 'Kuna',
 
   copyCode: 'Den Code kopieren',
   browseAll1: 'Überblick über alle',
@@ -121,7 +122,8 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'EDRPOU ist ein Code zur Identifizierung einer juristischen Person in der Datenbank von Steuernzahlern der Ukraine',
+  legalDesc1:
+    'EDRPOU ist ein Code zur Identifizierung einer juristischen Person in der Datenbank von Steuernzahlern der Ukraine',
   legalDesc2: 'Den EDRPOU-Code kopieren',
   legalDesc3: 'Die Organisation nach dem Code in der Datenbank überprüfen',
   legalFooterLink: 'Das Steueramt der Ukraine',
