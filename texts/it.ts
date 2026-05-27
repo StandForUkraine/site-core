@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Dona alle organizzazioni militari e umanitarie ucraine. Sfoglia enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell'Ucraina.`,
+  siteDescription: `Sostieni le organizzazioni militari e umanitarie ucraine. Fondi verificati che aiutano le forze armate e le persone colpite dalla guerra.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Condividi',
@@ -10,10 +10,10 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Dona alle organizzazioni militari e umanitarie ucraine',
+  heroTitle: 'Sostieni le organizzazioni militari e umanitarie ucraine',
   heroSubtitle:
-    "Sfoglia un elenco di enti di beneficenza verificati e fondi di aiuto militare per sostenere le Forze Armate dell'Ucraina e fornire assistenza umanitaria.",
-  heroTagline: "Sostieni l'Ucraina di fronte all'invasione su larga scala della Russia.",
+    "Enti di beneficenza e fondi militari verificati — per aiutare le Forze Armate dell'Ucraina e le persone colpite dalla guerra.",
+  heroTagline: "Sostieni l'Ucraina durante l'invasione russa su larga scala.",
 
   close: 'Chiudi',
   sharePopupTitle: 'Condividi',
@@ -28,23 +28,22 @@ export default {
   Military: 'Militari',
   Medical: 'Medici',
   Humanitarian: 'Umanitario',
-  Refugees: 'Rifugiati',
+  Refugees: 'Aiuto ai rifugiati',
   Press: 'Stampa',
-  Veterancy: 'Veterani',
-  'Non-combat': 'Non-combattimento',
+  'Non-combat': 'Supporto non-combattimento',
   NGO: 'ONG',
   'Human Rights': 'Diritti umani',
 
   // footer
-  footerMissionLead: `ti aiuta a sostenere l’Ucraina — in modo diretto, sicuro e alle tue condizioni. Scegli raccolte verificate e dona dove serve di più.`,
+  footerMissionLead: `ti aiuta a sostenere l’Ucraina — in modo diretto, sicuro e come preferisci. Scegli raccolte verificate e dona dove serve di più.`,
   footerGoals: 'I nostri obiettivi',
   goal1:
     'Fornire alle forze armate ucraine armi, munizioni e equipaggiamento contro l’invasione russa su larga scala.',
-  goal2: 'Sostenere veterani e vittime di guerra nel recupero.',
-  goal3: 'Offrire riparo e cibo ai rifugiati sfollati.',
-  goal4: 'Aiutare bambini, anziani e altri gruppi vulnerabili.',
+  goal2: 'Sostenere persone veterane e vittime di guerra nel recupero.',
+  goal3: 'Offrire riparo e cibo alle persone sfollate.',
+  goal4: 'Aiutare l’infanzia, le persone anziane e altri gruppi vulnerabili.',
   goal5: 'Rafforzare il giornalismo indipendente.',
-  footerCreds: `Realizzato da volontari — ingegneri, designer, giornalisti e attivisti dall’Ucraina e dal mondo.`,
+  footerCreds: `Realizzato da volontari — ingegneria, design, giornalismo e attivismo, dall’Ucraina e dal mondo.`,
   footerContact: 'Contattaci',
   joinUs: 'Unisciti a noi',
   disclaimer:
@@ -54,10 +53,9 @@ export default {
   sharedFeedbackLink: "Condividi l'opinione",
   footerVerifyYouControl: 'Verifica tramite youcontrol.com',
   footerLastReviewed: 'Ultima revisione: marzo 2026',
-  joinFormLink: 'Unisciti alla Lega Internazionale',
 
   // filter
-  filterTo: 'Organizzazioni',
+  filterTo: 'Causa',
   filterPayVia: 'Pagamento',
   resetFilter: 'Ripristina i filtri',
   moreFilters: 'Altri filtri',

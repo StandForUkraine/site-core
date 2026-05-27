@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Done a organizaciones militares y humanitarias ucranianas. Explore organizaciones benéficas verificadas y fondos de ayuda militar para apoyar a las Fuerzas Armadas de Ucrania.`,
+  siteDescription: `Apoya a organizaciones militares y humanitarias ucranianas. Fondos verificados que ayudan a las Fuerzas Armadas y a las personas afectadas por la guerra.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Comparte',
@@ -10,9 +10,9 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Done a organizaciones militares y humanitarias ucranianas',
+  heroTitle: 'Apoya a organizaciones militares y humanitarias ucranianas',
   heroSubtitle:
-    'Explore una lista de organizaciones benéficas verificadas y fondos de ayuda militar para apoyar a las Fuerzas Armadas de Ucrania y brindar asistencia humanitaria.',
+    'Organizaciones benéficas y fondos militares verificados — para apoyar a las Fuerzas Armadas de Ucrania y a las personas afectadas por la guerra.',
   heroTagline: 'Apoya a Ucrania frente a la invasión rusa a gran escala.',
 
   close: 'Cerrar',
@@ -28,10 +28,9 @@ export default {
   Military: 'Militar',
   Medical: 'Médico',
   Humanitarian: 'Humanitario',
-  Refugees: 'Refugiados',
+  Refugees: 'Ayuda a refugiados',
   Press: 'Prensa',
-  Veterancy: 'Veteranía',
-  'Non-combat': 'No combate',
+  'Non-combat': 'Apoyo no combatiente',
   NGO: 'ONG',
   'Human Rights': 'Derechos Humanos',
 
@@ -41,12 +40,12 @@ export default {
   footerGoals: 'Nuestros Objetivos',
   goal1:
     'Dotar a las Fuerzas Armadas de Ucrania de armas, munición y equipo frente a la invasión rusa a gran escala.',
-  goal2: 'Apoyar a veteranos y víctimas de guerra en su recuperación.',
+  goal2: 'Apoyar a personas veteranas y víctimas de guerra en su recuperación.',
   goal3: 'Dar refugio y alimento a personas refugiadas desplazadas.',
-  goal4: 'Ayudar a niños, personas mayores y otros grupos vulnerables.',
+  goal4: 'Ayudar a la infancia, a las personas mayores y a otros grupos vulnerables.',
   goal5: 'Fortalecer el periodismo independiente.',
   footerCreds:
-    'Creado por voluntarios — ingenieros, diseñadores, periodistas y activistas de Ucrania y del mundo.',
+    'Hecho por voluntariado — ingeniería, diseño, periodismo y activismo, desde Ucrania y desde todo el mundo.',
   footerContact: 'Contáctanos',
   joinUs: 'Únete a nosotros',
   disclaimer:
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Comparte tus comentarios',
   footerVerifyYouControl: 'Verificar en youcontrol.com',
   footerLastReviewed: 'Última revisión: marzo de 2026',
-  joinFormLink: 'Únete a la Legión Internacional',
 
   // filter
-  filterTo: 'Organizaciones',
+  filterTo: 'Causa',
   filterPayVia: 'Formas de pago',
   resetFilter: 'Restablecer filtros',
   moreFilters: 'Más filtros',

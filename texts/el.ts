@@ -28,10 +28,9 @@ export default {
   Military: 'Στρατός',
   Medical: 'Ιατρικά',
   Humanitarian: 'Φιλάνθρωπος',
-  Refugees: 'Πρόσφυγες',
+  Refugees: 'Βοήθεια προσφύγων',
   Press: 'Τύπος',
-  Veterancy: 'Βετεράνοι',
-  'Non-combat': 'Μη μαχητικά',
+  'Non-combat': 'Μη μαχητική υποστήριξη',
   NGO: 'ΜΚΟ',
   'Human Rights': 'Ανθρώπινα δικαιώματα',
 
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Share feedback',
   footerVerifyYouControl: 'Επαλήθευση μέσω youcontrol.com',
   footerLastReviewed: 'Τελευταία ενημέρωση: Μάρτιος 2026',
-  joinFormLink: 'Join Internation Legion',
 
   // filter
-  filterTo: 'To',
+  filterTo: 'Κατηγορία',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
   moreFilters: 'Περισσότερα φίλτρα',

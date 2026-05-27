@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Faites un don aux organisations militaires et humanitaires ukrainiennes. Parcourez des organisations caritatives vérifiées et des fonds d'aide militaire pour soutenir les Forces armées de l'Ukraine.`,
+  siteDescription: `Soutiens les organisations militaires et humanitaires ukrainiennes. Fonds vérifiés qui aident les forces armées et les personnes touchées par la guerre.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Partager',
@@ -10,10 +10,10 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Faites un don aux organisations militaires et humanitaires ukrainiennes',
+  heroTitle: 'Soutiens les organisations militaires et humanitaires ukrainiennes',
   heroSubtitle:
-    "Parcourez une liste d'organisations caritatives vérifiées et de fonds d'aide militaire pour soutenir les Forces armées de l'Ukraine et fournir une aide humanitaire.",
-  heroTagline: "Soutenir l'Ukraine face à l'invasion russe à grande échelle.",
+    "Organisations caritatives et fonds militaires vérifiés — pour aider les forces armées de l'Ukraine et les personnes touchées par la guerre.",
+  heroTagline: "Soutiens l'Ukraine pendant l'invasion russe à grande échelle.",
 
   close: 'Fermer',
   sharePopupTitle: 'Faire circuler la cause',
@@ -29,36 +29,34 @@ export default {
   Military: 'Militaire',
   Medical: 'Médical',
   Humanitarian: 'Humanitaire',
-  Refugees: 'Réfugiés',
+  Refugees: 'Aide aux réfugiés',
   Press: 'Presse',
-  Veterancy: 'Vétérans',
-  'Non-combat': 'Non-combattant',
+  'Non-combat': 'Soutien non-combattant',
   NGO: 'ONG',
   'Human Rights': 'Droits de l’homme',
 
   // footer
-  footerMissionLead: `vous aide à soutenir l'Ukraine — directement, en toute sécurité et selon vos conditions. Trouvez des collectes fiables et donnez là où c'est le plus utile.`,
+  footerMissionLead: `t'aide à soutenir l'Ukraine — directement, en toute sécurité et comme tu le souhaites. Trouve des collectes fiables et donne là où ça compte.`,
   footerGoals: 'Nos objectifs',
   goal1:
     'Approvisionner les forces armées ukrainiennes en armes, munitions et équipement face à l’invasion russe à grande échelle.',
-  goal2: 'Soutenir les vétérans et les victimes de guerre dans leur rétablissement.',
-  goal3: 'Héberger et nourrir les réfugiés déplacés.',
+  goal2: 'Soutenir les vétéran·e·s et victimes de guerre dans leur rétablissement.',
+  goal3: 'Héberger et nourrir les personnes déplacées.',
   goal4: 'Aider les enfants, les personnes âgées et les groupes vulnérables.',
   goal5: 'Renforcer le journalisme indépendant.',
-  footerCreds: `Créé par des bénévoles — ingénieurs, designers, journalistes et activistes d'Ukraine et d'ailleurs.`,
-  footerContact: 'Contactez-nous',
-  joinUs: 'Rejoignez-nous',
+  footerCreds: `Fait par des bénévoles — ingénierie, design, journalisme et militantisme, d'Ukraine et d'ailleurs.`,
+  footerContact: 'Écris-nous',
+  joinUs: 'Rejoins-nous',
   disclaimer:
-    'Nous ne traitons pas les dons — nous vous mettons seulement en relation avec des collectes vérifiées et transparentes.',
+    "Nous ne traitons pas les dons — nous t'orientons vers des collectes vérifiées et transparentes.",
   aboutProject: 'À propos du projet',
   suggestOrgLink: 'Suggérer une association',
   sharedFeedbackLink: 'Partager des commentaires',
   footerVerifyYouControl: 'Vérifier via youcontrol.com',
   footerLastReviewed: 'Dernière révision : mars 2026',
-  joinFormLink: 'Rejoindre la légion internationale',
 
   // filter
-  filterTo: 'Organismes',
+  filterTo: 'Cause',
   filterPayVia: 'Méthodes de paiement',
   resetFilter: 'Réinitialiser le filtre',
   moreFilters: 'Plus de filtres',

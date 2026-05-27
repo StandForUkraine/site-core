@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Spenden Sie an ukrainische Militär- und Hilfsorganisationen. Durchsuchen Sie geprüfte Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine.`,
+  siteDescription: `Unterstütze ukrainische Militär- und Hilfsorganisationen. Geprüfte Fonds, die den Streitkräften und vom Krieg Betroffenen helfen.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Teilen',
@@ -10,12 +10,12 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Spenden Sie an ukrainische Militär- und Hilfsorganisationen',
+  heroTitle: 'Unterstütze ukrainische Militär- und Hilfsorganisationen',
   heroSubtitle:
-    'Durchsuchen Sie eine Liste geprüfter Wohltätigkeitsorganisationen und Militärhilfsfonds zur Unterstützung der Streitkräfte der Ukraine und humanitärer Hilfe.',
-  heroTagline: 'Für die Ukraine — angesichts der russischen Vollinvasion.',
+    'Geprüfte Hilfsorganisationen und Militärfonds — um den Streitkräften der Ukraine und vom Krieg Betroffenen zu helfen.',
+  heroTagline: 'Für die Ukraine — angesichts der großangelegten russischen Invasion.',
 
-  close: 'Schliessen',
+  close: 'Schließen',
   sharePopupTitle: 'Erzähle davon',
   sharePopupText1: 'Teile dieses Projekt mit Freunden und Arbeitskollegen.',
   sharePopupText2: 'Lass alle wissen, wie Ukraine geholfen werden kann.',
@@ -29,38 +29,36 @@ export default {
   Military: 'Militär',
   Medical: 'Medizin',
   Humanitarian: 'Humanitär',
-  Refugees: 'Flüchtlinge',
+  Refugees: 'Flüchtlingshilfe',
   Press: 'Presse',
-  Veterancy: 'Veteranen',
-  'Non-combat': 'Nicht-Kampf',
+  'Non-combat': 'Nicht-Kampf-Unterstützung',
   NGO: 'NGO',
-  'Human Rights': 'Menschrechte',
+  'Human Rights': 'Menschenrechte',
 
   // footer
   footerMissionLead:
     'hilft dir, die Ukraine zu unterstützen — direkt, sicher und nach deinen Vorstellungen. Finde Organisationen und spende dort, wo es am meisten zählt.',
   footerGoals: 'Unsere Ziele',
   goal1:
-    'Die ukrainischen Streitkräfte mit Waffen, Munition und Ausrüstung für den Widerstand gegen Russlands vollständige Invasion unterstützen.',
-  goal2: 'Veteranen und Kriegsopfer bei der Erholung unterstützen.',
+    'Die ukrainischen Streitkräfte mit Waffen, Munition und Ausrüstung für den Widerstand gegen Russlands großangelegte Invasion unterstützen.',
+  goal2: 'Veteran:innen und Kriegsopfer bei der Erholung unterstützen.',
   goal3: 'Geflüchtete unterbringen und versorgen.',
   goal4: 'Kindern, älteren Menschen und anderen schutzbedürftigen Gruppen helfen.',
   goal5: 'Unabhängigen Journalismus stärken.',
   footerCreds:
-    'Erstellt von Freiwilligen — Ingenieuren, Designerinnen, Journalistinnen und Aktivisten aus der Ukraine und der Welt.',
+    'Erstellt von Freiwilligen — Ingenieur:innen, Designer:innen, Journalist:innen und Aktivist:innen aus der Ukraine und der Welt.',
   footerContact: 'Hier erreichst du uns',
-  joinUs: 'Begleiten Sie uns',
+  joinUs: 'Mach mit',
   disclaimer:
-    'Wir bearbeiten keine Spenden — wir verbinden nur mit geprüften, transparenten Spendern.',
+    'Wir bearbeiten keine Spenden — wir verbinden nur mit geprüften, transparenten Spender:innen.',
   aboutProject: 'Über das Projekt',
   suggestOrgLink: 'Schlage eine Organisation vor!',
   sharedFeedbackLink: 'Bewerte die Seite!',
   footerVerifyYouControl: 'Über youcontrol.com prüfen',
   footerLastReviewed: 'Zuletzt geprüft: März 2026',
-  joinFormLink: 'Schließe dich der Internationalen Legion!',
 
   // filter
-  filterTo: 'Organisationen',
+  filterTo: 'Zweck',
   filterPayVia: 'Bezahlungsmöglichkeiten',
   resetFilter: 'Löschen',
   moreFilters: 'Weitere Filter',
@@ -73,8 +71,8 @@ export default {
   Patreon: 'Patreon',
 
   copyCode: 'Den Code kopieren',
-  browseAll1: 'Überblick über alle',
-  browseAll2: 'organisationen verschaffen',
+  browseAll1: 'Alle',
+  browseAll2: 'Organisationen ansehen',
   browseAll3: 'posts',
 
   // about page

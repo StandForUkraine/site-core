@@ -1,6 +1,6 @@
 export default {
   siteName: `Stand For Ukraine`,
-  siteDescription: `Doneer aan Oekraïense militaire en humanitaire organisaties. Bekijk geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen.`,
+  siteDescription: `Steun Oekraïense militaire en humanitaire organisaties. Geverifieerde fondsen die de strijdkrachten en oorlogsslachtoffers helpen.`,
   thumbnail: `/thumbnail.png`,
 
   share: 'Delen',
@@ -10,12 +10,12 @@ export default {
   spreadTheWorld: 'Spread the word',
 
   // AI-translated, pending native review
-  heroTitle: 'Doneer aan Oekraïense militaire en humanitaire organisaties',
+  heroTitle: 'Steun Oekraïense militaire en humanitaire organisaties',
   heroSubtitle:
-    'Bekijk een lijst van geverifieerde liefdadigheidsinstellingen en militaire hulpfondsen om de strijdkrachten van Oekraïne te steunen en humanitaire hulp te bieden.',
-  heroTagline: 'Steun Oekraïne in het aangezicht van de grootschalige Russische invasie.',
+    'Geverifieerde liefdadigheidsorganisaties en militaire fondsen — om de strijdkrachten van Oekraïne en oorlogsslachtoffers te helpen.',
+  heroTagline: 'Steun Oekraïne tijdens de grootschalige Russische invasie.',
 
-  close: 'Afsluiten',
+  close: 'Sluiten',
   sharePopupTitle: 'Deel deze boodschap',
   sharePopupText1: "Deel deze bron met je vrienden en collega's.",
   sharePopupText2: 'Laat mensen weten hoe ze Oekraïne kunnen steunen.',
@@ -28,15 +28,14 @@ export default {
   Military: 'Militair',
   Medical: 'Medisch',
   Humanitarian: 'Humanitair',
-  Refugees: 'Vluchtelingen',
+  Refugees: 'Vluchtelingenhulp',
   Press: 'Pers',
-  Veterancy: 'Veteranenschap',
-  'Non-combat': 'Niet-gevechts',
+  'Non-combat': 'Niet-gevechtssteun',
   NGO: 'NGO',
   'Human Rights': 'Mensenrechten',
 
   // footer
-  footerMissionLead: `helpt je Oekraïne te steunen — direct, veilig en op jouw voorwaarden. Kies gecontroleerde acties en geef waar het het meest telt.`,
+  footerMissionLead: `helpt je Oekraïne te steunen — direct, veilig en op jouw manier. Kies gecontroleerde acties en geef waar het het meest telt.`,
   footerGoals: 'Onze doelen',
   goal1:
     'De Oekraïense strijdkrachten bevoorraden met wapens, munitie en uitrusting tegen de grootschalige Russische invasie.',
@@ -45,7 +44,7 @@ export default {
   goal4: 'Kinderen, ouderen en andere kwetsbare groepen helpen.',
   goal5: 'Onafhankelijke journalistiek versterken.',
   footerCreds: `Gemaakt door vrijwilligers — engineers, ontwerpers, journalisten en activisten uit Oekraïne en daarbuiten.`,
-  footerContact: 'Bereik ons',
+  footerContact: 'Schrijf ons',
   joinUs: 'Doe met ons mee',
   disclaimer:
     'We verwerken geen donaties — we verbinden je alleen met gecontroleerde, transparante inzamelingen.',
@@ -54,10 +53,9 @@ export default {
   sharedFeedbackLink: 'Feedback delen',
   footerVerifyYouControl: 'Controleren via youcontrol.com',
   footerLastReviewed: 'Laatst beoordeeld: maart 2026',
-  joinFormLink: 'Lid worden van International Legion',
 
   // filter
-  filterTo: 'Organisaties',
+  filterTo: 'Doel',
   filterPayVia: 'Betaalmethoden',
   resetFilter: 'Filters opnieuw instellen',
   moreFilters: 'Meer filters',

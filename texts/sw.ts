@@ -13,7 +13,7 @@ export default {
   heroTitle: 'Donera till ukrainska militära och humanitära organisationer',
   heroSubtitle:
     'Bläddra bland granskade välgörenhetsorganisationer och militära biståndsfonder för att stödja Ukrainas försvarsmakt och ge humanitärt bistånd.',
-  heroTagline: 'Stöd Ukraina i mötet med Rysslands fullskaliga invasion.',
+  heroTagline: 'Stöd Ukraina under Rysslands fullskaliga invasion.',
 
   close: 'Stäng',
   sharePopupTitle: 'Sprid uppropet',
@@ -28,10 +28,9 @@ export default {
   Military: 'Militär',
   Medical: 'Medicinsk',
   Humanitarian: 'Humanitär',
-  Refugees: 'Flyktingar',
+  Refugees: 'Flyktinghjälp',
   Press: 'Press',
-  Veterancy: 'Veteraner',
-  'Non-combat': 'Icke-strid',
+  'Non-combat': 'Icke-stridsstöd',
   NGO: 'NGO',
   'Human Rights': 'Mänskliga rättigheter',
 
@@ -46,7 +45,7 @@ export default {
   goal5: 'Stärka oberoende journalistik.',
   footerCreds: `Byggt av volontärer — ingenjörer, designers, journalister och aktivister från Ukraina och världen.`,
   footerContact: 'Kontakta oss',
-  joinUs: 'Följ oss',
+  joinUs: 'Gå med',
   disclaimer:
     'Vi hanterar inte donationer — vi kopplar bara ihop med verifierade, transparenta insamlingar.',
   aboutProject: 'Om projektet',
@@ -54,10 +53,9 @@ export default {
   sharedFeedbackLink: 'Ge feedback',
   footerVerifyYouControl: 'Verifiera via youcontrol.com',
   footerLastReviewed: 'Senast granskad: mars 2026',
-  joinFormLink: 'Gå med i den Internationella Legionen',
 
   // filter
-  filterTo: 'Organisationer',
+  filterTo: 'Kategori',
   filterPayVia: 'Betalningsmetod',
   resetFilter: 'Återställ filter',
   moreFilters: 'Fler filter',
@@ -65,7 +63,7 @@ export default {
   // payment methods
   IBAN: 'IBAN',
   Crypto: 'Krypto',
-  'Credit Card': 'Carte de crédit',
+  'Credit Card': 'Kreditkort',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
 

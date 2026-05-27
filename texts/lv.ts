@@ -28,10 +28,9 @@ export default {
   Military: 'Militārs',
   Medical: 'Medicīnas',
   Humanitarian: 'Humanitārs',
-  Refugees: 'Bēgļi',
+  Refugees: 'Palīdzība bēgļiem',
   Press: 'Prese',
-  Veterancy: 'Veterāns',
-  'Non-combat': 'Nekauja',
+  'Non-combat': 'Nekaujas atbalsts',
   NGO: 'NVO',
   'Human Rights': 'Cilvēktiesības',
 
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Share feedback',
   footerVerifyYouControl: 'Pārbaudīt ar youcontrol.com',
   footerLastReviewed: 'Pēdējā pārskatīšana: 2026. gada marts',
-  joinFormLink: 'Join Internation Legion',
 
   // filter
-  filterTo: 'To',
+  filterTo: 'Kategorija',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
   moreFilters: 'Vairāk filtru',
