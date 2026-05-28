@@ -28,10 +28,9 @@ export default {
   Military: 'Ordu',
   Medical: 'Tıbbi',
   Humanitarian: 'İnsani',
-  Refugees: 'Mülteciler',
+  Refugees: 'Mültecilere yardım',
   Press: 'Basın',
-  Veterancy: 'Gazilik',
-  'Non-combat': 'Savaş dışı',
+  'Non-combat': 'Savaş dışı destek',
   NGO: 'STK',
   'Human Rights': 'Human Rights',
 
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Geri Bildirimi Paylaşın',
   footerVerifyYouControl: 'youcontrol.com ile doğrula',
   footerLastReviewed: 'Son güncelleme: Mart 2026',
-  joinFormLink: 'Uluslararası Lejyona Katılın',
 
   // filter
-  filterTo: 'Kuruluşlar',
+  filterTo: 'Kategori',
   filterPayVia: 'Ödeme Seçenekleri',
   resetFilter: 'Filtreleri sıfırla',
   moreFilters: 'Daha fazla filtre',

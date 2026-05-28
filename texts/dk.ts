@@ -28,10 +28,9 @@ export default {
   Military: 'Militær',
   Medical: 'Medicinsk',
   Humanitarian: 'Humanitær',
-  Refugees: 'Flygtninge',
+  Refugees: 'Flygtningehjælp',
   Press: 'Presse',
-  Veterancy: 'Veteraner',
-  'Non-combat': 'Ikke-kamp',
+  'Non-combat': 'Ikke-kampstøtte',
   NGO: 'NGO',
   'Human Rights': 'Menneskerettigheder',
 
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Del feedback',
   footerVerifyYouControl: 'Verificer via youcontrol.com',
   footerLastReviewed: 'Sidst gennemgået: marts 2026',
-  joinFormLink: 'Bliv medlem af den internationale legion',
 
   // filter
-  filterTo: 'Organisation',
+  filterTo: 'Kategori',
   filterPayVia: 'Betalingsmetoder',
   resetFilter: 'Nulstil filtrering',
   moreFilters: 'Flere filtre',

@@ -28,10 +28,9 @@ export default {
   Military: 'Military',
   Medical: 'Medical',
   Humanitarian: 'Humanitarian',
-  Refugees: 'Refugees',
+  Refugees: 'Refugee aid',
   Press: 'Press',
-  Veterancy: 'Veterancy',
-  'Non-combat': 'Non-combat',
+  'Non-combat': 'Non-combat support',
   NGO: 'NGO',
   'Human Rights': 'Human Rights',
 
@@ -56,10 +55,9 @@ export default {
   sharedFeedbackLink: 'Share feedback',
   footerVerifyYouControl: 'Verify via youcontrol.com',
   footerLastReviewed: 'Last reviewed: March 2026',
-  joinFormLink: 'Join Internation Legion',
 
   // filter
-  filterTo: 'To',
+  filterTo: 'Cause',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
 

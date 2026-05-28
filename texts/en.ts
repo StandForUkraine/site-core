@@ -27,10 +27,9 @@ export default {
   Military: 'Military',
   Medical: 'Medical',
   Humanitarian: 'Humanitarian',
-  Refugees: 'Refugees',
+  Refugees: 'Refugee aid',
   Press: 'Press',
-  Veterancy: 'Veterancy',
-  'Non-combat': 'Non-combat',
+  'Non-combat': 'Non-combat support',
   NGO: 'NGO',
   'Human Rights': 'Human Rights',
 
@@ -55,10 +54,9 @@ export default {
   sharedFeedbackLink: 'Share feedback',
   footerVerifyYouControl: 'Verify via youcontrol.com',
   footerLastReviewed: 'Last reviewed: March 2026',
-  joinFormLink: 'Join International Legion',
 
   // filter
-  filterTo: 'To',
+  filterTo: 'Cause',
   filterPayVia: 'Via',
   resetFilter: 'Reset filter',
   moreFilters: 'More filters',
@@ -121,7 +119,7 @@ export default {
 
   // legal popup
   legalCodeLabel: 'ЄДРПОУ',
-  legalDesc1: 'ЄДРПОУ(EDRPOU) is a code of the legal entity from State Tax Service of Ukraine.',
+  legalDesc1: 'EDRPOU (ЄДРПОУ) is the legal-entity code issued by the State Tax Service of Ukraine.',
   legalDesc2: 'Copy EDRPOU code',
   legalDesc3: 'Verify the organization by the code in the register',
   legalFooterLink: 'State Tax Service of Ukraine',

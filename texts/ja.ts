@@ -24,14 +24,13 @@ export default {
   copyLinkDone: 'コピー完了!',
 
   // tags
-  All: 'All',
+  All: 'すべて',
   Military: '軍隊',
   Medical: '医療',
   Humanitarian: '人道',
-  Refugees: '避難・保護',
+  Refugees: '難民支援',
   Press: 'プレス',
-  Veterancy: 'ベテランシー',
-  'Non-combat': '非戦闘',
+  'Non-combat': '非戦闘支援',
   NGO: 'NGO',
   'Human Rights': '人権',
 
@@ -54,10 +53,9 @@ export default {
   sharedFeedbackLink: 'フィードバックを共有する',
   footerVerifyYouControl: 'youcontrol.com で確認',
   footerLastReviewed: '最終確認: 2026年3月',
-  joinFormLink: 'インターナショナルリージョンに参加する',
 
   // filter
-  filterTo: '団体',
+  filterTo: 'カテゴリー',
   filterPayVia: '支払方法',
   resetFilter: 'フィルターのリセット',
   moreFilters: 'さらにフィルター',
@@ -65,7 +63,7 @@ export default {
   // payment methods
   IBAN: 'IBAN',
   Crypto: '暗号通貨',
-  'Credit Card': 'Credit Card',
+  'Credit Card': 'クレジットカード',
   PayPal: 'PayPal',
   Patreon: 'Patreon',
 

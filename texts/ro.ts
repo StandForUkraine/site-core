@@ -28,10 +28,9 @@ export default {
   Military: 'Militar',
   Medical: 'Medical',
   Humanitarian: 'Umanitar',
-  Refugees: 'Refugiați',
+  Refugees: 'Ajutor refugiați',
   Press: 'Presă',
-  Veterancy: 'Veterani',
-  'Non-combat': 'Non-combat',
+  'Non-combat': 'Suport non-luptă',
   NGO: 'ONG',
   'Human Rights': 'Drepturile Omului',
 
@@ -54,10 +53,9 @@ export default {
   sharedFeedbackLink: 'Trimite feedback',
   footerVerifyYouControl: 'Verifică prin youcontrol.com',
   footerLastReviewed: 'Ultima revizuire: martie 2026',
-  joinFormLink: 'Join Internation Legion',
 
   // filter
-  filterTo: 'La',
+  filterTo: 'Cauză',
   filterPayVia: 'Prin intermediul',
   resetFilter: 'Resetați filtrul',
   moreFilters: 'Mai multe filtre',
