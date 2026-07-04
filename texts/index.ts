@@ -16,6 +16,8 @@ import ja from './ja'
 import no from './no'
 import ua from './ua'
 import ar from './ar'
+import pt from './pt'
+import kk from './kk'
 
 export const defaultLang = process.env.NEXT_PUBLIC_DEFAULT_LANG as Lang
 
@@ -38,6 +40,8 @@ export const byLang = {
   tr,
   // ar,
   ru,
+  pt,
+  kk,
 } as const
 
 export const flagsMap: Record<Lang, string> = {
@@ -59,6 +63,8 @@ export const flagsMap: Record<Lang, string> = {
   ja: '🇯🇵',
   // ar: '🇦🇪',
   ru: '🏳',
+  pt: '🇵🇹',
+  kk: '🇰🇿',
 }
 
 export type Lang = keyof typeof byLang
